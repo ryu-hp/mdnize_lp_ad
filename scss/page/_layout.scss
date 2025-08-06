@@ -1,0 +1,35 @@
+@use "../global" as *;
+
+// 全体のレイアウト
+.lp1 {
+    width: 100%;
+    
+    // セクション共通
+    section,
+    footer {
+        width: 100%;
+        
+        picture {
+            width: 100%;
+            display: block;
+            
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+    }
+    
+    // 画像の最適化
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    // レスポンシブ対応
+    @include mq(md) {
+        // モバイル用の調整がある場合はここに追加
+    }
+}

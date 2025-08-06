@@ -1,4 +1,16 @@
 @charset "UTF-8";
 
 @use "./base";
-@use "./page/sample";
+@use "./page/layout";
+@use "./page/hero";
+@use "./page/main-visual";
+@use "./page/content";
+@use "./page/features";
+@use "./page/service-details";
+@use "./page/benefits";
+@use "./page/results";
+@use "./page/process";
+@use "./page/pricing";
+@use "./page/faq";
+@use "./page/contact";
+@use "./page/footer";
