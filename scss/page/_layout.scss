@@ -3,20 +3,26 @@
 // 全体のレイアウト
 .lp1 {
     width: 100%;
+    margin: 0 auto;
+    max-width: 1920px; // 最大幅を設定
+    font-family: $base-font-family;
     
     // セクション共通
     section,
     footer {
         width: 100%;
+        position: relative;
         
         picture {
             width: 100%;
             display: block;
+            line-height: 0; // 画像間の隙間を除去
             
             img {
                 width: 100%;
                 height: auto;
                 display: block;
+                object-fit: cover; // 画像のアスペクト比を保持
             }
         }
     }
@@ -30,6 +36,9 @@
     
     // レスポンシブ対応
     @include mq(md) {
-        // モバイル用の調整がある場合はここに追加
+        // モバイル用の調整
+        picture img {
+            object-position: center; // モバイルでの画像位置調整
+        }
     }
 }

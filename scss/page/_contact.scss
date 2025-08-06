@@ -2,15 +2,26 @@
 
 .contact {
     width: 100%;
+    position: relative;
+    background-color: $color-theme;
     
     &__image {
         width: 100%;
         display: block;
+        line-height: 0;
         
         img {
             width: 100%;
             height: auto;
             display: block;
+            object-fit: cover;
+        }
+    }
+    
+    // レスポンシブ対応
+    @include mq(md) {
+        &__image img {
+            object-position: center;
         }
     }
 }

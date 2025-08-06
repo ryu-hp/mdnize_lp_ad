@@ -1,0 +1,57 @@
+@use "../global" as *;
+
+// パフォーマンス最適化
+.lp1 {
+    // 画像の遅延読み込み対応
+    img[loading="lazy"] {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        
+        &.loaded {
+            opacity: 1;
+        }
+    }
+    
+    // スムーススクロール
+    scroll-behavior: smooth;
+    
+    // GPU加速
+    picture,
+    img {
+        transform: translateZ(0);
+        will-change: transform;
+    }
+    
+    // レスポンシブ画像の最適化
+    @include mq(md) {
+        picture {
+            // モバイルでの画像圧縮対応
+            img {
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+            }
+        }
+    }
+}
+
+// アニメーション用のクラス
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    
+    &.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// 画像のプリロード用
+.preload {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
