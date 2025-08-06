@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LP確認用画面</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1920px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        .lp-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            vertical-align: bottom;
+        }
+
+        /* 確認用ヘッダー */
+        .preview-header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .preview-header h1 {
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .preview-info {
+            background-color: #e8e8e8;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* レスポンシブ対応 */
+        @media (max-width: 1920px) {
+            .container {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .preview-header h1 {
+                font-size: 16px;
+            }
+            
+            .preview-info {
+                font-size: 12px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="広告運用ページ_01.jpg" alt="ランディングページ1" class="lp-image">
+        <img src="広告運用ページ_02.jpg" alt="ランディングページ2" class="lp-image">
+    </div>
+</body>
+</html>
