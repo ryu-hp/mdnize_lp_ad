@@ -1,0 +1,193 @@
+@use "../global" as *;
+
+.solution {
+    padding: rem(100) 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    
+    @include mq(md) {
+        padding: rem(60) 0;
+    }
+    
+    &__title-logo {
+        display: inline-block;
+        
+        img {
+            height: rem(40);
+            width: auto;
+            vertical-align: middle;
+            
+            @include mq(md) {
+                height: rem(30);
+            }
+        }
+    }
+    
+    &__title {
+        &--large {
+            font-size: rem(48);
+            
+            @include mq(md) {
+                font-size: rem(36);
+            }
+        }
+        
+        &--middle {
+            font-size: rem(32);
+            
+            @include mq(md) {
+                font-size: rem(24);
+            }
+        }
+    }
+    
+    &__title-sub {
+        font-size: rem(18);
+        margin-top: rem(10);
+        font-weight: $normal;
+        
+        @include mq(md) {
+            font-size: rem(16);
+        }
+    }
+    
+    &__contents {
+        display: flex;
+        flex-direction: column;
+        gap: rem(60);
+        
+        @include mq(md) {
+            gap: rem(40);
+        }
+    }
+    
+    &__item {
+        background-color: $color-white;
+        border-radius: rem(16);
+        padding: rem(40);
+        box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+        &:hover {
+            transform: translateY(rem(-4));
+            box-shadow: 0 rem(16) rem(48) rgba(0, 0, 0, 0.15);
+        }
+        
+        @include mq(md) {
+            padding: rem(24);
+            border-radius: rem(12);
+        }
+    }
+    
+    &__item-content {
+        display: flex;
+        align-items: center;
+        gap: rem(40);
+        
+        @include mq(md) {
+            flex-direction: column;
+            text-align: center;
+            gap: rem(24);
+        }
+    }
+    
+    &__item-image {
+        flex: 0 0 rem(300);
+        
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: rem(12);
+        }
+        
+        @include mq(md) {
+            flex: none;
+            max-width: rem(250);
+        }
+    }
+    
+    &__item-title {
+        font-size: rem(24);
+        font-weight: $bold;
+        color: $color-black;
+        margin-bottom: rem(20);
+        line-height: 1.4;
+        
+        &--blue {
+            color: $color-theme;
+        }
+        
+        @include mq(md) {
+            font-size: rem(20);
+            margin-bottom: rem(15);
+        }
+    }
+    
+    &__item-descriptions {
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+    }
+    
+    &__item-description {
+        font-size: rem(16);
+        line-height: 1.7;
+        color: $color-black;
+        
+        @include mq(md) {
+            font-size: rem(14);
+        }
+    }
+}
+
+// セクションタイトルの拡張
+.section__title {
+    &--solution {
+        position: relative;
+        
+        .section__title--accent {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            
+            &--left {
+                left: rem(-100);
+                
+                @include mq(md) {
+                    display: none;
+                }
+            }
+            
+            &--right {
+                right: rem(-100);
+                
+                @include mq(md) {
+                    display: none;
+                }
+            }
+            
+            img {
+                width: rem(80);
+                height: auto;
+            }
+        }
+    }
+}
+
+.section__title-main {
+    &--solution {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(10);
+        
+        @include mq(md) {
+            gap: rem(8);
+        }
+    }
+}
+
+// カラークラスの追加
+.color-heavy-blue {
+    color: #001d3d;
+    font-weight: $bold;
+}

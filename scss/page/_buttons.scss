@@ -1,0 +1,80 @@
+@use "../global" as *;
+
+// ボタン共通スタイル
+.c-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(8);
+    padding: rem(16) rem(32);
+    border-radius: rem(50);
+    font-size: rem(16);
+    font-weight: $bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+    
+    &:hover {
+        transform: translateY(rem(-2));
+        box-shadow: 0 rem(8) rem(24) rgba(0, 0, 0, 0.15);
+        opacity: 1;
+    }
+    
+    @include mq(md) {
+        font-size: rem(14);
+        padding: rem(14) rem(24);
+        gap: rem(6);
+    }
+    
+    &--contact {
+        background-color: $color-theme;
+        color: $color-white;
+        
+        &:hover {
+            background-color: darken($color-theme, 10%);
+        }
+    }
+    
+    &--shiryo {
+        background-color: $color-white;
+        color: $color-theme;
+        border: rem(2) solid $color-theme;
+        
+        &:hover {
+            background-color: $color-theme;
+            color: $color-white;
+            
+            .c-btn__icon--shiryo img {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    
+    &__icon {
+        display: inline-flex;
+        align-items: center;
+        
+        img {
+            width: rem(20);
+            height: rem(20);
+        }
+        
+        &--contact img {
+            filter: brightness(0) invert(1);
+        }
+        
+        &--shiryo img {
+            filter: none;
+            transition: filter 0.3s ease;
+        }
+        
+        @include mq(md) {
+            img {
+                width: rem(18);
+                height: rem(18);
+            }
+        }
+    }
+}

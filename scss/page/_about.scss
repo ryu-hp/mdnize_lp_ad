@@ -1,0 +1,96 @@
+@use "../global" as *;
+
+.about {
+    padding: rem(100) 0;
+    background-color: $color-white;
+    
+    @include mq(md) {
+        padding: rem(60) 0;
+    }
+    
+    &__description {
+        font-size: rem(18);
+        line-height: 1.8;
+        margin-bottom: rem(60);
+        color: $color-black;
+        
+        @include mq(md) {
+            font-size: rem(16);
+            margin-bottom: rem(40);
+            text-align: left;
+        }
+    }
+    
+    &__movie {
+        width: 100%;
+        max-width: rem(800);
+        margin: 0 auto;
+        
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: rem(12);
+            box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
+// セクション共通スタイル
+.section {
+    &__title {
+        text-align: center;
+        margin-bottom: rem(60);
+        position: relative;
+        
+        &--bar {
+            display: block;
+            width: rem(60);
+            height: rem(4);
+            background-color: $color-theme;
+            margin: 0 auto rem(20);
+        }
+        
+        @include mq(md) {
+            margin-bottom: rem(40);
+        }
+    }
+    
+    &__title-main {
+        font-size: rem(36);
+        font-weight: $bold;
+        color: $color-black;
+        margin-bottom: rem(20);
+        
+        @include mq(md) {
+            font-size: rem(28);
+            margin-bottom: rem(15);
+        }
+    }
+    
+    &__title-bg_text {
+        position: absolute;
+        top: rem(-20);
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        opacity: 0.1;
+        
+        img {
+            height: rem(120);
+            width: auto;
+        }
+        
+        @include mq(md) {
+            img {
+                height: rem(80);
+            }
+        }
+    }
+}
+
+// テキスト共通クラス
+.text {
+    &--center {
+        text-align: center;
+    }
+}
