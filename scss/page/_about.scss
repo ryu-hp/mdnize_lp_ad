@@ -1,12 +1,7 @@
 @use "../global" as *;
 
 .about {
-    padding: rem(100) 0;
-    background-color: $color-white;
-    
-    @include mq(md) {
-        padding: rem(60) 0;
-    }
+    // セクション共通スタイルを使用（base.scssで定義）
     
     &__description {
         font-size: rem(18);

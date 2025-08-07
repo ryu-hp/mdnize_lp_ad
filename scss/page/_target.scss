@@ -1,12 +1,7 @@
 @use "../global" as *;
 
 .target {
-    padding: rem(100) 0;
-    background-color: $color-white;
-    
-    @include mq(md) {
-        padding: rem(60) 0;
-    }
+    // base.scssのセクション共通スタイルとbg--whiteクラスを使用
     
     &__title-sub {
         font-size: rem(18);

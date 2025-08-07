@@ -74,6 +74,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            display: inline-block; // グラデーションを正しく表示するため
         }
         
         @include mq(md) {
@@ -130,34 +131,4 @@
         min-height: 80vh;
         background-image: url(../img/sp/02_1.webp);
     }
-}
-
-// バッジのスタイル
-.c-badge-01 {
-    background-color: $color-theme;
-    color: $color-white;
-    padding: rem(8) rem(16);
-    border-radius: rem(20);
-    font-size: rem(14);
-    font-weight: $bold;
-    display: inline-block;
-    margin: 0 rem(8);
-    
-    @include mq(md) {
-        font-size: rem(12);
-        padding: rem(6) rem(12);
-        margin: 0 rem(4);
-    }
-}
-
-// カラークラス
-.color-theme-blue {
-    color: $color-theme;
-}
-
-.color-grad-blue {
-    background: linear-gradient(135deg, #003566 0%, #0077b6 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }

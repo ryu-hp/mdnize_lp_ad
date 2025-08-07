@@ -47,4 +47,249 @@ a:hover {
 a {
     text-decoration: none;
 }
+
+// 共通バッジスタイル
+.c-badge-01 {
+    background-color: $color-theme;
+    color: $color-white;
+    padding: rem(8) rem(16);
+    border-radius: rem(20);
+    font-size: rem(14);
+    font-weight: $bold;
+    display: inline-block;
+    margin: 0 rem(8);
+    
+    @include mq(md) {
+        font-size: rem(12);
+        padding: rem(6) rem(12);
+        margin: 0 rem(4);
+    }
+}
+
+// 共通カラークラス
+.color-theme-blue {
+    color: $color-theme;
+}
+
+.color-grad-blue {
+    background: linear-gradient(135deg, #003566 0%, #0077b6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.color-heavy-blue {
+    color: #001d3d;
+    font-weight: $bold;
+}
+
+.color-black {
+    color: $color-black;
+}
+
+.color-white {
+    color: $color-white;
+}
+
+.color-red {
+    color: $color-red;
+}
+
+.color-main-gray {
+    color: $color-main_gray;
+}
+
+// テキスト共通クラス
+.text {
+    &--center {
+        text-align: center;
+    }
+    
+    &--left {
+        text-align: left;
+    }
+    
+    &--right {
+        text-align: right;
+    }
+    
+    &--bold {
+        font-weight: $bold;
+    }
+    
+    &--normal {
+        font-weight: $normal;
+    }
+    
+    &--light {
+        font-weight: $light;
+    }
+}
+
+// フォントサイズクラス
+.fs {
+    &--xs {
+        font-size: rem(12);
+        
+        @include mq(md) {
+            font-size: rem(10);
+        }
+    }
+    
+    &--sm {
+        font-size: rem(14);
+        
+        @include mq(md) {
+            font-size: rem(12);
+        }
+    }
+    
+    &--md {
+        font-size: rem(16);
+        
+        @include mq(md) {
+            font-size: rem(14);
+        }
+    }
+    
+    &--lg {
+        font-size: rem(18);
+        
+        @include mq(md) {
+            font-size: rem(16);
+        }
+    }
+    
+    &--xl {
+        font-size: rem(24);
+        
+        @include mq(md) {
+            font-size: rem(20);
+        }
+    }
+    
+    &--xxl {
+        font-size: rem(32);
+        
+        @include mq(md) {
+            font-size: rem(24);
+        }
+    }
+}
+
+// マージン・パディング共通クラス
+.mt {
+    &--sm { margin-top: rem(10); }
+    &--md { margin-top: rem(20); }
+    &--lg { margin-top: rem(40); }
+    &--xl { margin-top: rem(60); }
+}
+
+.mb {
+    &--sm { margin-bottom: rem(10); }
+    &--md { margin-bottom: rem(20); }
+    &--lg { margin-bottom: rem(40); }
+    &--xl { margin-bottom: rem(60); }
+}
+
+.pt {
+    &--sm { padding-top: rem(10); }
+    &--md { padding-top: rem(20); }
+    &--lg { padding-top: rem(40); }
+    &--xl { padding-top: rem(60); }
+}
+
+.pb {
+    &--sm { padding-bottom: rem(10); }
+    &--md { padding-bottom: rem(20); }
+    &--lg { padding-bottom: rem(40); }
+    &--xl { padding-bottom: rem(60); }
+}
+
+// セクション共通スタイル
+.section {
+    padding: rem(100) 0;
+    
+    @include mq(md) {
+        padding: rem(60) 0;
+    }
+    
+    &--no-padding {
+        padding: 0;
+    }
+    
+    &--sm-padding {
+        padding: rem(60) 0;
+        
+        @include mq(md) {
+            padding: rem(40) 0;
+        }
+    }
+    
+    &--lg-padding {
+        padding: rem(140) 0;
+        
+        @include mq(md) {
+            padding: rem(80) 0;
+        }
+    }
+}
+
+// 背景色クラス
+.bg {
+    &--white {
+        background-color: $color-white;
+    }
+    
+    &--gray {
+        background-color: $color-bg_gray;
+    }
+    
+    &--theme {
+        background-color: $color-theme;
+    }
+    
+    &--gradient {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+}
+
+// ボックスシャドウクラス
+.shadow {
+    &--sm {
+        box-shadow: 0 rem(4) rem(16) rgba(0, 0, 0, 0.1);
+    }
+    
+    &--md {
+        box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.15);
+    }
+    
+    &--lg {
+        box-shadow: 0 rem(16) rem(48) rgba(0, 0, 0, 0.2);
+    }
+}
+
+// 角丸クラス
+.radius {
+    &--sm {
+        border-radius: rem(8);
+    }
+    
+    &--md {
+        border-radius: rem(12);
+    }
+    
+    &--lg {
+        border-radius: rem(16);
+    }
+    
+    &--xl {
+        border-radius: rem(24);
+    }
+    
+    &--full {
+        border-radius: rem(50);
+    }
+}
+
 //base_laout

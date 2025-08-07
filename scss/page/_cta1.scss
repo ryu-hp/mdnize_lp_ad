@@ -1,14 +1,9 @@
 @use "../global" as *;
 
 .cta1 {
-    padding: rem(80) 0;
-    background-color: $color-bg_gray;
+    // base.scssのセクション共通スタイルとbg--grayクラスを使用
     position: relative;
     overflow: hidden;
-    
-    @include mq(md) {
-        padding: rem(60) 0;
-    }
     
     &__contents {
         text-align: center;
