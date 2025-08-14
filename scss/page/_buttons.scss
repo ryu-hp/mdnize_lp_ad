@@ -52,6 +52,23 @@
         }
     }
     
+    &--soudan {
+        background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+        color: $color-white;
+        font-size: rem(18);
+        padding: rem(18) rem(36);
+        
+        &:hover {
+            background: linear-gradient(135deg, darken(#FF6B35, 10%) 0%, darken(#F7931E, 10%) 100%);
+            transform: translateY(rem(-3));
+        }
+        
+        @include mq(md) {
+            font-size: rem(16);
+            padding: rem(16) rem(28);
+        }
+    }
+    
     &__icon {
         display: inline-flex;
         align-items: center;

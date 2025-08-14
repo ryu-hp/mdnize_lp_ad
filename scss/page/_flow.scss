@@ -1,0 +1,297 @@
+@use "../global" as *;
+
+.flow {
+    padding: rem(120) 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    
+    @include mq(md) {
+        padding: rem(80) 0;
+    }
+    
+    &__inner {
+        max-width: $inner;
+        margin: 0 auto;
+        padding: 0 $padding-pc;
+        
+        @include mq(md) {
+            padding: 0 $padding-sp;
+        }
+    }
+    
+    &__body {
+        margin-top: rem(60);
+        
+        @include mq(md) {
+            margin-top: rem(40);
+        }
+    }
+    
+    &__contents {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: rem(60);
+        align-items: center;
+        margin-bottom: rem(60);
+        
+        @include mq(md) {
+            grid-template-columns: 1fr;
+            gap: rem(40);
+            margin-bottom: rem(40);
+        }
+    }
+    
+    &__image {
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: rem(16);
+            box-shadow: 0 rem(16) rem(48) rgba(0, 0, 0, 0.15);
+        }
+    }
+    
+    &__text-area {
+        padding: rem(20);
+        
+        @include mq(md) {
+            padding: 0;
+        }
+    }
+    
+    &__top-text {
+        font-size: rem(18);
+        line-height: 1.7;
+        margin-bottom: rem(40);
+        
+        @include mq(md) {
+            font-size: rem(16);
+            margin-bottom: rem(30);
+        }
+        
+        .text-yellow-line {
+            position: relative;
+            
+            .text-single-dt {
+                display: inline-block;
+                position: relative;
+                
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: rem(-4);
+                    left: 0;
+                    width: 100%;
+                    height: rem(2);
+                    background-color: #FFD60A;
+                }
+            }
+        }
+    }
+    
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 rem(40) 0;
+        
+        @include mq(md) {
+            margin-bottom: rem(30);
+        }
+        
+        &-item {
+            display: flex;
+            align-items: flex-start;
+            gap: rem(20);
+            margin-bottom: rem(30);
+            
+            @include mq(md) {
+                gap: rem(15);
+                margin-bottom: rem(25);
+            }
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        
+        &-number {
+            background-color: $color-theme;
+            color: $color-white;
+            font-size: rem(14);
+            font-weight: $bold;
+            padding: rem(8) rem(12);
+            border-radius: rem(20);
+            white-space: nowrap;
+            min-width: rem(80);
+            text-align: center;
+            
+            @include mq(md) {
+                font-size: rem(12);
+                padding: rem(6) rem(10);
+                min-width: rem(70);
+            }
+        }
+        
+        &-text {
+            font-size: rem(16);
+            line-height: 1.6;
+            
+            @include mq(md) {
+                font-size: rem(14);
+            }
+        }
+    }
+    
+    &__bottom-description {
+        font-size: rem(16);
+        line-height: 1.7;
+        text-align: center;
+        margin-bottom: rem(40);
+        
+        @include mq(md) {
+            font-size: rem(14);
+            margin-bottom: rem(30);
+        }
+        
+        &--large {
+            font-size: rem(20);
+            font-weight: $bold;
+            
+            @include mq(md) {
+                font-size: rem(18);
+            }
+        }
+    }
+    
+    &__bottom-contents {
+        background-color: $color-white;
+        border-radius: rem(16);
+        padding: rem(40);
+        text-align: center;
+        position: relative;
+        box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.1);
+        margin-bottom: rem(60);
+        
+        @include mq(md) {
+            padding: rem(30);
+            margin-bottom: rem(40);
+        }
+        
+        &-accent {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            
+            &--left {
+                left: rem(-20);
+                
+                @include mq(md) {
+                    left: rem(-10);
+                }
+            }
+            
+            &--right {
+                right: rem(-20);
+                
+                @include mq(md) {
+                    right: rem(-10);
+                }
+            }
+            
+            img {
+                width: rem(40);
+                height: auto;
+                
+                @include mq(md) {
+                    width: rem(30);
+                }
+            }
+        }
+        
+        &-text {
+            font-size: rem(18);
+            line-height: 1.7;
+            
+            @include mq(md) {
+                font-size: rem(16);
+            }
+            
+            &--large {
+                font-size: rem(22);
+                font-weight: $bold;
+                
+                @include mq(md) {
+                    font-size: rem(20);
+                }
+            }
+        }
+    }
+    
+    &__btn-area {
+        text-align: center;
+    }
+}
+
+// セクションタイトル - フロー用
+.section__title {
+    &--flow {
+        text-align: center;
+        margin-bottom: rem(20);
+        
+        @include mq(md) {
+            margin-bottom: rem(15);
+        }
+    }
+    
+    &-main {
+        &--flow {
+            font-size: rem(40);
+            font-weight: $bold;
+            line-height: 1.4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: rem(15);
+            flex-wrap: wrap;
+            
+            @include mq(md) {
+                font-size: rem(28);
+                gap: rem(10);
+            }
+            
+            span {
+                img {
+                    height: rem(40);
+                    width: auto;
+                    
+                    @include mq(md) {
+                        height: rem(28);
+                    }
+                }
+            }
+            
+            .flow-title--blue-box {
+                background-color: $color-theme;
+                color: $color-white;
+                padding: rem(8) rem(12);
+                border-radius: rem(8);
+                font-size: rem(36);
+                
+                @include mq(md) {
+                    font-size: rem(24);
+                    padding: rem(6) rem(10);
+                }
+            }
+        }
+    }
+}
+
+// カラークラス
+.color-theme-orange {
+    color: #FF6B35;
+}
+
+.text-underline {
+    text-decoration: underline;
+    text-decoration-color: #FF6B35;
+    text-decoration-thickness: rem(2);
+    text-underline-offset: rem(4);
+}

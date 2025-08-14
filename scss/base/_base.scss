@@ -292,4 +292,302 @@ a {
     }
 }
 
+// セクション共通クラス
+.section__inner {
+    max-width: $inner;
+    margin: 0 auto;
+    padding: 0 $padding-pc;
+    
+    @include mq(md) {
+        padding: 0 $padding-sp;
+    }
+}
+
+.section__title {
+    text-align: center;
+    margin-bottom: rem(60);
+    position: relative;
+    
+    @include mq(md) {
+        margin-bottom: rem(40);
+    }
+    
+    &--bar {
+        width: rem(60);
+        height: rem(4);
+        background-color: $color-theme;
+        display: block;
+        margin: 0 auto rem(20) auto;
+        
+        @include mq(md) {
+            margin-bottom: rem(15);
+        }
+    }
+    
+    &-main {
+        font-size: rem(40);
+        font-weight: $bold;
+        line-height: 1.4;
+        color: $color-black;
+        
+        @include mq(md) {
+            font-size: rem(28);
+        }
+    }
+    
+    &--accent {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        &--left {
+            left: rem(-60);
+            
+            @include mq(md) {
+                left: rem(-30);
+            }
+        }
+        
+        &--right {
+            right: rem(-60);
+            
+            @include mq(md) {
+                right: rem(-30);
+            }
+        }
+        
+        img {
+            width: rem(40);
+            height: auto;
+            
+            @include mq(md) {
+                width: rem(30);
+            }
+        }
+    }
+}
+
+.section__body {
+    &--about {
+        text-align: center;
+    }
+    
+    &--target {
+        .target__body-head {
+            text-align: center;
+            margin-bottom: rem(40);
+            
+            @include mq(md) {
+                margin-bottom: rem(30);
+            }
+        }
+        
+        .target__body-label {
+            background-color: #FFD60A;
+            color: $color-black;
+            font-size: rem(18);
+            font-weight: $bold;
+            padding: rem(12) rem(24);
+            border-radius: rem(25);
+            display: inline-block;
+            
+            @include mq(md) {
+                font-size: rem(16);
+                padding: rem(10) rem(20);
+            }
+        }
+    }
+    
+    &--solution {
+        .solution__contents {
+            display: grid;
+            gap: rem(60);
+            
+            @include mq(md) {
+                gap: rem(40);
+            }
+        }
+    }
+}
+
+// テキスト配置クラス
+.text--center {
+    text-align: center;
+}
+
+.text--left {
+    text-align: left;
+}
+
+.text--right {
+    text-align: right;
+}
+
+// ターゲットリスト用スタイル
+.target__list {
+    list-style: none;
+    padding: 0;
+    margin: rem(40) 0;
+    
+    @include mq(md) {
+        margin: rem(30) 0;
+    }
+    
+    li {
+        font-size: rem(18);
+        line-height: 1.7;
+        margin-bottom: rem(20);
+        padding-left: rem(30);
+        position: relative;
+        
+        @include mq(md) {
+            font-size: rem(16);
+            margin-bottom: rem(15);
+            padding-left: rem(25);
+        }
+        
+        &:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: $color-theme;
+            font-weight: $bold;
+            font-size: rem(20);
+            
+            @include mq(md) {
+                font-size: rem(18);
+            }
+        }
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    &--yellow {
+        background: linear-gradient(transparent 60%, #FFD60A 60%);
+        font-weight: $bold;
+    }
+}
+
+.target__bottom-label {
+    background-color: $color-theme;
+    color: $color-white;
+    padding: rem(40) rem(20);
+    text-align: center;
+    margin-top: rem(60);
+    
+    @include mq(md) {
+        padding: rem(30) rem(15);
+        margin-top: rem(40);
+    }
+    
+    p {
+        font-size: rem(20);
+        font-weight: $bold;
+        line-height: 1.5;
+        margin: 0;
+        
+        @include mq(md) {
+            font-size: rem(18);
+        }
+    }
+}
+
+// ソリューション用追加スタイル
+.solution__item {
+    background-color: $color-white;
+    border-radius: rem(16);
+    padding: rem(40);
+    box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.1);
+    
+    @include mq(md) {
+        padding: rem(30);
+    }
+    
+    &-content {
+        text-align: center;
+    }
+    
+    &-image {
+        margin-bottom: rem(30);
+        
+        @include mq(md) {
+            margin-bottom: rem(20);
+        }
+        
+        img {
+            width: rem(120);
+            height: auto;
+            margin: 0 auto;
+            
+            @include mq(md) {
+                width: rem(100);
+            }
+        }
+    }
+    
+    &-title {
+        font-size: rem(24);
+        font-weight: $bold;
+        line-height: 1.4;
+        margin-bottom: rem(20);
+        
+        @include mq(md) {
+            font-size: rem(20);
+            margin-bottom: rem(15);
+        }
+        
+        &--blue {
+            color: $color-theme;
+        }
+    }
+    
+    &-descriptions {
+        text-align: left;
+        
+        .solution__item-description {
+            font-size: rem(16);
+            line-height: 1.7;
+            margin-bottom: rem(15);
+            
+            @include mq(md) {
+                font-size: rem(14);
+            }
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// アバウト用スタイル
+.about {
+    &__description {
+        font-size: rem(18);
+        line-height: 1.7;
+        margin-bottom: rem(40);
+        color: $color-black;
+        
+        @include mq(md) {
+            font-size: rem(16);
+            margin-bottom: rem(30);
+        }
+    }
+    
+    &__movie {
+        max-width: rem(600);
+        margin: 0 auto;
+        
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: rem(16);
+            box-shadow: 0 rem(16) rem(48) rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
 //base_laout
