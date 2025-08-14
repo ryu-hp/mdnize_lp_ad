@@ -198,11 +198,12 @@
 .platform__sub-item-main-text-03--hukidashi {
   background-color: #fffa94;
   color: $color-light-blue;
-  font-size: rem(16);
+  font-size: rem(24);
   padding: rem(4) rem(8);
   border-radius: rem(8);
   position: relative;
   z-index: 1;
+  margin-right: rem(20);
 }
 .platform__sub-item-main-text-03--hukidashi::after {
   content: "";
@@ -210,7 +211,7 @@
   top: 50%;
   left: 99%;
   transform: translateY(-50%);
-  width: rem(20);
+  width: rem(12);
   height: rem(20);
   background-color: #fffa94;
   clip-path: polygon(0 0, 0% 100%, 100% 50%);
