@@ -2275,12 +2275,15 @@ select::-ms-expand {
 }
 
 .success__item-card {
-  width: 17.5rem;
+  max-width: 39.5rem;
+  width: 100%;
   background-color: #fff;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   overflow: hidden;
   -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+  margin-top: -1.25rem;
+  padding: 1.25rem 1rem;
 }
 
 .success__item-card-image {
@@ -2296,52 +2299,46 @@ select::-ms-expand {
      object-fit: cover;
 }
 
-.success__item-card-body {
-  padding: 1.25rem;
-}
-
-.success__item-card-info {
-  margin-bottom: 0.9375rem;
-}
-
-.success__item-card-info:last-child {
-  margin-bottom: 0;
+.success__item-card-info:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .success__item-card-info-tag {
-  font-size: 0.75rem;
-  color: #ccc;
-  margin-bottom: 0.3125rem;
-  display: block;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #184fab;
+  display: inline-block;
+  margin-bottom: 0.375rem;
+  border-radius: 0.625rem;
+  line-height: 1;
+  padding: 0.125rem 0.5rem;
 }
 
 .success__item-card-info-description {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
   color: #17181c;
 }
 
 .success__item-company {
   font-size: 1rem;
-  font-weight: 700;
   color: #17181c;
-  padding: 0.9375rem 1.25rem;
-  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #184fab;
 }
 
 .success__item-company span {
-  color: #184fab;
+  display: inline-block;
+  margin-left: 1rem;
 }
 
 .success__item-contents {
-  padding: 1.25rem;
-  background-color: #fff;
+  padding: 1.25rem 0;
 }
 
 .success__item-head {
   font-size: 1.75rem;
-  font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.5;
   margin-bottom: 1.875rem;
 }
 
@@ -2352,7 +2349,7 @@ select::-ms-expand {
 
 .success__item-info-tag {
   font-size: 1rem;
-  color: #ccc;
+  color: #fff;
   display: inline-block;
   border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;
