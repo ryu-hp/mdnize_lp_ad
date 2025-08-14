@@ -160,21 +160,6 @@
     font-weight: $bold;
     line-height: 1.4;
 }
-
-.section__title-bg_text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0.1;
-}
-
-.section__title-bg_text img {
-    width: rem(300);
-    height: auto;
-}
-
 // SP用スタイル
 @include mq(md) {
     .succes {
@@ -254,9 +239,6 @@
         font-size: rem(28);
     }
     
-    .section__title-bg_text img {
-        width: rem(200);
-    }
 }
 
 .succes {

@@ -44,17 +44,6 @@
     margin-bottom: rem(10);
 }
 
-.section__title-bg_text span {
-    font-size: rem(120);
-    font-weight: $bold;
-    color: $color-theme;
-    opacity: 0.1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-}
 
 .flow__body {
     position: relative;
@@ -269,9 +258,6 @@
         font-size: rem(16);
     }
     
-    .section__title-bg_text span {
-        font-size: rem(80);
-    }
     
     .flow__contents {
         flex-direction: column;
@@ -396,18 +382,6 @@
     font-size: rem(18);
     color: #ccc;
     margin-bottom: rem(10);
-}
-
-.section__title-bg_text span {
-    font-size: rem(120);
-    font-weight: $bold;
-    color: $color-theme;
-    opacity: 0.1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
 }
 
 .flow__body {

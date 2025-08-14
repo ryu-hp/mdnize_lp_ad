@@ -1085,9 +1085,7 @@ select::-ms-expand {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: -1;
-  opacity: 1;
-  color: #333333;
-  mix-blend-mode: soft-light;
+  opacity: 0.1;
 }
 
 .section__title-bg_text img {
