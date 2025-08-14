@@ -5,93 +5,98 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: rem(8);
-    padding: rem(16) rem(32);
-    border-radius: rem(50);
+		max-width: 485px;
+		width: 100%;
+    gap: rem(14);
+		line-height: 1;
+    padding: rem(8) rem(16);
+    border-radius: rem(10);
     font-size: rem(16);
     font-weight: $bold;
+		color: $color-white;
     text-decoration: none;
     transition: all 0.3s ease;
     white-space: nowrap;
     cursor: pointer;
     border: none;
-    
-    &:hover {
-        transform: translateY(rem(-2));
-        box-shadow: 0 rem(8) rem(24) rgba(0, 0, 0, 0.15);
-        opacity: 1;
-    }
-    
-    @include mq(md) {
+		box-shadow: 2px 2px 0 2px #c65618;
+}
+
+.c-btn:hover {
+    transform: translateY(rem(-2));
+    box-shadow: 0 rem(8) rem(24) rgba(0, 0, 0, 0.15);
+    opacity: 1;
+}
+
+.c-btn--contact {
+    background-color: $color-theme;
+    color: $color-white;
+}
+
+.c-btn--contact:hover {
+    background-color: darken($color-theme, 10%);
+}
+
+.c-btn--shiryo {
+	background-color: $color-orange;
+	border: 2px solid $color-orange;
+}
+
+.c-btn--shiryo:hover {
+    background-color: $color-white;
+    color: $color-orange;
+}
+
+.c-btn--shiryo:hover .c-btn__icon--shiryo img {
+    filter: brightness(0) invert(1);
+}
+
+.c-btn--soudan {
+    background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+    color: $color-white;
+    font-size: rem(18);
+    padding: rem(18) rem(36);
+}
+
+.c-btn--soudan:hover {
+    background: linear-gradient(135deg, darken(#FF6B35, 10%) 0%, darken(#F7931E, 10%) 100%);
+    transform: translateY(rem(-3));
+}
+
+.c-btn__icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+.c-btn__icon img {
+    width: rem(20);
+    height: rem(20);
+}
+
+.c-btn__icon--contact img {
+    filter: brightness(0) invert(1);
+}
+
+.c-btn__icon--shiryo img {
+    filter: none;
+    transition: filter 0.3s ease;
+}
+
+// SP用スタイル
+@include mq(md) {
+    .c-btn {
         font-size: rem(14);
         padding: rem(14) rem(24);
         gap: rem(6);
     }
     
-    &--contact {
-        background-color: $color-theme;
-        color: $color-white;
-        
-        &:hover {
-            background-color: darken($color-theme, 10%);
-        }
+    .c-btn--soudan {
+        font-size: rem(16);
+        padding: rem(16) rem(28);
     }
     
-    &--shiryo {
-        background-color: $color-white;
-        color: $color-theme;
-        border: rem(2) solid $color-theme;
-        
-        &:hover {
-            background-color: $color-theme;
-            color: $color-white;
-            
-            .c-btn__icon--shiryo img {
-                filter: brightness(0) invert(1);
-            }
-        }
-    }
-    
-    &--soudan {
-        background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
-        color: $color-white;
-        font-size: rem(18);
-        padding: rem(18) rem(36);
-        
-        &:hover {
-            background: linear-gradient(135deg, darken(#FF6B35, 10%) 0%, darken(#F7931E, 10%) 100%);
-            transform: translateY(rem(-3));
-        }
-        
-        @include mq(md) {
-            font-size: rem(16);
-            padding: rem(16) rem(28);
-        }
-    }
-    
-    &__icon {
-        display: inline-flex;
-        align-items: center;
-        
-        img {
-            width: rem(20);
-            height: rem(20);
-        }
-        
-        &--contact img {
-            filter: brightness(0) invert(1);
-        }
-        
-        &--shiryo img {
-            filter: none;
-            transition: filter 0.3s ease;
-        }
-        
-        @include mq(md) {
-            img {
-                width: rem(18);
-                height: rem(18);
-            }
-        }
+    .c-btn__icon img {
+        width: rem(18);
+        height: rem(18);
     }
 }

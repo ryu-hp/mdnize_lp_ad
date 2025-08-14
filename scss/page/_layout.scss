@@ -4,41 +4,38 @@
 .lp1 {
     width: 100%;
     margin: 0 auto;
-    max-width: 1920px; // 最大幅を設定
+    max-width: 1920px;
     font-family: $base-font-family;
-    
-    // セクション共通
-    section,
-    footer {
-        width: 100%;
-        position: relative;
-        
-        picture {
-            width: 100%;
-            display: block;
-            line-height: 0; // 画像間の隙間を除去
-            
-            img {
-                width: 100%;
-                height: auto;
-                display: block;
-                object-fit: cover; // 画像のアスペクト比を保持
-            }
-        }
-    }
-    
-    // 画像の最適化
-    img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-    
-    // レスポンシブ対応
-    @include mq(md) {
-        // モバイル用の調整
-        picture img {
-            object-position: center; // モバイルでの画像位置調整
-        }
+}
+
+.lp1 section,
+.lp1 footer {
+    width: 100%;
+    position: relative;
+}
+
+.lp1 picture {
+    width: 100%;
+    display: block;
+    line-height: 0;
+}
+
+.lp1 picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.lp1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+// SP用スタイル
+@include mq(md) {
+    .lp1 picture img {
+        object-position: center;
     }
 }

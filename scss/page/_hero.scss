@@ -48,7 +48,7 @@
 }
 
 .hero__main-copy {
-    font-size: rem(48);
+    font-size: rem(97);
     font-weight: $bold;
     line-height: 1.2;
     margin-bottom: rem(20);
@@ -56,11 +56,11 @@
 }
 
 .hero__main-copy--large {
-    font-size: rem(64);
+    font-size: calc(129 / 97 * 1em);
 }
 
 .hero__main-copy--grad_blue {
-    background: linear-gradient(135deg, #003566 0%, #0077b6 100%);
+    background: linear-gradient(-45deg, #037ef1 0%,#037ef1 49%,#0460d7 50%, #0460d7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -68,7 +68,7 @@
 }
 
 .hero__main-title {
-    font-size: rem(32);
+    font-size: rem(62);
     font-weight: $bold;
     color: $color-black;
     display: flex;
@@ -76,14 +76,18 @@
     gap: rem(10);
 }
 
-.hero__main-title--company img {
-    height: rem(40);
+.hero__main-title--company {
+    height: rem(62);
     width: auto;
+    display: inline-block;
+}
+.hero__main-title--company img {
+    display: block;
 }
 
 .hero__image {
     flex: 1;
-    max-width: rem(500);
+    max-width: rem(620);
 }
 
 .hero__image img {

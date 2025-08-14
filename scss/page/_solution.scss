@@ -11,22 +11,22 @@
 
 .section__title--accent {
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 0;
 }
 
 .section__title--accent--left {
-    left: 0;
+    left: rem(-100);
 }
 
 .section__title--accent--right {
-    right: 0;
+    right: rem(-100);
 }
 
 .section__title--accent img {
-    width: rem(100);
+    width: rem(80);
     height: auto;
-    opacity: 0.3;
 }
 
 .section__title-main--solution {
@@ -34,6 +34,14 @@
     z-index: 1;
     font-size: rem(36);
     line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(10);
+}
+
+.solution__title-logo {
+    display: inline-block;
 }
 
 .solution__title-logo img {
@@ -53,46 +61,49 @@
 .solution__title-sub {
     font-size: rem(18);
     margin-top: rem(10);
+    font-weight: $normal;
 }
 
 .solution__contents {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr));
-    gap: rem(40);
+    display: flex;
+    flex-direction: column;
+    gap: rem(60);
 }
 
 .solution__item {
     background-color: $color-white;
-    border-radius: rem(12);
-    padding: rem(30);
+    border-radius: rem(16);
+    padding: rem(40);
     box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .solution__item:hover {
-    transform: translateY(rem(-5));
+    transform: translateY(rem(-4));
     box-shadow: 0 rem(16) rem(48) rgba(0, 0, 0, 0.15);
 }
 
 .solution__item-content {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: rem(40);
 }
 
 .solution__item-image {
-    margin-bottom: rem(20);
+    flex: 0 0 rem(300);
 }
 
 .solution__item-image img {
-    width: rem(80);
-    height: rem(80);
-    object-fit: contain;
+    width: 100%;
+    height: auto;
+    border-radius: rem(12);
 }
 
 .solution__item-title {
-    font-size: rem(20);
+    font-size: rem(24);
     font-weight: $bold;
     color: $color-black;
-    margin-bottom: rem(16);
+    margin-bottom: rem(20);
     line-height: 1.4;
 }
 
@@ -101,197 +112,70 @@
 }
 
 .solution__item-descriptions {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: rem(16);
 }
 
 .solution__item-description {
-    font-size: rem(14);
-    color: #ccc;
-    line-height: 1.6;
-    margin-bottom: rem(12);
+    font-size: rem(16);
+    line-height: 1.7;
+    color: $color-black;
 }
 
-.solution__item-description:last-child {
-    margin-bottom: 0;
-}
-
-.solution {
-    // base.scssのセクション共通スタイルとbg--gradientクラスを使用
-    
-    &__title-logo {
-        display: inline-block;
-        
-        img {
-            height: rem(40);
-            width: auto;
-            vertical-align: middle;
-            
-            @include mq(md) {
-                height: rem(30);
-            }
-        }
+// SP用スタイル
+@include mq(md) {
+    .section__title--accent--left,
+    .section__title--accent--right {
+        display: none;
     }
     
-    &__title {
-        &--large {
-            font-size: rem(48);
-            
-            @include mq(md) {
-                font-size: rem(36);
-            }
-        }
-        
-        &--middle {
-            font-size: rem(32);
-            
-            @include mq(md) {
-                font-size: rem(24);
-            }
-        }
+    .section__title-main--solution {
+        gap: rem(8);
     }
     
-    &__title-sub {
-        font-size: rem(18);
-        margin-top: rem(10);
-        font-weight: $normal;
-        
-        @include mq(md) {
-            font-size: rem(16);
-        }
+    .solution__title-logo img {
+        height: rem(30);
     }
     
-    &__contents {
-        display: flex;
-        flex-direction: column;
-        gap: rem(60);
-        
-        @include mq(md) {
-            gap: rem(40);
-        }
+    .solution__title--large {
+        font-size: rem(36);
     }
     
-    &__item {
-        background-color: $color-white;
-        border-radius: rem(16);
-        padding: rem(40);
-        box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        
-        &:hover {
-            transform: translateY(rem(-4));
-            box-shadow: 0 rem(16) rem(48) rgba(0, 0, 0, 0.15);
-        }
-        
-        @include mq(md) {
-            padding: rem(24);
-            border-radius: rem(12);
-        }
-    }
-    
-    &__item-content {
-        display: flex;
-        align-items: center;
-        gap: rem(40);
-        
-        @include mq(md) {
-            flex-direction: column;
-            text-align: center;
-            gap: rem(24);
-        }
-    }
-    
-    &__item-image {
-        flex: 0 0 rem(300);
-        
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: rem(12);
-        }
-        
-        @include mq(md) {
-            flex: none;
-            max-width: rem(250);
-        }
-    }
-    
-    &__item-title {
+    .solution__title--middle {
         font-size: rem(24);
-        font-weight: $bold;
-        color: $color-black;
-        margin-bottom: rem(20);
-        line-height: 1.4;
-        
-        &--blue {
-            color: $color-theme;
-        }
-        
-        @include mq(md) {
-            font-size: rem(20);
-            margin-bottom: rem(15);
-        }
     }
     
-    &__item-descriptions {
-        display: flex;
-        flex-direction: column;
-        gap: rem(16);
-    }
-    
-    &__item-description {
+    .solution__title-sub {
         font-size: rem(16);
-        line-height: 1.7;
-        color: $color-black;
-        
-        @include mq(md) {
-            font-size: rem(14);
-        }
     }
-}
-
-// セクションタイトルの拡張
-.section__title {
-    &--solution {
-        position: relative;
-        
-        .section__title--accent {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            
-            &--left {
-                left: rem(-100);
-                
-                @include mq(md) {
-                    display: none;
-                }
-            }
-            
-            &--right {
-                right: rem(-100);
-                
-                @include mq(md) {
-                    display: none;
-                }
-            }
-            
-            img {
-                width: rem(80);
-                height: auto;
-            }
-        }
+    
+    .solution__contents {
+        gap: rem(40);
     }
-}
-
-.section__title-main {
-    &--solution {
-        display: flex;
+    
+    .solution__item {
+        padding: rem(24);
+        border-radius: rem(12);
+    }
+    
+    .solution__item-content {
         flex-direction: column;
-        align-items: center;
-        gap: rem(10);
-        
-        @include mq(md) {
-            gap: rem(8);
-        }
+        text-align: center;
+        gap: rem(24);
+    }
+    
+    .solution__item-image {
+        flex: none;
+        max-width: rem(250);
+    }
+    
+    .solution__item-title {
+        font-size: rem(20);
+        margin-bottom: rem(15);
+    }
+    
+    .solution__item-description {
+        font-size: rem(14);
     }
 }

@@ -4,133 +4,89 @@
     background-color: $color-white;
 }
 
+.about__description {
+    font-size: rem(18);
+    line-height: 1.8;
+    margin-bottom: rem(60);
+    color: $color-black;
+}
+
+.about__movie {
+    width: 100%;
+    max-width: rem(800);
+    margin: 0 auto;
+}
+
+.about__movie img {
+    width: 100%;
+    height: auto;
+    border-radius: rem(12);
+    box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.15);
+}
+
 .section__title--about {
     position: relative;
 }
 
 .section__title-bg_text {
     position: absolute;
-    top: 50%;
+    top: rem(-20);
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
+    transform: translateX(-50%);
+    z-index: -1;
     opacity: 0.1;
 }
 
 .section__title-bg_text img {
-    width: auto;
     height: rem(120);
+    width: auto;
+}
+
+.section__title {
+    text-align: center;
+    margin-bottom: rem(60);
+    position: relative;
 }
 
 .section__title-main {
+    font-size: rem(36);
+    font-weight: $bold;
+    color: $color-black;
+    margin-bottom: rem(20);
     position: relative;
     z-index: 1;
 }
 
-.about__description {
-    font-size: rem(16);
-    line-height: 1.8;
-    color: $color-black;
-    margin-bottom: rem(40);
+.section__title--bar {
+    display: block;
+    width: rem(60);
+    height: rem(4);
+    background-color: $color-theme;
+    margin: 0 auto rem(20);
 }
 
-.about__movie {
+.text--center {
     text-align: center;
 }
 
-.about__movie img {
-    max-width: rem(600);
-    height: auto;
-    border-radius: rem(8);
-    box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.1);
-}
-
-.about {
-    // セクション共通スタイルを使用（base.scssで定義）
-    
-    &__description {
-        font-size: rem(18);
-        line-height: 1.8;
-        margin-bottom: rem(60);
-        color: $color-black;
-        
-        @include mq(md) {
-            font-size: rem(16);
-            margin-bottom: rem(40);
-            text-align: left;
-        }
+// SP用スタイル
+@include mq(md) {
+    .about__description {
+        font-size: rem(16);
+        margin-bottom: rem(40);
+        text-align: left;
     }
     
-    &__movie {
-        width: 100%;
-        max-width: rem(800);
-        margin: 0 auto;
-        
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: rem(12);
-            box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.15);
-        }
-    }
-}
-
-// セクション共通スタイル
-.section {
-    &__title {
-        text-align: center;
-        margin-bottom: rem(60);
-        position: relative;
-        
-        &--bar {
-            display: block;
-            width: rem(60);
-            height: rem(4);
-            background-color: $color-theme;
-            margin: 0 auto rem(20);
-        }
-        
-        @include mq(md) {
-            margin-bottom: rem(40);
-        }
+    .section__title {
+        margin-bottom: rem(40);
     }
     
-    &__title-main {
-        font-size: rem(36);
-        font-weight: $bold;
-        color: $color-black;
-        margin-bottom: rem(20);
-        
-        @include mq(md) {
-            font-size: rem(28);
-            margin-bottom: rem(15);
-        }
+    .section__title-main {
+        font-size: rem(28);
+        margin-bottom: rem(15);
     }
     
-    &__title-bg_text {
-        position: absolute;
-        top: rem(-20);
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-        opacity: 0.1;
-        
-        img {
-            height: rem(120);
-            width: auto;
-        }
-        
-        @include mq(md) {
-            img {
-                height: rem(80);
-            }
-        }
-    }
-}
-
-// テキスト共通クラス
-.text {
-    &--center {
-        text-align: center;
+    .section__title-bg_text img {
+        height: rem(80);
     }
 }
