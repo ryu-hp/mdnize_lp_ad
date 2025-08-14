@@ -853,13 +853,13 @@ select::-ms-expand {
 }
 
 .c-btn--shiryo {
-  background-color: #c65618;
-  border: 2px solid #c65618;
+  background-color: #fa7019;
+  border: 2px solid #fa7019;
 }
 
 .c-btn--shiryo:hover {
   background-color: #fff;
-  color: #c65618;
+  color: #fa7019;
 }
 
 .c-btn--shiryo:hover .c-btn__icon--shiryo img {
