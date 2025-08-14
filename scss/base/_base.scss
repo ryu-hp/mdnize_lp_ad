@@ -47,6 +47,9 @@ a:hover {
 a {
     text-decoration: none;
 }
+img:not([alt]) {
+    filter: none;
+}
 
 // 共通バッジスタイル
 .c-badge-01 {
