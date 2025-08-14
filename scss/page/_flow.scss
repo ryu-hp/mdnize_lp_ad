@@ -94,29 +94,32 @@
 }
 
 .flow__list-item {
+  display: flex;
+  width: 100%;
+}
+
+.flow__list-item:not(:last-child) {
   margin-bottom: rem(20);
-  padding: rem(20);
-  background-color: #f8f9fa;
-  border-radius: rem(8);
-  border-left: rem(4) solid $color-theme;
 }
 
 .flow__list-item-number {
-  font-size: rem(14);
-  font-weight: $bold;
-  color: $color-theme;
-  margin-bottom: rem(8);
+  font-size: rem(16);
+  color: $color-white;
+  padding: rem(8) rem(16);
+  background: linear-gradient(-180deg, #037ef1 0%, #194fa9 100%);
+  line-height: 1.5;
 }
 
 .flow__list-item-text {
   font-size: rem(16);
-  line-height: 1.6;
-  color: $color-black;
+  line-height: 1.5;
+  color: #f0f0f0;
+  padding: rem(8) rem(16);
 }
 
 .flow__bottom-description {
   font-size: rem(16);
-  line-height: 1.6;
+  line-height: 1.5;
   text-align: center;
 }
 
