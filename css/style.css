@@ -2495,6 +2495,8 @@ select::-ms-expand {
   border-radius: 0.5rem;
   position: relative;
   background-color: #fff;
+  -webkit-box-shadow: 0.3125rem 0.3125rem 0.9375rem rgba(16, 52, 104, 0.3);
+          box-shadow: 0.3125rem 0.3125rem 0.9375rem rgba(16, 52, 104, 0.3);
 }
 
 .flow__item:not(:last-child) {

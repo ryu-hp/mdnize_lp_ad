@@ -50,6 +50,7 @@
   border-radius: rem(8);
   position: relative;
   background-color: $color-white;
+  box-shadow: rem(5) rem(5) rem(15) rgba(16,52,104, 0.3);
 }
 
 .flow__item:not(:last-child) {
