@@ -800,6 +800,13 @@ select::-ms-expand {
   display: block;
 }
 
+.hero-about-wrapper {
+  background-image: url(../img/pc/hero-about-bg-image.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 767px) {
   .lp1 picture img {
     -o-object-position: center;
@@ -926,11 +933,6 @@ select::-ms-expand {
 .hero {
   width: 100%;
   position: relative;
-  min-height: 100vh;
-  background-image: url(../img/pc/02_1.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1049,10 +1051,6 @@ select::-ms-expand {
 
 .hero__cta {
   text-align: center;
-}
-
-.about {
-  background-color: #fff;
 }
 
 .about__description {
