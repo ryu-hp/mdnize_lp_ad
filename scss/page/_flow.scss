@@ -49,6 +49,7 @@
   overflow: hidden;
   border-radius: rem(8);
   position: relative;
+  background-color: $color-white;
 }
 
 .flow__item:not(:last-child) {
@@ -103,6 +104,9 @@
   border-radius: rem(20);
   font-size: rem(16);
   height: calc(100% + (rem(10) * 2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .flow__tag-text {
   writing-mode: vertical-rl;

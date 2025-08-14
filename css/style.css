@@ -2494,6 +2494,7 @@ select::-ms-expand {
   overflow: hidden;
   border-radius: 0.5rem;
   position: relative;
+  background-color: #fff;
 }
 
 .flow__item:not(:last-child) {
@@ -2555,6 +2556,15 @@ select::-ms-expand {
   border-radius: 1.25rem;
   font-size: 1rem;
   height: calc(100% + 1.25rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flow__tag-text {
