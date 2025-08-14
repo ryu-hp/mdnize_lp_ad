@@ -33,6 +33,13 @@
     display: block;
 }
 
+.hero-about-wrapper {
+    background-image: url(../img/pc/hero-about-bg-image.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 // SP用スタイル
 @include mq(md) {
     .lp1 picture img {
