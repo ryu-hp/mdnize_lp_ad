@@ -1310,18 +1310,29 @@ select::-ms-expand {
   height: auto;
 }
 
+.solution__item-text {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 2.5rem;
+}
+
 .solution__item-title {
   font-size: 1.5rem;
   color: #17181c;
   margin-bottom: 1.25rem;
-  line-height: 1.4;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .solution__item-title--blue {
+  display: inline-block;
   color: #fff;
   background: -webkit-gradient(linear, right top, left top, from(#037ef1), to(#194fa9));
   background: linear-gradient(-90deg, #037ef1 0%, #194fa9 100%);
   font-size: 1.25em;
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
 }
 
 .solution__item-descriptions {

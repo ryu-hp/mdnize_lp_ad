@@ -115,17 +115,28 @@
     height: auto;
 }
 
+.solution__item-text {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 rem(40);
+}
+
 .solution__item-title {
-    font-size: rem(24);
-    color: $color-black;
-    margin-bottom: rem(20);
-    line-height: 1.4;
+  font-size: rem(24);
+  color: $color-black;
+  margin-bottom: rem(20);
+  line-height: 1.5;
+  text-align: left;
 }
 
 .solution__item-title--blue {
+  display: inline-block;
   color: $color-white;
   background: linear-gradient(-90deg, #037ef1 0%, #194fa9 100%);
   font-size: 1.25em;
+  padding: rem(4) rem(8);
+  line-height: 1;
 }
 
 .solution__item-descriptions {
