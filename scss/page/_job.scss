@@ -66,15 +66,22 @@
     margin-bottom: rem(40);
 }
 
-.job_description {
+.job__description {
     font-size: rem(16);
     color: $color-black;
     line-height: 1.7;
     margin-bottom: rem(16);
 }
 
-.job_description:last-child {
+.job__description:last-child {
     margin-bottom: 0;
+}
+
+.job__description--bg-orange {
+    display: inline-block;
+    background-color: #fff3e9;
+    padding: 2px 0;
+
 }
 
 .job__tags {
@@ -137,7 +144,7 @@
         margin: rem(30) 0;
     }
     
-    .job_description {
+    .job__description {
         font-size: rem(14);
         margin-bottom: rem(12);
     }
@@ -212,14 +219,14 @@
     margin-bottom: rem(40);
 }
 
-.job_description {
+.job__description {
     font-size: rem(16);
     color: $color-black;
     line-height: 1.7;
     margin-bottom: rem(16);
 }
 
-.job_description:last-child {
+.job__description:last-child {
     margin-bottom: 0;
 }
 

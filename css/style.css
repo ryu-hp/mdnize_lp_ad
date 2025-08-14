@@ -2112,15 +2112,21 @@ select::-ms-expand {
   margin-bottom: 2.5rem;
 }
 
-.job_description {
+.job__description {
   font-size: 1rem;
   color: #17181c;
   line-height: 1.7;
   margin-bottom: 1rem;
 }
 
-.job_description:last-child {
+.job__description:last-child {
   margin-bottom: 0;
+}
+
+.job__description--bg-orange {
+  display: inline-block;
+  background-color: #fff3e9;
+  padding: 2px 0;
 }
 
 .job__tags {
@@ -2182,7 +2188,7 @@ select::-ms-expand {
   .job__descriptions {
     margin: 1.875rem 0;
   }
-  .job_description {
+  .job__description {
     font-size: 0.875rem;
     margin-bottom: 0.75rem;
   }
@@ -2256,14 +2262,14 @@ select::-ms-expand {
   margin-bottom: 2.5rem;
 }
 
-.job_description {
+.job__description {
   font-size: 1rem;
   color: #17181c;
   line-height: 1.7;
   margin-bottom: 1rem;
 }
 
-.job_description:last-child {
+.job__description:last-child {
   margin-bottom: 0;
 }
 
