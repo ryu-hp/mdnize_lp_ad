@@ -44,8 +44,6 @@
 .flow__item {
   display: flex;
   flex-direction: row;
-  gap: rem(40);
-  padding: rem(20);
   overflow: hidden;
   border-radius: rem(8);
   position: relative;
@@ -63,6 +61,8 @@
   color: $color-white;
   -webkit-text-stroke: 1px $color-orange;
   text-stroke: 1px $color-orange;
+  align-self: center;
+  padding: rem(20) rem(32);
 }
 .flow__after-contents .flow__item-number {
   -webkit-text-stroke: 1px $color-theme;
@@ -82,12 +82,12 @@
 
 .flow__item-content {
   flex: 1;
-}
-
-.flow__item-content {
   color: $color-black;
   line-height: 1.5;
+  padding: rem(20) rem(32);
+  margin-left: rem(40);
 }
+
 .flow__item-head {
   font-size: 1.5em;
   margin-bottom: rem(32);
@@ -99,9 +99,9 @@
 .flow__tag {
   position: absolute;
   top: rem(-10);
-  left: rem(80);
+  left: rem(104);
   background-color: $color-orange;
-  padding: rem(8) rem(16);
+  padding: rem(8) rem(8);
   border-radius: rem(20);
   font-size: rem(16);
   height: calc(100% + (rem(10) * 2));
