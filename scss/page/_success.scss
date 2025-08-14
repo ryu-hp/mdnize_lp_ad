@@ -72,18 +72,33 @@
     margin-bottom: 0;
 }
 
-.success__item-card-info-tag,
-.success_item-card-info-tag {
-    font-size: rem(12);
+.success__item-card-info-tag {
+    font-size: rem(16);
     color: #ccc;
-    margin-bottom: rem(5);
-    display: block;
+    display: inline-block;
+    border-radius: rem(4);
+    padding: rem(12) rem(8);
+}
+.success__item-info--before .success__item-info-tag {
+    background-color: #808080;
+}
+
+.success__item-info--after .success__item-info-tag {
+    background: linear-gradient(-90deg, #037ef1 0%, #194fa9 100%);
 }
 
 .success__item-card-info-description {
-    font-size: rem(14);
+    font-size: rem(16);
     line-height: 1.5;
     color: $color-black;
+    padding: rem(12) rem(24);
+    margin-top: rem(-8);
+}
+.success__item-info--before .success__item-info-description {
+    background: #e4e4e4;
+}
+.success__item-info--after .success__item-info-description {
+    background: #ecf7ff;
 }
 
 .success__item-company {
@@ -114,34 +129,9 @@
     gap: rem(30);
 }
 
-.success__item-info {
-    background-color: $color-white;
-    border-radius: rem(12);
-    padding: rem(25);
-}
-
-.success__item-info--before {
-    border-left: rem(4) solid #dc3545;
-}
-
-.success__item-info--after {
-    border-left: rem(4) solid #28a745;
-}
-
-.success__item-info-tag {
-    font-size: rem(14);
-    font-weight: $bold;
-    margin-bottom: rem(10);
-}
-
-.success__item-info-description {
-    font-size: rem(16);
-    line-height: 1.7;
-}
-
 .success__item-info-description--bg-yellow {
-    background: linear-gradient(transparent 60%, #FFD60A 60%);
-    font-weight: $bold;
+    background-color: #fffa94;
+    display: inline-block;
 }
 
 .section__title--succes {
