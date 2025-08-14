@@ -737,6 +737,11 @@ select::-ms-expand {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 1.5rem;
+}
+
+.c-btn__icon img {
+  height: 100%;
 }
 
 .c-btn__icon--shiryo img {
@@ -974,7 +979,6 @@ select::-ms-expand {
 }
 
 .cta1__contents {
-  max-width: 37.5rem;
   margin: 0 auto;
 }
 
@@ -1016,6 +1020,7 @@ select::-ms-expand {
 .cta1__image img {
   height: 100%;
   width: auto;
+  margin-left: auto;
 }
 
 .target {
@@ -1741,12 +1746,6 @@ select::-ms-expand {
   padding: 6.25rem 0;
 }
 
-.flow__inner {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 1.5625rem;
-}
-
 .section__title--flow {
   text-align: center;
   margin-bottom: 3.75rem;
@@ -1754,24 +1753,38 @@ select::-ms-expand {
 
 .section__title-main--flow {
   font-size: 2.25rem;
-  font-weight: 700;
+  font-weight: normal;
   color: #17181c;
   margin-bottom: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flow-title__logo {
+  max-width: 12.5rem;
+  width: 100%;
+  display: inline-block;
 }
 
 .section__title-main--flow img {
-  height: 2.5rem;
-  width: auto;
-  vertical-align: middle;
+  width: 100%;
 }
 
 .flow-title--blue-box {
   background-color: #184fab;
   color: #fff;
-  padding: 0.25rem 0.5rem;
-  margin: 0 0.125rem;
+  line-height: 1;
+  padding: 0.5rem;
+  margin-right: 0.25rem;
   border-radius: 0.25rem;
-  font-weight: 700;
+  font-size: 1.5em;
 }
 
 .flows__title-sub {
@@ -1786,14 +1799,10 @@ select::-ms-expand {
 }
 
 .flow__contents {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 3.75rem;
   margin-bottom: 3.75rem;
+  background-color: #fff;
+  border-radius: 0.625rem;
+  padding: 1.25rem 1.25rem;
 }
 
 .flow__image {
@@ -1801,14 +1810,14 @@ select::-ms-expand {
       -ms-flex: 1;
           flex: 1;
   max-width: 25rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2.5rem;
 }
 
 .flow__image img {
   width: 100%;
   height: auto;
-  border-radius: 0.75rem;
-  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 .flow__text-area {

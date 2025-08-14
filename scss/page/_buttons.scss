@@ -70,6 +70,10 @@
 .c-btn__icon {
     display: inline-flex;
     align-items: center;
+    height: rem(24);
+}
+.c-btn__icon img {
+    height: 100%;
 }
 
 
