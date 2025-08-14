@@ -47,9 +47,6 @@ a:hover {
 a {
     text-decoration: none;
 }
-img:not([alt]) {
-    filter: none;
-}
 
 // 共通バッジスタイル
 .c-badge-01 {
@@ -407,49 +404,6 @@ img:not([alt]) {
     }
 }
 
-.section__body {
-    &--about {
-        text-align: center;
-    }
-    
-    &--target {
-        .target__body-head {
-            text-align: center;
-            margin-bottom: rem(40);
-            
-            @include mq(md) {
-                margin-bottom: rem(30);
-            }
-        }
-        
-        .target__body-label {
-            background-color: #FFD60A;
-            color: $color-black;
-            font-size: rem(18);
-            font-weight: $bold;
-            padding: rem(12) rem(24);
-            border-radius: rem(25);
-            display: inline-block;
-            
-            @include mq(md) {
-                font-size: rem(16);
-                padding: rem(10) rem(20);
-            }
-        }
-    }
-    
-    &--solution {
-        .solution__contents {
-            display: grid;
-            gap: rem(60);
-            
-            @include mq(md) {
-                gap: rem(40);
-            }
-        }
-    }
-}
-
 // テキスト配置クラス
 .text--center {
     text-align: center;
@@ -461,78 +415,6 @@ img:not([alt]) {
 
 .text--right {
     text-align: right;
-}
-
-// ターゲットリスト用スタイル
-.target__list {
-    list-style: none;
-    padding: 0;
-    margin: rem(40) 0;
-    
-    @include mq(md) {
-        margin: rem(30) 0;
-    }
-    
-    li {
-        font-size: rem(18);
-        line-height: 1.7;
-        margin-bottom: rem(20);
-        padding-left: rem(30);
-        position: relative;
-        
-        @include mq(md) {
-            font-size: rem(16);
-            margin-bottom: rem(15);
-            padding-left: rem(25);
-        }
-        
-        &:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: $color-theme;
-            font-weight: $bold;
-            font-size: rem(20);
-            
-            @include mq(md) {
-                font-size: rem(18);
-            }
-        }
-        
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-    
-    &--yellow {
-        background: linear-gradient(transparent 60%, #FFD60A 60%);
-        font-weight: $bold;
-    }
-}
-
-.target__bottom-label {
-    background-color: $color-theme;
-    color: $color-white;
-    padding: rem(40) rem(20);
-    text-align: center;
-    margin-top: rem(60);
-    
-    @include mq(md) {
-        padding: rem(30) rem(15);
-        margin-top: rem(40);
-    }
-    
-    p {
-        font-size: rem(20);
-        font-weight: $bold;
-        line-height: 1.5;
-        margin: 0;
-        
-        @include mq(md) {
-            font-size: rem(18);
-        }
-    }
 }
 
 // ソリューション用追加スタイル
