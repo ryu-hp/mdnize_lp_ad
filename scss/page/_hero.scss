@@ -11,124 +11,87 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    &__contents {
-        width: 100%;
-        max-width: $inner;
-        padding: 0 $padding-pc;
-        
-        @include mq(md) {
-            padding: 0 $padding-sp;
-        }
-    }
-    
-    &__contents-main {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: rem(60);
-        margin-bottom: rem(60);
-        
-        @include mq(md) {
-            flex-direction: column;
-            text-align: center;
-            gap: rem(40);
-            margin-bottom: rem(40);
-        }
-    }
-    
-    &__text-contents {
-        flex: 1;
-        max-width: rem(600);
-    }
-    
-    &__top-texts {
-        font-size: rem(18);
-        font-weight: $normal;
-        margin-bottom: rem(20);
-        color: $color-black;
-        
-        @include mq(md) {
-            font-size: rem(16);
-            margin-bottom: rem(15);
-        }
-    }
-    
-    &__main-copy {
-        font-size: rem(48);
-        font-weight: $bold;
-        line-height: 1.2;
-        margin-bottom: rem(20);
-        color: $color-black;
-        
-        &--large {
-            font-size: rem(64);
-            
-            @include mq(md) {
-                font-size: rem(48);
-            }
-        }
-        
-        &--grad_blue {
-            background: linear-gradient(135deg, #003566 0%, #0077b6 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            display: inline-block; // グラデーションを正しく表示するため
-        }
-        
-        @include mq(md) {
-            font-size: rem(36);
-            margin-bottom: rem(15);
-        }
-    }
-    
-    &__main-title {
-        font-size: rem(32);
-        font-weight: $bold;
-        color: $color-black;
-        display: flex;
-        align-items: center;
-        gap: rem(10);
-        
-        &--company {
-            img {
-                height: rem(40);
-                width: auto;
-            }
-        }
-        
-        @include mq(md) {
-            font-size: rem(24);
-            justify-content: center;
-            
-            &--company img {
-                height: rem(30);
-            }
-        }
-    }
-    
-    &__image {
-        flex: 1;
-        max-width: rem(500);
-        
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        @include mq(md) {
-            max-width: rem(300);
-        }
-    }
-    
-    &__cta {
-        text-align: center;
-    }
-    
-    @include mq(md) {
-        min-height: 80vh;
-        background-image: url(../img/sp/02_1.webp);
-    }
+    padding: rem(80) 0;
+}
+
+.hero__contents {
+    width: 100%;
+    max-width: calc($inner + ($padding-pc * 2));
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.hero__contents-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: rem(32);
+}
+
+.hero__text-contents {
+    flex: 1;
+    max-width: rem(600);
+}
+
+.hero__top-texts {
+    font-size: rem(18);
+    font-weight: $normal;
+    margin-bottom: rem(20);
+    color: $color-black;
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+}
+
+.hero__main-copy {
+    font-size: rem(48);
+    font-weight: $bold;
+    line-height: 1.2;
+    margin-bottom: rem(20);
+    color: $color-black;
+}
+
+.hero__main-copy--large {
+    font-size: rem(64);
+}
+
+.hero__main-copy--grad_blue {
+    background: linear-gradient(135deg, #003566 0%, #0077b6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+.hero__main-title {
+    font-size: rem(32);
+    font-weight: $bold;
+    color: $color-black;
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+}
+
+.hero__main-title--company img {
+    height: rem(40);
+    width: auto;
+}
+
+.hero__image {
+    flex: 1;
+    max-width: rem(500);
+}
+
+.hero__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero__cta {
+    text-align: center;
 }

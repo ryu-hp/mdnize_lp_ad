@@ -91,12 +91,46 @@ a {
     color: $color-white;
 }
 
-.color-red {
-    color: $color-red;
+
+// セクション共通
+.section {
+    position: relative;
+    padding: rem(80) 0;
 }
 
-.color-main-gray {
-    color: $color-main_gray;
+.section__inner {
+    width: 100%;
+    max-width: calc($inner + ($padding-pc * 2));
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.section__title {
+    text-align: center;
+    margin-bottom: rem(60);
+    position: relative;
+}
+
+.section__title-main {
+    font-size: rem(36);
+    font-weight: $bold;
+    color: $color-black;
+    margin-bottom: rem(16);
+}
+
+.section__title--bar {
+    width: rem(60);
+    height: rem(4);
+    background-color: $color-theme;
+    display: block;
+    margin: 0 auto rem(16);
+}
+
+.text--center {
+    text-align: center;
 }
 
 // テキスト共通クラス
@@ -239,10 +273,6 @@ a {
 .bg {
     &--white {
         background-color: $color-white;
-    }
-    
-    &--gray {
-        background-color: $color-bg_gray;
     }
     
     &--theme {

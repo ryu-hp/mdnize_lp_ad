@@ -1,11 +1,112 @@
 @use "../global" as *;
 
+
+.section__title--target {
+    text-align: center;
+    position: relative;
+}
+
+.section__title-main--target {
+    font-size: rem(32);
+    color: $color-black;
+    margin-bottom: rem(20);
+}
+
+.section__title-main--target span {
+    color: $color-theme;
+    font-weight: $bold;
+}
+
+.target__title-sub {
+    font-size: rem(18);
+    color: #ccc;
+    margin-bottom: rem(10);
+}
+
+.target__title-icon {
+    margin-bottom: rem(40);
+}
+
+.target__title-icon img {
+    width: rem(60);
+    height: auto;
+}
+
+.target__body-head {
+    text-align: center;
+    margin-bottom: rem(40);
+}
+
+.target__body-label {
+    background-color: $color-theme;
+    color: $color-white;
+    padding: rem(12) rem(24);
+    border-radius: rem(25);
+    font-size: rem(16);
+    font-weight: $bold;
+    display: inline-block;
+}
+
+.target__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: rem(800);
+    margin: 0 auto rem(40);
+}
+
+.target__list li {
+    background-color: $color-white;
+    padding: rem(20) rem(24);
+    margin-bottom: rem(16);
+    border-radius: rem(8);
+    font-size: rem(16);
+    line-height: 1.6;
+    position: relative;
+    box-shadow: 0 rem(2) rem(8) rgba(0, 0, 0, 0.1);
+}
+
+.target__list li::before {
+    content: "✓";
+    position: absolute;
+    left: rem(12);
+    top: rem(20);
+    color: $color-theme;
+    font-weight: $bold;
+}
+
+.target__list li {
+    padding-left: rem(40);
+}
+
+.target__list--yellow {
+    background-color: #fff3cd;
+    padding: rem(2) rem(6);
+    border-radius: rem(4);
+    font-weight: $bold;
+}
+
+.target__bottom-label {
+    background-color: $color-theme;
+    color: $color-white;
+    text-align: center;
+    padding: rem(40) rem(20);
+    margin-top: rem(40);
+}
+
+.target__bottom-label p {
+    font-size: rem(18);
+    font-weight: $bold;
+    margin: 0;
+    line-height: 1.6;
+}
+
 .target {
     // base.scssのセクション共通スタイルとbg--whiteクラスを使用
     
     &__title-sub {
         font-size: rem(18);
-        color: $color-main_gray;
+        color: #ccc;
         margin-bottom: rem(20);
         text-align: center;
         
@@ -62,7 +163,6 @@
         margin: 0 auto;
         
         li {
-            background-color: $color-bg_gray;
             border-radius: rem(12);
             padding: rem(20) rem(24);
             margin-bottom: rem(16);
@@ -96,7 +196,6 @@
     &__bottom-label {
         text-align: center;
         margin-top: rem(60);
-        background-color: $color-red;
         color: $color-white;
         padding: rem(30) rem(20);
         border-radius: rem(12);
@@ -124,7 +223,6 @@
         font-size: rem(36);
         
         span {
-            color: $color-red;
             position: relative;
             
             &:after {
@@ -134,7 +232,6 @@
                 left: 0;
                 width: 100%;
                 height: rem(3);
-                background-color: $color-red;
                 border-radius: rem(2);
             }
         }

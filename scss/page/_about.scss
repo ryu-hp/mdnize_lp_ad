@@ -1,6 +1,51 @@
 @use "../global" as *;
 
 .about {
+    background-color: $color-white;
+}
+
+.section__title--about {
+    position: relative;
+}
+
+.section__title-bg_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: 0.1;
+}
+
+.section__title-bg_text img {
+    width: auto;
+    height: rem(120);
+}
+
+.section__title-main {
+    position: relative;
+    z-index: 1;
+}
+
+.about__description {
+    font-size: rem(16);
+    line-height: 1.8;
+    color: $color-black;
+    margin-bottom: rem(40);
+}
+
+.about__movie {
+    text-align: center;
+}
+
+.about__movie img {
+    max-width: rem(600);
+    height: auto;
+    border-radius: rem(8);
+    box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.1);
+}
+
+.about {
     // セクション共通スタイルを使用（base.scssで定義）
     
     &__description {

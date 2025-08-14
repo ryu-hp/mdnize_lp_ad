@@ -1,6 +1,121 @@
 @use "../global" as *;
 
 .solution {
+    background-color: $color-white;
+}
+
+.section__title--solution {
+    position: relative;
+    padding: rem(20) 0;
+}
+
+.section__title--accent {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.section__title--accent--left {
+    left: 0;
+}
+
+.section__title--accent--right {
+    right: 0;
+}
+
+.section__title--accent img {
+    width: rem(100);
+    height: auto;
+    opacity: 0.3;
+}
+
+.section__title-main--solution {
+    position: relative;
+    z-index: 1;
+    font-size: rem(36);
+    line-height: 1.4;
+}
+
+.solution__title-logo img {
+    height: rem(40);
+    width: auto;
+    vertical-align: middle;
+}
+
+.solution__title--large {
+    font-size: rem(48);
+}
+
+.solution__title--middle {
+    font-size: rem(32);
+}
+
+.solution__title-sub {
+    font-size: rem(18);
+    margin-top: rem(10);
+}
+
+.solution__contents {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr));
+    gap: rem(40);
+}
+
+.solution__item {
+    background-color: $color-white;
+    border-radius: rem(12);
+    padding: rem(30);
+    box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution__item:hover {
+    transform: translateY(rem(-5));
+    box-shadow: 0 rem(16) rem(48) rgba(0, 0, 0, 0.15);
+}
+
+.solution__item-content {
+    text-align: center;
+}
+
+.solution__item-image {
+    margin-bottom: rem(20);
+}
+
+.solution__item-image img {
+    width: rem(80);
+    height: rem(80);
+    object-fit: contain;
+}
+
+.solution__item-title {
+    font-size: rem(20);
+    font-weight: $bold;
+    color: $color-black;
+    margin-bottom: rem(16);
+    line-height: 1.4;
+}
+
+.solution__item-title--blue {
+    color: $color-theme;
+}
+
+.solution__item-descriptions {
+    text-align: left;
+}
+
+.solution__item-description {
+    font-size: rem(14);
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: rem(12);
+}
+
+.solution__item-description:last-child {
+    margin-bottom: 0;
+}
+
+.solution {
     // base.scssのセクション共通スタイルとbg--gradientクラスを使用
     
     &__title-logo {

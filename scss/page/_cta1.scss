@@ -1,6 +1,60 @@
 @use "../global" as *;
 
 .cta1 {
+    background-image: url(../img/pc/cta1-bg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta1__inner {
+    position: relative;
+    z-index: 2;
+}
+
+.cta1__contents {
+    max-width: rem(600);
+    margin: 0 auto;
+}
+
+.cta1__title {
+    font-size: rem(28);
+    font-weight: $bold;
+    color: $color-black;
+    margin-bottom: rem(16);
+    line-height: 1.4;
+}
+
+.cta1__description {
+    font-size: rem(16);
+    color: $color-black;
+    margin-bottom: rem(40);
+    line-height: 1.6;
+}
+
+.cta1__btn-contents {
+    display: flex;
+    justify-content: center;
+    gap: rem(20);
+    flex-wrap: wrap;
+}
+
+.cta1__image {
+    position: absolute;
+    right: rem(40);
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.cta1__image img {
+    width: rem(300);
+    height: auto;
+}
+
+.cta1 {
     padding: rem(100) 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     position: relative;
@@ -52,7 +106,6 @@
     
     &__description {
         font-size: rem(18);
-        color: $color-main_gray;
         margin-bottom: rem(40);
         line-height: 1.6;
         

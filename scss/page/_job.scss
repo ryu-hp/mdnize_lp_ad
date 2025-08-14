@@ -1,6 +1,107 @@
 @use "../global" as *;
 
 .job {
+    position: relative;
+    overflow: hidden;
+}
+
+.job__flex {
+    display: flex;
+    align-items: center;
+    gap: rem(60);
+}
+
+.job__main {
+    flex: 2;
+}
+
+.section__title--job {
+    text-align: left;
+    margin-bottom: rem(40);
+}
+
+.section__title-main--job {
+    font-size: rem(32);
+    font-weight: $bold;
+    line-height: 1.4;
+}
+
+.job__title--yellow-circle {
+    background-color: #ffd60a;
+    padding: rem(8) rem(16);
+    border-radius: rem(25);
+    display: inline-block;
+    margin: 0 rem(4);
+}
+
+.job__title--large {
+    font-size: rem(36);
+    font-weight: $bold;
+}
+
+.job__descriptions {
+    margin-bottom: rem(40);
+}
+
+.job_description {
+    font-size: rem(16);
+    color: $color-black;
+    line-height: 1.7;
+    margin-bottom: rem(16);
+}
+
+.job_description:last-child {
+    margin-bottom: 0;
+}
+
+.job__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(12);
+}
+
+.job__tag {
+    background-color: $color-white;
+    color: $color-theme;
+    padding: rem(8) rem(16);
+    border-radius: rem(20);
+    font-size: rem(14);
+    font-weight: $bold;
+    border: 2px solid $color-theme;
+    transition: all 0.3s ease;
+}
+
+.job__tag:hover {
+    background-color: $color-theme;
+    color: $color-white;
+}
+
+.job__images {
+    flex: 1;
+    text-align: center;
+}
+
+.job__images img {
+    max-width: rem(300);
+    height: auto;
+    border-radius: rem(12);
+    box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.1);
+}
+
+.job__bg-text {
+    position: absolute;
+    bottom: rem(20);
+    right: rem(20);
+    z-index: 0;
+    opacity: 0.1;
+}
+
+.job__bg-text img {
+    width: rem(200);
+    height: auto;
+}
+
+.job {
     padding: rem(100) 0;
     background-color: $color-white;
     position: relative;
