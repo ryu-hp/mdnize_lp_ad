@@ -65,9 +65,10 @@ a {
 .c-badge-01 {
   background-color: #184fab;
   color: #fff;
-  padding: 0.5rem 1rem;
+  line-height: 1;
+  padding: 0.125rem 0.5rem;
   border-radius: 1.25rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 700;
   display: inline-block;
   margin: 0 0.5rem;
