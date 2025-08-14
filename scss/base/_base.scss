@@ -339,16 +339,6 @@ a {
     }
 }
 
-// セクション共通クラス
-.section__inner {
-    max-width: $inner;
-    margin: 0 auto;
-    padding: 0 $padding-pc;
-    
-    @include mq(md) {
-        padding: 0 $padding-sp;
-    }
-}
 
 .section__title {
     text-align: center;

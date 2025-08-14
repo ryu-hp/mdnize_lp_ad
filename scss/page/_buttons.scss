@@ -11,7 +11,7 @@
 		line-height: 1;
     padding: rem(8) rem(16);
     border-radius: rem(10);
-    font-size: rem(16);
+    font-size: rem(32);
     font-weight: $bold;
 		color: $color-white;
     text-decoration: none;
@@ -29,12 +29,16 @@
 }
 
 .c-btn--contact {
-    background-color: $color-theme;
-    color: $color-white;
+    background-color: $color-white;
+    color: $color-black;
+    box-shadow: 2px 2px 0 2px darken($color-white, 10%);
 }
 
 .c-btn--contact:hover {
     background-color: darken($color-theme, 10%);
+}
+.c-btn__icon--contact img {
+    filter: brightness(0) invert(0);
 }
 
 .c-btn--shiryo {
