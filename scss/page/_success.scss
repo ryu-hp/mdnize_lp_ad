@@ -11,6 +11,13 @@
     padding: 0 $padding-pc;
 }
 
+.section__title-main--success {
+    color: $color-theme;
+}
+.section__title--success .section__title-bg_text {
+    top: rem(-52);
+}
+
 .success__title-sub {
     font-size: rem(16);
     color: #ccc;

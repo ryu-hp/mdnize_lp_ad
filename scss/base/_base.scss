@@ -125,7 +125,6 @@ a {
 
 .section__title-main {
     font-size: rem(36);
-    font-weight: $bold;
     color: $color-black;
     margin-bottom: rem(16);
 }
@@ -145,9 +144,12 @@ a {
     transform: translateX(-50%);
     z-index: -1;
     opacity: 1;
-    color: #333333;
+    color: $color-theme;
     mix-blend-mode: soft-light;
     text-transform: uppercase;
+    opacity: 0.2;
+    font-size: rem(80);
+    letter-spacing: 0.1em;
 }
 
 .text--center {
