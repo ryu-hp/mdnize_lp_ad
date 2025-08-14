@@ -221,33 +221,3 @@
     margin-top: rem(40);
   }
 }
-
-.flow__tag {
-  display: flex;
-  justify-content: center;
-  margin: rem(20) 0;
-
-  &--before {
-    margin-bottom: rem(40);
-  }
-
-  &--after {
-    margin-top: rem(40);
-  }
-}
-
-.flow__tag-text {
-  background-color: $color-orange;
-  color: $color-white;
-  padding: rem(8) rem(20);
-  border-radius: rem(20);
-  font-size: rem(14);
-  font-weight: $bold;
-}
-
-@include mq(md) {
-  .flow__tag-text {
-    font-size: rem(12);
-    padding: rem(6) rem(16);
-  }
-}
