@@ -104,7 +104,7 @@
 }
 .solution__item:nth-child(even)::after {
   right: -15%;
-  background:linear-gradient(-90deg,#a4d2f5 0% ,#a4d2f5 66%, transparent 66%+1px , transparent 100%);
+  background:linear-gradient(-90deg,#a4d2f5 0% ,#a4d2f5 66%, transparent calc(66% + 1px) , transparent 100%);
 }
 
 
