@@ -1467,6 +1467,10 @@ select::-ms-expand {
 
 .platform__maincontents-label-text {
   max-width: 21.875rem;
+  width: 100%;
+  display: inline-block;
+  border-radius: 2.5rem;
+  padding: 0.5rem 1.25rem;
   font-size: 1.5rem;
   background: #184fab;
   color: #fff;
@@ -1494,10 +1498,13 @@ select::-ms-expand {
 
 .platform__sub-item {
   padding-top: 1.5rem;
+  position: relative;
 }
 
 .platform__sub-item-label {
-  color: #17181c;
+  position: absolute;
+  text-align: center;
+  color: #fff;
   font-size: 1.125rem;
   font-weight: 700;
   padding: 0.5rem 1.25rem;
@@ -1535,6 +1542,7 @@ select::-ms-expand {
 }
 
 .platform__sub-item-description {
+  text-align: center;
   font-size: 1rem;
   line-height: 1.5;
   padding: 2.5rem 1.25rem 1.25rem;
@@ -1563,6 +1571,20 @@ select::-ms-expand {
 
 .platform__sub-item-main {
   padding: 1.5rem 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 12rem;
 }
 
 .platform__sub-item--lp .platform__sub-item-main {
@@ -1576,13 +1598,14 @@ select::-ms-expand {
 }
 
 .platform__sub-item-main-text-01 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
 .platform__sub-item-main-text-02 {
   font-size: 2rem;
   font-weight: 700;
+  line-height: 1;
 }
 
 .platform__sub-item-main-text-02--large {
@@ -1591,16 +1614,18 @@ select::-ms-expand {
 
 .platform__sub-item-main-text-02 img {
   display: inline-block;
-  height: 1.5rem;
+  height: 1em;
   width: auto;
   -o-object-fit: contain;
      object-fit: contain;
+  vertical-align: middle;
 }
 
 .platform__sub-item-main-text-03 {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  line-height: 1;
 }
 
 .platform__sub-item-main-text-03--hukidashi {

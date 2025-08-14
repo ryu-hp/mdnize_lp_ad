@@ -56,6 +56,10 @@
 
 .platform__maincontents-label-text {
   max-width: rem(350);
+  width: 100%;
+  display: inline-block;
+  border-radius: rem(40);
+  padding: rem(8) rem(20);
   font-size: rem(24);
   background: $color-theme;
   color: $color-white;
@@ -79,10 +83,13 @@
 
 .platform__sub-item {
   padding-top: rem(24);
+  position: relative;
 }
 
 .platform__sub-item-label {
-  color: $color-black;
+  position: absolute;
+  text-align: center;
+  color: $color-white;
   font-size: rem(18);
   font-weight: $bold;
   padding: rem(8) rem(20);
@@ -115,6 +122,7 @@
 }
 
 .platform__sub-item-description {
+  text-align: center;
   font-size: rem(16);
   line-height: 1.5;
   padding: rem(40) rem(20) rem(20);
@@ -142,6 +150,11 @@
 
 .platform__sub-item-main {
   padding: rem(24) rem(20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: rem(192);
 }
 .platform__sub-item--lp .platform__sub-item-main {
   background-color: $color-theme;
@@ -153,13 +166,14 @@
 }
 
 .platform__sub-item-main-text-01 {
-    font-size: rem(16);
+    font-size: rem(24);
     margin-bottom: rem(8);
 }
 
 .platform__sub-item-main-text-02 {
   font-size: rem(32);
   font-weight: $bold;
+  line-height: 1;
 }
 
 .platform__sub-item-main-text-02--large {
@@ -168,15 +182,17 @@
 
 .platform__sub-item-main-text-02 img {
     display: inline-block;
-    height: rem(24);
+    height: 1em;
     width: auto;
     object-fit: contain;
+    vertical-align: middle;
 }
 
 .platform__sub-item-main-text-03 {
-    font-size: rem(24);
-    font-weight: $bold;
-    margin-bottom: rem(8);
+  font-size: rem(24);
+  font-weight: $bold;
+  margin-bottom: rem(8);
+  line-height: 1;
 }
 
 .platform__sub-item-main-text-03--hukidashi {
