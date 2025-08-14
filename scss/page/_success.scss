@@ -5,8 +5,15 @@
     background-color: #cbe4fd;
 }
 
+.succes__inner {
+    max-width: $inner;
+    margin: 0 auto;
+    padding: 0 $padding-pc;
+}
+
 .success__title-sub {
     font-size: rem(16);
+    color: #ccc;
     text-align: center;
     margin-bottom: rem(10);
 }
@@ -45,7 +52,6 @@
     border-radius: rem(16);
     overflow: hidden;
     box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.1);
-    margin-top: rem(-20);
 }
 
 .success__item-card-image {
@@ -73,32 +79,16 @@
 }
 
 .success__item-card-info-tag {
-    font-size: rem(16);
+    font-size: rem(12);
     color: #ccc;
-    display: inline-block;
-    border-radius: rem(4);
-    padding: rem(12) rem(8);
-}
-.success__item-info--before .success__item-info-tag {
-    background-color: #808080;
-}
-
-.success__item-info--after .success__item-info-tag {
-    background: linear-gradient(-90deg, #037ef1 0%, #194fa9 100%);
+    margin-bottom: rem(5);
+    display: block;
 }
 
 .success__item-card-info-description {
-    font-size: rem(16);
+    font-size: rem(14);
     line-height: 1.5;
     color: $color-black;
-    padding: rem(12) rem(24);
-    margin-top: rem(-8);
-}
-.success__item-info--before .success__item-info-description {
-    background: #e4e4e4;
-}
-.success__item-info--after .success__item-info-description {
-    background: #ecf7ff;
 }
 
 .success__item-company {
@@ -129,25 +119,44 @@
     gap: rem(30);
 }
 
+
+.success__item-info-tag {
+    font-size: rem(16);
+    color: #ccc;
+    display: inline-block;
+    border-radius: rem(4);
+    padding: rem(12) rem(8);
+}
+.success__item-info--before .success__item-info-tag {
+    background-color: #808080;
+}
+
+.success__item-info--after .success__item-info-tag {
+    background: linear-gradient(-90deg, #037ef1 0%, #194fa9 100%);
+}
+
+.success__item-info-description {
+    font-size: rem(16);
+    line-height: 1.5;
+    color: $color-black;
+    padding: rem(12) rem(24);
+    margin-top: rem(-8);
+}
+.success__item-info--before .success__item-info-description {
+    background: #e4e4e4;
+}
+.success__item-info--after .success__item-info-description {
+    background: #ecf7ff;
+}
+
 .success__item-info-description--bg-yellow {
     background-color: #fffa94;
-    display: inline-block;
 }
 
-.section__title--success {
-    text-align: center;
-    position: relative;
-    margin-bottom: rem(20);
-}
 
-.section__title-main--success {
-    font-size: rem(40);
-    font-weight: $bold;
-    line-height: 1.4;
-}
 // SP用スタイル
 @include mq(md) {
-    .success {
+    .succes {
         padding: rem(60) 0;
     }
     
@@ -216,30 +225,13 @@
         font-size: rem(14);
     }
     
-    .section__title--success {
+    .section__title--succes {
         margin-bottom: rem(15);
     }
     
-    .section__title-main--success {
+    .section__title-main--succes {
         font-size: rem(28);
     }
     
 }
 
-.success {
-    padding: rem(100) 0;
-    
-    @include mq(md) {
-        padding: rem(60) 0;
-    }
-    
-    &__inner {
-        max-width: $inner;
-        margin: 0 auto;
-        padding: 0 $padding-pc;
-        
-        @include mq(md) {
-            padding: 0 $padding-sp;
-        }
-    }
-}
