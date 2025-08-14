@@ -1,6 +1,6 @@
 @use "../global" as *;
 
-.succes {
+.success {
     padding: rem(100) 0;
     background-color: #cbe4fd;
 }
@@ -134,20 +134,20 @@
     display: inline-block;
 }
 
-.section__title--succes {
+.section__title--success {
     text-align: center;
     position: relative;
     margin-bottom: rem(20);
 }
 
-.section__title-main--succes {
+.section__title-main--success {
     font-size: rem(40);
     font-weight: $bold;
     line-height: 1.4;
 }
 // SP用スタイル
 @include mq(md) {
-    .succes {
+    .success {
         padding: rem(60) 0;
     }
     
@@ -216,17 +216,17 @@
         font-size: rem(14);
     }
     
-    .section__title--succes {
+    .section__title--success {
         margin-bottom: rem(15);
     }
     
-    .section__title-main--succes {
+    .section__title-main--success {
         font-size: rem(28);
     }
     
 }
 
-.succes {
+.success {
     padding: rem(100) 0;
     
     @include mq(md) {

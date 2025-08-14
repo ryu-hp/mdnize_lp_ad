@@ -2209,7 +2209,7 @@ select::-ms-expand {
     font-size: 1.75rem;
   }
 }
-.succes {
+.success {
   padding: 6.25rem 0;
   background-color: #cbe4fd;
 }
@@ -2355,20 +2355,20 @@ select::-ms-expand {
   display: inline-block;
 }
 
-.section__title--succes {
+.section__title--success {
   text-align: center;
   position: relative;
   margin-bottom: 1.25rem;
 }
 
-.section__title-main--succes {
+.section__title-main--success {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.4;
 }
 
 @media screen and (max-width: 767px) {
-  .succes {
+  .success {
     padding: 3.75rem 0;
   }
   .succes__inner {
@@ -2425,28 +2425,28 @@ select::-ms-expand {
   .success__item-info-description {
     font-size: 0.875rem;
   }
-  .section__title--succes {
+  .section__title--success {
     margin-bottom: 0.9375rem;
   }
-  .section__title-main--succes {
+  .section__title-main--success {
     font-size: 1.75rem;
   }
 }
-.succes {
+.success {
   padding: 6.25rem 0;
 }
 @media screen and (max-width: 767px) {
-  .succes {
+  .success {
     padding: 3.75rem 0;
   }
 }
-.succes__inner {
+.success__inner {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 1.5625rem;
 }
 @media screen and (max-width: 767px) {
-  .succes__inner {
+  .success__inner {
     padding: 0 0.9375rem;
   }
 }
