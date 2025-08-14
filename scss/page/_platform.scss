@@ -176,20 +176,29 @@
 .platform__sub-item-main-text-03 {
     font-size: rem(24);
     font-weight: $bold;
-    color: $color-theme;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: rem(5);
-    margin-bottom: rem(5);
+    margin-bottom: rem(8);
 }
 
 .platform__sub-item-main-text-03--hukidashi {
-    background-color: #FFD60A;
-    color: $color-black;
-    font-size: rem(14);
-    padding: rem(4) rem(8);
-    border-radius: rem(8);
+  background-color: #fffa94;
+  color: $color-light-blue;
+  font-size: rem(16);
+  padding: rem(4) rem(8);
+  border-radius: rem(8);
+  position: relative;
+  z-index: 1;
+}
+.platform__sub-item-main-text-03--hukidashi::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 99%;
+  transform: translateY(-50%);
+  width: rem(20);
+  height: rem(20);
+  background-color: #fffa94;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  box-sizing: border-box;
 }
 
 .platform__sub-item-main-text-03--large {
