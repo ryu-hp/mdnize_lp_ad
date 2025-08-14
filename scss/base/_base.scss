@@ -453,3 +453,20 @@ a {
 }
 
 //base_laout
+.text-yellow-line {
+  background: linear-gradient(transparent 40%, #fffa94 40%);
+}
+.text-single-dt {
+  display: inline-block;
+  position: relative;  
+}
+.text-single-dt::before {
+  content: "";
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  width: rem(24);
+  height: rem(24);
+  top: rem(-30);
+  border-radius: 50%;
+}

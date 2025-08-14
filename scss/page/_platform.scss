@@ -136,15 +136,15 @@
     content: "";
     display: inline-block;
     width: 100%;
-    height: 2px;
+    height: rem(15);
     color: $color-black;
     font-size: rem(8);
     position: absolute;
     top: rem(-8);
     left: 50%;
     transform: translateX(-50%);
-    background: radial-gradient(circle farthest-side, $color-black, $color-black 60%, transparent 60%, transparent);
-    background-size: 2px;
+    background: radial-gradient(circle farthest-side, $color-black, $color-black 20%, transparent 20%, transparent);
+    background-size: rem(15);
     content: '';
 }
 

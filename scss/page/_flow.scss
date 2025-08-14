@@ -1,340 +1,328 @@
 @use "../global" as *;
 
 .flow {
-    background-color: #cbe4fd;
-    padding: rem(100) 0;
+  background-color: #cbe4fd;
+  padding: rem(100) 0;
 }
 
 .section__title--flow {
-    text-align: center;
-    margin-bottom: rem(60);
+  text-align: center;
+  margin-bottom: rem(60);
 }
 
 .section__title-main--flow {
-    font-size: rem(36);
-    font-weight: normal;
-    color: $color-black;
-    margin-bottom: rem(20);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-size: rem(36);
+  font-weight: normal;
+  color: $color-black;
+  margin-bottom: rem(20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flow-title__logo {
-    max-width: rem(200);
-    width: 100%;
-    display: inline-block;
+  max-width: rem(200);
+  width: 100%;
+  display: inline-block;
 }
 
 .section__title-main--flow img {
-    width: 100%;
+  width: 100%;
 }
 
 .flow-title--blue-box {
-    background-color: $color-theme;
-    color: $color-white;
-    line-height: 1;
-    padding: rem(8);
-    margin-right:rem(4);
-    border-radius: rem(4);
-    font-size: 1.5em;
+  background-color: $color-theme;
+  color: $color-white;
+  line-height: 1;
+  padding: rem(8);
+  margin-right:rem(4);
+  border-radius: rem(4);
+  font-size: 1.5em;
 }
 
 .flows__title-sub {
-    font-size: rem(18);
-    color: #ccc;
-    margin-bottom: rem(10);
+  font-size: rem(18);
+  color: #ccc;
+  margin-bottom: rem(10);
 }
 
 
 .flow__body {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .flow__contents {
-    margin-bottom: rem(60);
-    background-color: $color-white;
-    border-radius: rem(10);
-    padding: rem(20) rem(20);
+  margin-bottom: rem(60);
+  background-color: $color-white;
+  border-radius: rem(10);
+  padding: rem(20) rem(20);
 }
 
 .flow__image {
-    flex: 1;
-    max-width: rem(400);
-    margin-right:auto;
-    margin-left:auto;
-    margin-bottom: rem(40);
+  flex: 1;
+  max-width: rem(800);
+  margin-right:auto;
+  margin-left:auto;
+  margin-bottom: rem(40);
 }
 
 .flow__image img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .flow__text-area {
-    flex: 1;
+  flex: 1;
 }
 
 .flow__top-text {
-    font-size: rem(18);
-    color: $color-black;
-    margin-bottom: rem(30);
-    line-height: 1.6;
+  font-size: rem(18);
+  color: $color-black;
+  margin-bottom: rem(30);
+  line-height: 1.6;
+}
+
+.flow__top-text .text-single-dt::before {
+  background-color: $color-orange
 }
 
 .flow__list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 rem(40);
+  list-style: none;
+  padding: 0;
+  margin: 0 0 rem(40);
 }
 
 .flow__list-item {
-    margin-bottom: rem(20);
-    padding: rem(20);
-    background-color: #f8f9fa;
-    border-radius: rem(8);
-    border-left: rem(4) solid $color-theme;
+  margin-bottom: rem(20);
+  padding: rem(20);
+  background-color: #f8f9fa;
+  border-radius: rem(8);
+  border-left: rem(4) solid $color-theme;
 }
 
 .flow__list-item-number {
-    font-size: rem(14);
-    font-weight: $bold;
-    color: $color-theme;
-    margin-bottom: rem(8);
+  font-size: rem(14);
+  font-weight: $bold;
+  color: $color-theme;
+  margin-bottom: rem(8);
 }
 
 .flow__list-item-text {
-    font-size: rem(16);
-    line-height: 1.6;
-    color: $color-black;
+  font-size: rem(16);
+  line-height: 1.6;
+  color: $color-black;
 }
 
 .flow__bottom-description {
-    font-size: rem(16);
-    line-height: 1.6;
-    text-align: center;
+  font-size: rem(16);
+  line-height: 1.6;
+  text-align: center;
 }
 
 .flow__bottom-description--large {
-    font-size: rem(18);
-    font-weight: $bold;
+  font-size: rem(18);
+  font-weight: $bold;
 }
 
 .flow__bottom-contents {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: rem(20);
-    margin-top: rem(40);
-    padding: rem(30);
-    background-color: #f8f9fa;
-    border-radius: rem(12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(20);
+  margin-top: rem(40);
+  padding: rem(30);
+  background-color: #f8f9fa;
+  border-radius: rem(12);
 }
 
 .flow__bottom-contents-accent {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .flow__bottom-contents-accent img {
-    width: rem(60);
-    height: auto;
+  width: rem(60);
+  height: auto;
 }
 
 .flow__bottom-contents-text {
-    font-size: rem(16);
-    line-height: 1.6;
-    text-align: center;
+  font-size: rem(16);
+  line-height: 1.6;
+  text-align: center;
 }
 
 .flow__bottom-contents-text--large {
-    font-size: rem(18);
-    font-weight: $bold;
+  font-size: rem(18);
+  font-weight: $bold;
 }
 
 .flow__front-contents,
 .flow__after-contents {
-    margin-bottom: rem(60);
+  margin-bottom: rem(60);
 }
 
 .flow__item {
-    display: flex;
-    align-items: center;
-    gap: rem(40);
-    margin-bottom: rem(40);
-    padding: rem(30);
-    background-color: $color-white;
-    border-radius: rem(12);
-    box-shadow: 0 rem(4) rem(16) rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: rem(40);
+  margin-bottom: rem(40);
+  padding: rem(30);
+  background-color: $color-white;
+  border-radius: rem(12);
+  box-shadow: 0 rem(4) rem(16) rgba(0, 0, 0, 0.1);
 }
 
 .flow__item-number {
-    flex-shrink: 0;
-    width: rem(60);
-    height: rem(60);
-    background-color: $color-theme;
-    color: $color-white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: rem(20);
-    font-weight: $bold;
+  flex-shrink: 0;
+  width: rem(60);
+  height: rem(60);
+  background-color: $color-theme;
+  color: $color-white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(20);
+  font-weight: $bold;
 }
 
 .flow__item-content {
-    flex: 1;
+  flex: 1;
 }
 
 .flow__item-head {
-    font-size: rem(20);
-    font-weight: $bold;
-    color: $color-black;
-    margin-bottom: rem(10);
+  font-size: rem(20);
+  font-weight: $bold;
+  color: $color-black;
+  margin-bottom: rem(10);
 }
 
 .flow__item-description {
-    font-size: rem(14);
-    line-height: 1.6;
-    color: $color-black;
+  font-size: rem(14);
+  line-height: 1.6;
+  color: $color-black;
 }
 
 .flow__item-image {
-    flex-shrink: 0;
-    width: rem(120);
+  flex-shrink: 0;
+  width: rem(120);
 }
 
 .flow__item-image img {
-    width: 100%;
-    height: auto;
-    border-radius: rem(8);
+  width: 100%;
+  height: auto;
+  border-radius: rem(8);
 }
 
 .flow__btn-area {
-    text-align: center;
-    margin-top: rem(60);
+  text-align: center;
+  margin-top: rem(60);
 }
 
-.color-theme-orange {
-    color: #FF6B35;
-}
 
-.text-yellow-line {
-    background: linear-gradient(transparent 70%, #FFD60A 70%);
-}
 
-.text-single-dt {
-    display: inline-block;
-    margin: 0 rem(2);
-}
 
-.text-underline {
-    text-decoration: underline;
-    text-decoration-color: #FF6B35;
-    text-decoration-thickness: rem(2);
-    text-underline-offset: rem(4);
-}
 
 // SP用スタイル
 @include mq(md) {
-    .flow {
-        padding: rem(60) 0;
-    }
-    
-    .flow__inner {
-        padding: 0 $padding-sp;
-    }
-    
-    .section__title--flow {
-        margin-bottom: rem(40);
-    }
-    
-    .section__title-main--flow {
-        font-size: rem(28);
-    }
-    
-    .section__title-main--flow img {
-        height: rem(30);
-    }
-    
-    .flows__title-sub {
-        font-size: rem(16);
-    }
-    
-    
-    .flow__contents {
-        flex-direction: column;
-        gap: rem(30);
-        margin-bottom: rem(40);
-    }
-    
-    .flow__image {
-        max-width: rem(300);
-    }
-    
-    .flow__top-text {
-        font-size: rem(16);
-        margin-bottom: rem(20);
-    }
-    
-    .flow__list-item {
-        padding: rem(15);
-    }
-    
-    .flow__list-item-text {
-        font-size: rem(14);
-    }
-    
-    .flow__bottom-description {
-        font-size: rem(14);
-    }
-    
-    .flow__bottom-description--large {
-        font-size: rem(16);
-    }
-    
-    .flow__bottom-contents {
-        flex-direction: column;
-        padding: rem(20);
-        margin-top: rem(30);
-    }
-    
-    .flow__bottom-contents-text {
-        font-size: rem(14);
-    }
-    
-    .flow__bottom-contents-text--large {
-        font-size: rem(16);
-    }
-    
-    .flow__item {
-        flex-direction: column;
-        gap: rem(20);
-        padding: rem(20);
-        margin-bottom: rem(30);
-    }
-    
-    .flow__item-number {
-        width: rem(50);
-        height: rem(50);
-        font-size: rem(18);
-    }
-    
-    .flow__item-head {
-        font-size: rem(18);
-        text-align: center;
-    }
-    
-    .flow__item-description {
-        font-size: rem(13);
-        text-align: center;
-    }
-    
-    .flow__item-image {
-        width: rem(100);
-    }
-    
-    .flow__btn-area {
-        margin-top: rem(40);
-    }
+  .flow {
+    padding: rem(60) 0;
+  }
+  
+  .flow__inner {
+    padding: 0 $padding-sp;
+  }
+  
+  .section__title--flow {
+    margin-bottom: rem(40);
+  }
+  
+  .section__title-main--flow {
+    font-size: rem(28);
+  }
+  
+  .section__title-main--flow img {
+    height: rem(30);
+  }
+  
+  .flows__title-sub {
+    font-size: rem(16);
+  }
+  
+  
+  .flow__contents {
+    flex-direction: column;
+    gap: rem(30);
+    margin-bottom: rem(40);
+  }
+  
+  .flow__image {
+    max-width: rem(300);
+  }
+  
+  .flow__top-text {
+    font-size: rem(16);
+    margin-bottom: rem(20);
+  }
+  
+  .flow__list-item {
+    padding: rem(15);
+  }
+  
+  .flow__list-item-text {
+    font-size: rem(14);
+  }
+  
+  .flow__bottom-description {
+    font-size: rem(14);
+  }
+  
+  .flow__bottom-description--large {
+    font-size: rem(16);
+  }
+  
+  .flow__bottom-contents {
+    flex-direction: column;
+    padding: rem(20);
+    margin-top: rem(30);
+  }
+  
+  .flow__bottom-contents-text {
+    font-size: rem(14);
+  }
+  
+  .flow__bottom-contents-text--large {
+    font-size: rem(16);
+  }
+  
+  .flow__item {
+    flex-direction: column;
+    gap: rem(20);
+    padding: rem(20);
+    margin-bottom: rem(30);
+  }
+  
+  .flow__item-number {
+    width: rem(50);
+    height: rem(50);
+    font-size: rem(18);
+  }
+  
+  .flow__item-head {
+    font-size: rem(18);
+    text-align: center;
+  }
+  
+  .flow__item-description {
+    font-size: rem(13);
+    text-align: center;
+  }
+  
+  .flow__item-image {
+    width: rem(100);
+  }
+  
+  .flow__btn-area {
+    margin-top: rem(40);
+  }
 }

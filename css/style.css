@@ -459,6 +459,28 @@ a {
           box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
 }
 
+.text-yellow-line {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), color-stop(40%, #fffa94));
+  background: linear-gradient(transparent 40%, #fffa94 40%);
+}
+
+.text-single-dt {
+  display: inline-block;
+  position: relative;
+}
+
+.text-single-dt::before {
+  content: "";
+  display: block;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  top: -1.875rem;
+  border-radius: 50%;
+}
+
 *,
 *::before,
 *::after {
@@ -1569,7 +1591,7 @@ select::-ms-expand {
   content: "";
   display: inline-block;
   width: 100%;
-  height: 2px;
+  height: 0.9375rem;
   color: #17181c;
   font-size: 0.5rem;
   position: absolute;
@@ -1577,8 +1599,8 @@ select::-ms-expand {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: radial-gradient(circle farthest-side, #17181c, #17181c 60%, transparent 60%, transparent);
-  background-size: 2px;
+  background: radial-gradient(circle farthest-side, #17181c, #17181c 20%, transparent 20%, transparent);
+  background-size: 0.9375rem;
   content: "";
 }
 
@@ -1809,7 +1831,7 @@ select::-ms-expand {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  max-width: 25rem;
+  max-width: 50rem;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 2.5rem;
@@ -1831,6 +1853,10 @@ select::-ms-expand {
   color: #17181c;
   margin-bottom: 1.875rem;
   line-height: 1.6;
+}
+
+.flow__top-text .text-single-dt::before {
+  background-color: #fa7019;
 }
 
 .flow__list {
@@ -1985,27 +2011,6 @@ select::-ms-expand {
 .flow__btn-area {
   text-align: center;
   margin-top: 3.75rem;
-}
-
-.color-theme-orange {
-  color: #FF6B35;
-}
-
-.text-yellow-line {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #FFD60A));
-  background: linear-gradient(transparent 70%, #FFD60A 70%);
-}
-
-.text-single-dt {
-  display: inline-block;
-  margin: 0 0.125rem;
-}
-
-.text-underline {
-  text-decoration: underline;
-  text-decoration-color: #FF6B35;
-  text-decoration-thickness: 0.125rem;
-  text-underline-offset: 0.25rem;
 }
 
 @media screen and (max-width: 767px) {
