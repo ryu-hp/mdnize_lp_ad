@@ -1629,12 +1629,12 @@ select::-ms-expand {
 }
 
 .platform__sub-item-main-text-03--large {
-  font-size: 2.5rem;
+  font-size: 2em;
 }
 
 .platform__sub-item-main-text-04 {
-  font-size: 1rem;
-  color: #184fab;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 @media screen and (max-width: 767px) {
