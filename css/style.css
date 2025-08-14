@@ -1147,6 +1147,7 @@ select::-ms-expand {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  padding: 3rem 0;
 }
 
 .cta1__contents {
@@ -1155,15 +1156,15 @@ select::-ms-expand {
 }
 
 .cta1__title {
-  font-size: 1.75rem;
+  font-size: 3rem;
   font-weight: 700;
-  color: #17181c;
+  color: #fff;
   margin-bottom: 1rem;
   line-height: 1.4;
 }
 
 .cta1__description {
-  font-size: 1rem;
+  font-size: 1.75rem;
   color: #17181c;
   margin-bottom: 2.5rem;
   line-height: 1.6;
