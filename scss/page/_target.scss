@@ -87,15 +87,15 @@
 }
 
 .target__list li:before {
-    content: "";
-    display: block;
-    color: $color-theme;
-    background-image: url(../img/pc/list-check.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: rem(20);
-    height: rem(20);
+  content: "";
+  display: block;
+  color: $color-theme;
+  background-image: url(../img/pc/list-check.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(20);
+  height: rem(20);
 }
 
 .target__list--yellow {
@@ -107,16 +107,14 @@
 .target__bottom-label {
   text-align: center;
   margin-top: rem(60);
-  background-color: $color-theme;
   color: $color-white;
   padding: rem(30) rem(20);
-  border-radius: rem(12);
+  background: linear-gradient(90deg, rgba(16, 52, 104, 0.3) 0%, rgba(16, 52, 104, 1) 50%, rgba(16, 52, 104, 0.3) 100%);
 }
 
 .target__bottom-label p {
-    font-size: rem(20);
-    font-weight: $bold;
-    line-height: 1.4;
+    font-size: rem(42);
+    line-height: 1.5;
     margin: 0;
 }
 
