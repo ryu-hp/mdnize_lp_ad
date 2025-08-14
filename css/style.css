@@ -1077,8 +1077,9 @@ select::-ms-expand {
 }
 
 .target {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(166, 166, 166, 0)), to(rgb(166, 166, 166)));
-  background: linear-gradient(90deg, rgba(166, 166, 166, 0) 0%, rgb(166, 166, 166) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(166, 166, 166, 0)), to(rgb(166, 166, 166)));
+  background: linear-gradient(0deg, rgba(166, 166, 166, 0) 0%, rgb(166, 166, 166) 100%);
+  padding-bottom: 0;
 }
 
 .section__title--target {
@@ -1165,6 +1166,7 @@ select::-ms-expand {
   font-size: 1rem;
   line-height: 1.5;
   position: relative;
+  padding-left: 2rem;
 }
 
 .target__list li:not(:last-child) {
@@ -1173,6 +1175,9 @@ select::-ms-expand {
 
 .target__list li:before {
   content: "";
+  position: absolute;
+  left: 0;
+  top: 0.125rem;
   display: block;
   color: #184fab;
   background-image: url(../img/pc/list-check.svg);
@@ -1245,6 +1250,13 @@ select::-ms-expand {
 .section__title--solution {
   position: relative;
   padding: 1.25rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 .section__title--accent {
@@ -1271,43 +1283,26 @@ select::-ms-expand {
 .section__title-main--solution {
   position: relative;
   z-index: 1;
-  font-size: 2.25rem;
-  line-height: 1.4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.625rem;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 .solution__title-logo {
   display: inline-block;
-}
-
-.solution__title-logo img {
-  height: 2.5rem;
-  width: auto;
-  vertical-align: middle;
+  width: 20rem;
 }
 
 .solution__title--large {
-  font-size: 3rem;
+  font-size: 2em;
 }
 
 .solution__title--middle {
-  font-size: 2rem;
+  font-size: 1.25em;
 }
 
 .solution__title-sub {
-  font-size: 1.125rem;
-  margin-top: 0.625rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .solution__contents {

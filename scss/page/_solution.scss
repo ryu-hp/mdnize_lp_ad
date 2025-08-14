@@ -7,6 +7,8 @@
 .section__title--solution {
     position: relative;
     padding: rem(20) 0;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .section__title--accent {
@@ -32,36 +34,26 @@
 .section__title-main--solution {
     position: relative;
     z-index: 1;
-    font-size: rem(36);
-    line-height: 1.4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: rem(10);
+    font-size: rem(32);
+    line-height: 1.5;
 }
 
 .solution__title-logo {
     display: inline-block;
-}
-
-.solution__title-logo img {
-    height: rem(40);
-    width: auto;
-    vertical-align: middle;
+    width: rem(320);
 }
 
 .solution__title--large {
-    font-size: rem(48);
+    font-size: 2em;
 }
 
 .solution__title--middle {
-    font-size: rem(32);
+    font-size: 1.25em;
 }
 
 .solution__title-sub {
-    font-size: rem(18);
-    margin-top: rem(10);
-    font-weight: $normal;
+    font-size: rem(24);
+    margin-bottom: rem(16);
 }
 
 .solution__contents {
