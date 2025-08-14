@@ -113,8 +113,9 @@
 .flow__list-item-text {
   font-size: rem(16);
   line-height: 1.5;
-  color: #f0f0f0;
+  background-color: #f0f0f0;
   padding: rem(8) rem(16);
+  flex: 1;
 }
 
 .flow__bottom-description {

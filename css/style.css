@@ -1888,8 +1888,11 @@ select::-ms-expand {
 .flow__list-item-text {
   font-size: 1rem;
   line-height: 1.5;
-  color: #f0f0f0;
+  background-color: #f0f0f0;
   padding: 0.5rem 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .flow__bottom-description {
