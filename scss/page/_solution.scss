@@ -1,7 +1,11 @@
 @use "../global" as *;
 
 .solution {
-    background-color: $color-white;
+  background: linear-gradient(0deg, #ecf7ff 0%, #fff 100%);
+  background-image: url(../img/pc/bg-01.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
 }
 
 .section__title--solution {
@@ -96,7 +100,7 @@
   bottom: -5%;
   left: 0;
   width: 100%;
-  height: 40%;
+  height: 60%;
   z-index: -1;
 }
 .solution__item:nth-child(odd)::after {
