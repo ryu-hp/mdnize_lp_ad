@@ -124,8 +124,7 @@
 }
 
 .flow__bottom-description--large {
-  font-size: rem(18);
-  font-weight: $bold;
+  font-size: 1.25em;
 }
 
 .flow__bottom-contents {
@@ -134,28 +133,26 @@
   justify-content: center;
   gap: rem(20);
   margin-top: rem(40);
-  padding: rem(30);
-  background-color: #f8f9fa;
-  border-radius: rem(12);
 }
 
 .flow__bottom-contents-accent {
   flex-shrink: 0;
+  width: rem(60);
 }
 
 .flow__bottom-contents-accent img {
-  width: rem(60);
   height: auto;
+  width: 100%;
 }
 
 .flow__bottom-contents-text {
   font-size: rem(16);
-  line-height: 1.6;
+  line-height: 1.5;
   text-align: center;
 }
 
 .flow__bottom-contents-text--large {
-  font-size: rem(18);
+  font-size: 1.5em;
   font-weight: $bold;
 }
 
@@ -164,58 +161,6 @@
   margin-bottom: rem(60);
 }
 
-.flow__item {
-  display: flex;
-  align-items: center;
-  gap: rem(40);
-  margin-bottom: rem(40);
-  padding: rem(30);
-  background-color: $color-white;
-  border-radius: rem(12);
-  box-shadow: 0 rem(4) rem(16) rgba(0, 0, 0, 0.1);
-}
-
-.flow__item-number {
-  flex-shrink: 0;
-  width: rem(60);
-  height: rem(60);
-  background-color: $color-theme;
-  color: $color-white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: rem(20);
-  font-weight: $bold;
-}
-
-.flow__item-content {
-  flex: 1;
-}
-
-.flow__item-head {
-  font-size: rem(20);
-  font-weight: $bold;
-  color: $color-black;
-  margin-bottom: rem(10);
-}
-
-.flow__item-description {
-  font-size: rem(14);
-  line-height: 1.6;
-  color: $color-black;
-}
-
-.flow__item-image {
-  flex-shrink: 0;
-  width: rem(120);
-}
-
-.flow__item-image img {
-  width: 100%;
-  height: auto;
-  border-radius: rem(8);
-}
 
 .flow__btn-area {
   text-align: center;

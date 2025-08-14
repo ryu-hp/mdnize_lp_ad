@@ -475,9 +475,9 @@ a {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 1.5rem;
-  height: 1.5rem;
-  top: -1.875rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  top: -0.25rem;
   border-radius: 50%;
 }
 
@@ -1866,35 +1866,40 @@ select::-ms-expand {
 }
 
 .flow__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.flow__list-item:not(:last-child) {
   margin-bottom: 1.25rem;
-  padding: 1.25rem;
-  background-color: #f8f9fa;
-  border-radius: 0.5rem;
-  border-left: 0.25rem solid #184fab;
 }
 
 .flow__list-item-number {
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: #184fab;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#037ef1), to(#194fa9));
+  background: linear-gradient(-180deg, #037ef1 0%, #194fa9 100%);
+  line-height: 1.5;
 }
 
 .flow__list-item-text {
   font-size: 1rem;
-  line-height: 1.6;
-  color: #17181c;
+  line-height: 1.5;
+  color: #f0f0f0;
+  padding: 0.5rem 1rem;
 }
 
 .flow__bottom-description {
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.5;
   text-align: center;
 }
 
 .flow__bottom-description--large {
-  font-size: 1.125rem;
-  font-weight: 700;
+  font-size: 1.25em;
 }
 
 .flow__bottom-contents {
@@ -1909,103 +1914,33 @@ select::-ms-expand {
           justify-content: center;
   gap: 1.25rem;
   margin-top: 2.5rem;
-  padding: 1.875rem;
-  background-color: #f8f9fa;
-  border-radius: 0.75rem;
 }
 
 .flow__bottom-contents-accent {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  width: 3.75rem;
 }
 
 .flow__bottom-contents-accent img {
-  width: 3.75rem;
   height: auto;
+  width: 100%;
 }
 
 .flow__bottom-contents-text {
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.5;
   text-align: center;
 }
 
 .flow__bottom-contents-text--large {
-  font-size: 1.125rem;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
 .flow__front-contents,
 .flow__after-contents {
   margin-bottom: 3.75rem;
-}
-
-.flow__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 2.5rem;
-  margin-bottom: 2.5rem;
-  padding: 1.875rem;
-  background-color: #fff;
-  border-radius: 0.75rem;
-  -webkit-box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-.flow__item-number {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 3.75rem;
-  height: 3.75rem;
-  background-color: #184fab;
-  color: #fff;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-.flow__item-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.flow__item-head {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #17181c;
-  margin-bottom: 0.625rem;
-}
-
-.flow__item-description {
-  font-size: 0.875rem;
-  line-height: 1.6;
-  color: #17181c;
-}
-
-.flow__item-image {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 7.5rem;
-}
-
-.flow__item-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
 }
 
 .flow__btn-area {
