@@ -116,6 +116,7 @@ a {
     text-align: center;
     margin-bottom: rem(60);
     position: relative;
+    z-index: 1;
 }
 
 .section__title-main {
@@ -131,6 +132,18 @@ a {
     background-color: $color-theme;
     display: block;
     margin: 0 auto rem(16);
+}
+
+.section__title-bg_text {
+    position: absolute;
+    top: rem(-20);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 1;
+    color: #333333;
+    mix-blend-mode: soft-light;
+    text-transform: uppercase;
 }
 
 .text--center {
