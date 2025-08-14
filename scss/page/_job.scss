@@ -5,18 +5,15 @@
     background-color: $color-white;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
-.job__inner {
-    position: relative;
-    z-index: 2;
-}
 
 .job__flex {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: rem(60);
-    align-items: center;
+    align-items: flex-start;
 }
 
 .job__main {

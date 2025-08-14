@@ -2045,20 +2045,16 @@ select::-ms-expand {
   background-color: #fff;
   position: relative;
   overflow: hidden;
-}
-
-.job__inner {
-  position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .job__flex {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 3.75rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .job__main {
