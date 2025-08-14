@@ -2048,9 +2048,6 @@ select::-ms-expand {
 }
 
 .job__inner {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 1.5625rem;
   position: relative;
   z-index: 2;
 }
@@ -2076,26 +2073,43 @@ select::-ms-expand {
 }
 
 .section__title-main--job {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.4;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #184fab;
+}
+
+.section__title.section__title--job {
+  margin-bottom: 2.5rem;
 }
 
 .job__title--yellow-circle {
-  background-color: #ffd60a;
-  padding: 0.5rem 1rem;
-  border-radius: 1.5625rem;
-  display: inline-block;
-  margin: 0 0.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.job__title--yellow-circle::before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+  content: "";
+  width: 110%;
+  height: 200%;
+  background-image: url(../img/pc/job_head_yellow_circle.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .job__title--large {
-  font-size: 2.25rem;
-  font-weight: 700;
+  font-size: 1.25em;
 }
 
 .job__descriptions {
-  margin: 2.5rem 0;
+  margin-bottom: 2.5rem;
 }
 
 .job_description {
@@ -2119,20 +2133,15 @@ select::-ms-expand {
 }
 
 .job__tag {
-  background-color: #fff;
-  color: #184fab;
+  background-color: #184fab;
+  color: #fff;
   padding: 0.5rem 1rem;
-  border-radius: 1.25rem;
-  font-size: 0.875rem;
-  font-weight: 700;
+  line-height: 1;
+  border-radius: 0.25rem;
+  font-size: 1rem;
   border: 2px solid #184fab;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-.job__tag:hover {
-  background-color: #184fab;
-  color: #fff;
 }
 
 .job__images {
@@ -2142,21 +2151,20 @@ select::-ms-expand {
 .job__images img {
   max-width: 18.75rem;
   height: auto;
-  border-radius: 0.75rem;
-  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 .job__bg-text {
   position: absolute;
-  bottom: 1.25rem;
-  right: 1.25rem;
+  top: 0;
+  right: 0;
   z-index: 0;
-  opacity: 0.1;
+  opacity: 0.5;
+  max-width: 32.5rem;
+  width: 100%;
 }
 
 .job__bg-text img {
-  width: 12.5rem;
+  width: 100%;
   height: auto;
 }
 
