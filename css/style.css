@@ -627,6 +627,31 @@ select::-ms-expand {
   display: none !important;
 }
 
+#contentInner {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+body.page-template-one-column main {
+  padding: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.page-template-one-column .post {
+  padding: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.lp1 p {
+  line-height: 1.5;
+}
+
+.lp1 h3 {
+  padding: 0;
+}
+
 .lp1 {
   width: 100%;
   margin: 0 auto;
@@ -661,7 +686,7 @@ select::-ms-expand {
 }
 
 .hero-about-wrapper {
-  background-image: url(../img/pc/hero-about-bg-image.webp);
+  background-image: url(https://mdniz.com/wp-content/uploads/2025/08/hero-about-bg-image.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -959,7 +984,7 @@ select::-ms-expand {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url(../img/pc/about-title-accent-left.webp);
+  background-image: url(https://mdniz.com/wp-content/uploads/2025/08/about-title-accent-left.webp);
   background-size: contain;
   background-position: center;
   background-repeat: repeat-x;
@@ -992,7 +1017,7 @@ select::-ms-expand {
   }
 }
 .cta1 {
-  background-image: url(../img/pc/cta1-bg.webp);
+  background-image: url(https://mdniz.com/wp-content/uploads/2025/08/cta1-bg.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1151,7 +1176,7 @@ select::-ms-expand {
   top: 0.125rem;
   display: block;
   color: #184fab;
-  background-image: url(../img/pc/list-check.svg);
+  background-image: url(https://mdniz.com/wp-content/uploads/2025/08/list-check.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1217,7 +1242,7 @@ select::-ms-expand {
 .solution {
   background: -webkit-gradient(linear, left bottom, left top, from(#ecf7ff), to(#fff));
   background: linear-gradient(0deg, #ecf7ff 0%, #fff 100%);
-  background-image: url(../img/pc/bg-01.webp);
+  background-image: url(https://mdniz.com/wp-content/uploads/2025/08/bg-01.webp);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -1819,7 +1844,7 @@ select::-ms-expand {
   content: "";
   width: 110%;
   height: 200%;
-  background-image: url(../img/pc/job_head_yellow_circle.svg);
+  background-image: url(https://mdniz.com/wp-content/uploads/2025/08/job_head_yellow_circle.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -2443,6 +2468,7 @@ select::-ms-expand {
 .flow {
   background-color: #cbe4fd;
   padding: 6.25rem 0;
+  margin: 0 !important;
 }
 
 .section__title-main--flow {
@@ -2552,7 +2578,7 @@ select::-ms-expand {
 .flow__tag {
   position: absolute;
   top: -0.625rem;
-  left: 6.5rem;
+  left: 9.5rem;
   background-color: #fa7019;
   padding: 0.5rem 0.5rem;
   border-radius: 1.25rem;

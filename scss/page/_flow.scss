@@ -3,6 +3,7 @@
 .flow {
   background-color: #cbe4fd;
   padding: rem(100) 0;
+  margin: 0 !important;
 }
 
 .section__title-main--flow {
@@ -99,7 +100,7 @@
 .flow__tag {
   position: absolute;
   top: rem(-10);
-  left: rem(104);
+  left: rem(152);
   background-color: $color-orange;
   padding: rem(8) rem(8);
   border-radius: rem(20);

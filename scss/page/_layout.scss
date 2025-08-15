@@ -1,6 +1,28 @@
 @use "../global" as *;
 
 // 全体のレイアウト
+#contentInner {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+body.page-template-one-column main {
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+.page-template-one-column .post {
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.lp1 p {
+    line-height: 1.5;
+}
+.lp1 h3 {
+    padding: 0;
+}
+
 .lp1 {
     width: 100%;
     margin: 0 auto;
@@ -34,7 +56,7 @@
 }
 
 .hero-about-wrapper {
-    background-image: url(../img/pc/hero-about-bg-image.webp);
+    background-image: url(https://mdniz.com/wp-content/uploads/2025/08/hero-about-bg-image.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
