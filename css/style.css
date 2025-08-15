@@ -1335,6 +1335,7 @@ body.page-template-one-column main {
   -webkit-box-shadow: 0.9375rem 0.9375rem 1.875rem rgba(16, 52, 104, 0.3);
           box-shadow: 0.9375rem 0.9375rem 1.875rem rgba(16, 52, 104, 0.3);
   width: 85%;
+  max-width: 800px;
   position: relative;
 }
 
@@ -1378,13 +1379,6 @@ body.page-template-one-column main {
 .solution__item-image img {
   width: 100%;
   height: auto;
-}
-
-.solution__item-text {
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 2.5rem;
 }
 
 .solution__item-title {
