@@ -46,21 +46,29 @@
   .faq__item:hover {
     box-shadow: 0 rem(4) rem(16) rgba(0, 0, 0, 0.1);
   }
-  .faq__item.is-open .faq__item-sign::after {
-    transform: rotate(90deg);
+  .faq__item.is-active .faq__item-sign::after {
+    transform: translate(-50%,-50%) rotate(90deg);
   }
-  .faq__item.is-open .faq__item-body {
+  .faq__item.is-active .faq__item-body {
     max-height: 500px;
     padding: rem(20) rem(24);
+  }
+  .faq__item-head,
+  .faq__item-body {
+    display: flex;
+    align-items: flex-start;
+    transition: background-color 0.3s ease;
+    padding-left:rem(32);
+    padding-right: rem(32);
   }
   
   .faq__item-head {
     display: flex;
     align-items: flex-start;
-    padding: rem(32);
-    background-color: $color-white;
+    padding-top: rem(24);
+    padding-bottom: rem(24);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: $color-white;
   
     &:hover {
       background-color: #f8f9fa;
@@ -87,15 +95,16 @@
   .faq__item-title {
     flex: 1;
     font-size: rem(27);
-    font-weight: $bold;
+    font-weight: normal;
     color: $color-black;
-    line-height: 1.6;
+    line-height: 1.5;
+    margin-bottom: 0;
   }
   
   .faq__item-sign {
     flex-shrink: 0;
     width: rem(24);
-    height: rem(24);
+    height: calc(rem(27) * 1.5);
     position: relative;
     transition: transform 0.3s ease;
   
@@ -106,17 +115,18 @@
       top: 50%;
       left: 50%;
       background-color: $color-theme;
+      transition: transform 0.3s ease;
     }
   
     &::before {
-      width: rem(16);
-      height: rem(2);
+      width: rem(20);
+      height: rem(4);
       transform: translate(-50%, -50%);
     }
   
     &::after {
-      width: rem(2);
-      height: rem(16);
+      width: rem(4);
+      height: rem(20);
       transform: translate(-50%, -50%);
     }
   }
@@ -125,15 +135,16 @@
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease;
-    padding: 0 rem(24);
-    background-color: #f8f9fa;
+    padding-bottom: rem(24);
+    padding-top: rem(10);
+    background-color: $color-white;
+    display: flex;
   }
   
   .faq__item-description {
-    font-size: rem(14);
-    line-height: 1.7;
+    font-size: rem(22);
+    line-height: 1.5;
     color: $color-black;
-    margin-left: rem(48);
   }
   
   // SP用スタイル
