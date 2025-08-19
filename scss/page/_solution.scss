@@ -15,6 +15,12 @@
     flex-direction: column-reverse;
 }
 
+.section__title-area {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
 .section__title--accent {
     position: absolute;
     top: 50%;
