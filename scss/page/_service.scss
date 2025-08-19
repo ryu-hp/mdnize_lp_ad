@@ -1,131 +1,134 @@
 @use "../global" as *;
 
-.service {
-  background-color: #f8f9fa;
-  padding: rem(100) 0;
-  position: relative;
-}
-
-.services__title-sub {
-  font-size: rem(16);
-  color: #666;
-  margin-bottom: rem(10);
-  text-align: center;
-}
-
-.section__title--service {
-  text-align: center;
-  margin-bottom: rem(60);
-}
-
-.section__title-main--service {
-  font-size: rem(36);
-  font-weight: $bold;
-  margin-bottom: rem(20);
-}
-
-.service__body {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: rem(30);
-  width: 100%;
-  margin: 0 auto;
-}
-
-.service__item {
-  background-color: $color-white;
-  border-radius: rem(12);
-  overflow: hidden;
-  box-shadow: $shadow-card;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  color: inherit;
-  width: calc((100% - (rem(30)) * 2) / 3);
-
-  &:hover {
-    transform: translateY(rem(-8));
-  }
-}
-
-.service__item-contents {
-  padding: rem(30) rem(20);
-  text-align: center;
-}
-
-.service__item-image {
-  width: rem(96);
-  height: rem(96);
-  margin: 0 auto rem(20);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-}
-
-.service__item-head {
-  font-size: rem(32);
-  font-weight: normal;
-  color: $color-theme;
-  margin-bottom: rem(20);
-}
-
-.service__item-description {
-  font-size: rem(22);
-  line-height: 1.5;
-  color: $color-black;
-  text-align: left;
-}
-
-// SP用スタイル
-@include mq(md) {
+#lp-ad {
   .service {
-    padding: rem(60) 0;
+    padding: rem(100) 0;
+    position: relative;
   }
-
-  .section__title--service {
-    margin-bottom: rem(40);
-  }
-
-  .section__title-main--service {
-    font-size: rem(28);
-  }
-
+  
   .services__title-sub {
-    font-size: rem(14);
+    font-size: rem(16);
+    color: #666;
+    margin-bottom: rem(10);
+    text-align: center;
   }
-
+  
+  .section__title--service {
+    text-align: center;
+    margin-bottom: rem(60);
+  }
+  
+  .section__title-main--service {
+    font-size: rem(36);
+    font-weight: $bold;
+    margin-bottom: rem(20);
+  }
+  
   .service__body {
-    grid-template-columns: 1fr;
-    gap: rem(20);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: rem(30);
+    width: 100%;
+    margin: 0 auto;
   }
-
-  .service__item-contents {
-    padding: rem(24);
-  }
-
-  .service__item-image {
-    width: rem(60);
-    height: rem(60);
-    margin-bottom: rem(16);
-
-    img {
-      width: rem(36);
-      height: rem(36);
+  
+  .service__item {
+    background-color: $color-white;
+    border-radius: rem(12);
+    overflow: hidden;
+    box-shadow: $shadow-card;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    width: calc((100% - (rem(30)) * 2) / 3);
+  
+    &:hover {
+      transform: translateY(rem(-8));
     }
   }
-
-  .service__item-head {
-    font-size: rem(18);
-    margin-bottom: rem(12);
+  
+  .service__item-contents {
+    padding: rem(30) rem(20);
+    text-align: center;
   }
-
+  
+  .service__item-image {
+    width: rem(96);
+    height: rem(96);
+    margin: 0 auto rem(20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  
+  h3.service__item-head {
+    font-size: rem(32);
+    font-weight: normal;
+    color: $color-theme;
+    margin-bottom: rem(20);
+  }
+  
   .service__item-description {
-    font-size: rem(13);
+    font-size: rem(22);
+    line-height: 1.5;
+    color: $color-black;
+    text-align: left;
+  }
+  
+  // SP用スタイル
+  @include mq(md) {
+    .service {
+      padding: rem(60) 0;
+    }
+  
+    .section__title--service {
+      margin-bottom: rem(40);
+    }
+  
+    .section__title-main--service {
+      font-size: rem(28);
+    }
+  
+    .services__title-sub {
+      font-size: rem(14);
+    }
+  
+    .service__body {
+      grid-template-columns: 1fr;
+      gap: rem(20);
+    }
+  
+    .service__item-contents {
+      padding: rem(24);
+    }
+  
+    .service__item-image {
+      width: rem(60);
+      height: rem(60);
+      margin-bottom: rem(16);
+  
+      img {
+        width: rem(36);
+        height: rem(36);
+      }
+    }
+  
+    h3.service__item-head {
+      font-size: rem(18);
+      margin-bottom: rem(12);
+    }
+  
+    .service__item-description {
+      font-size: rem(13);
+    }
   }
 }
+

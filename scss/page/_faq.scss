@@ -51,7 +51,8 @@
   }
   .faq__item.is-active .faq__item-body {
     max-height: 500px;
-    padding: rem(20) rem(24);
+    padding-top: rem(10);
+    padding-bottom: rem(24);
   }
   .faq__item-head,
   .faq__item-body {
@@ -135,8 +136,6 @@
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease;
-    padding-bottom: rem(24);
-    padding-top: rem(10);
     background-color: $color-white;
     display: flex;
   }
