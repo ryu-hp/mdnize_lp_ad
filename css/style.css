@@ -2,11 +2,6 @@
 html {
   font-size: 16px;
 }
-@media screen and (max-width: 1290px) {
-  html {
-    font-size: 1.2403100775vw;
-  }
-}
 @media screen and (max-width: 767px) {
   html {
     font-size: 2.0860495437vw;
@@ -941,6 +936,7 @@ body.page-template-one-column main {
   margin-bottom: 1.25rem;
   position: relative;
   z-index: 1;
+  display: inline-block;
 }
 #lp-ad .about-title__bar {
   display: block;
@@ -999,11 +995,21 @@ body.page-template-one-column main {
   margin-bottom: 1rem;
   line-height: 1.4;
 }
+@media screen and (max-width: 1400px) and (min-width: 768px) {
+  #lp-ad .cta1__title {
+    font-size: 2916.6666666667vw;
+  }
+}
 #lp-ad .cta1__description {
   font-size: 1.75rem;
   color: #fff;
   margin-bottom: 2.5rem;
   line-height: 1.6;
+}
+@media screen and (max-width: 1400px) and (min-width: 768px) {
+  #lp-ad .cta1__description {
+    font-size: 5000vw;
+  }
 }
 #lp-ad .cta1__btn-contents {
   display: -webkit-box;
@@ -1015,6 +1021,16 @@ body.page-template-one-column main {
   gap: 1.25rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media screen and (max-width: 1400px) and (min-width: 768px) {
+  #lp-ad .cta1__btn-contents {
+    gap: 5000vw;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 768px) {
+  #lp-ad .cta1__btn-contents .c-btn {
+    font-size: 4375vw;
+  }
 }
 #lp-ad .cta1__image {
   position: absolute;
