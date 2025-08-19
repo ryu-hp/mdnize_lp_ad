@@ -71,7 +71,7 @@
     border-radius: rem(8);
     overflow: hidden;
     box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.1);
-    margin-top: rem(-20);
+    margin-top: rem(-36);
     padding: rem(20) rem(16);
 }
 
@@ -79,6 +79,7 @@
     width: 100%;
     height: rem(180);
     overflow: hidden;
+    margin-bottom: rem(16);
 }
 
 .success__item-card-image img {
@@ -114,6 +115,7 @@
     color: $color-black;
     padding-bottom: rem(8);
     border-bottom: 1px solid $color-theme;
+    margin-bottom: rem(16);
 }
 
 .success__item-company span {
@@ -122,7 +124,7 @@
 }
 
 .success__item-contents {
-    padding: rem(20) 0;
+    padding: rem(40) 0;
 }
 
 .success__item-head {

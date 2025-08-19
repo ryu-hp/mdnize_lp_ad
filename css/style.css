@@ -2162,7 +2162,7 @@ body.page-template-one-column main {
   overflow: hidden;
   -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
-  margin-top: -1.25rem;
+  margin-top: -2.25rem;
   padding: 1.25rem 1rem;
 }
 
@@ -2170,6 +2170,7 @@ body.page-template-one-column main {
   width: 100%;
   height: 11.25rem;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .success__item-card-image img {
@@ -2205,6 +2206,7 @@ body.page-template-one-column main {
   color: #17181c;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #184fab;
+  margin-bottom: 1rem;
 }
 
 .success__item-company span {
@@ -2213,7 +2215,7 @@ body.page-template-one-column main {
 }
 
 .success__item-contents {
-  padding: 1.25rem 0;
+  padding: 2.5rem 0;
 }
 
 .success__item-head {
@@ -2444,7 +2446,7 @@ body.page-template-one-column main {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #fff;
   line-height: 1.5;
   letter-spacing: 0.2em;
