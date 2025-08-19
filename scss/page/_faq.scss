@@ -38,31 +38,26 @@
   // アコーディオンアイテム
   .faq__item {
     margin-bottom: rem(20);
-    border: 1px solid #e0e0e0;
+    border: 2px solid $color-theme;
     border-radius: rem(8);
     overflow: hidden;
     transition: all 0.3s ease;
-  
-    &:hover {
-      box-shadow: 0 rem(4) rem(16) rgba(0, 0, 0, 0.1);
-    }
-  
-    &.is-open {
-      .faq__item-sign {
-        transform: rotate(45deg);
-      }
-  
-      .faq__item-body {
-        max-height: 500px;
-        padding: rem(20) rem(24);
-      }
-    }
+  }
+  .faq__item:hover {
+    box-shadow: 0 rem(4) rem(16) rgba(0, 0, 0, 0.1);
+  }
+  .faq__item.is-open .faq__item-sign::after {
+    transform: rotate(90deg);
+  }
+  .faq__item.is-open .faq__item-body {
+    max-height: 500px;
+    padding: rem(20) rem(24);
   }
   
   .faq__item-head {
     display: flex;
-    align-items: center;
-    padding: rem(24);
+    align-items: flex-start;
+    padding: rem(32);
     background-color: $color-white;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -74,30 +69,24 @@
   
   .faq__item-icon {
     flex-shrink: 0;
-    width: rem(32);
-    height: rem(32);
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: $bold;
-    font-size: rem(14);
+    font-size: rem(28);
     margin-right: rem(16);
-  
-    &--question {
-      background-color: $color-theme;
-      color: $color-white;
-    }
-  
-    &--anser {
-      background-color: $color-orange;
-      color: $color-white;
-    }
+    text-transform: uppercase;
   }
-  
+  .faq__item-icon--question {
+    color: $color-theme;
+  }
+  .faq__item-icon--answer {
+    color: $color-orange;
+  }
+
   .faq__item-title {
     flex: 1;
-    font-size: rem(16);
+    font-size: rem(27);
     font-weight: $bold;
     color: $color-black;
     line-height: 1.6;
