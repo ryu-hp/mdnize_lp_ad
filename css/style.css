@@ -997,7 +997,7 @@ body.page-template-one-column main {
 }
 @media screen and (max-width: 1400px) and (min-width: 768px) {
   #lp-ad .cta1__title {
-    font-size: 2916.6666666667vw;
+    font-size: 3.4285714286vw;
   }
 }
 #lp-ad .cta1__description {
@@ -1008,7 +1008,7 @@ body.page-template-one-column main {
 }
 @media screen and (max-width: 1400px) and (min-width: 768px) {
   #lp-ad .cta1__description {
-    font-size: 5000vw;
+    font-size: 2vw;
   }
 }
 #lp-ad .cta1__btn-contents {
@@ -1024,12 +1024,12 @@ body.page-template-one-column main {
 }
 @media screen and (max-width: 1400px) and (min-width: 768px) {
   #lp-ad .cta1__btn-contents {
-    gap: 5000vw;
+    gap: 1.4285714286vw;
   }
 }
 @media screen and (max-width: 1400px) and (min-width: 768px) {
   #lp-ad .cta1__btn-contents .c-btn {
-    font-size: 4375vw;
+    font-size: 2.2857142857vw;
   }
 }
 #lp-ad .cta1__image {

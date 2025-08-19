@@ -24,7 +24,7 @@
         margin-bottom: rem(16);
         line-height: 1.4;
         @media screen and (max-width:1400px) and (min-width:768px) {
-          font-size: vw(48,1400);
+          font-size: vw(1400,48);
         }
     }
     
@@ -34,7 +34,7 @@
       margin-bottom: rem(40);
       line-height: 1.6;
       @media screen and (max-width:1400px) and (min-width:768px) {
-        font-size: vw(28,1400);
+        font-size: vw(1400,28);
       }
     }
     
@@ -45,12 +45,12 @@
       flex-wrap: wrap;
 
       @media screen and (max-width:1400px) and (min-width:768px) {
-        gap: vw(28,1400);
+        gap: vw(1400,20);
       }
     }
     .cta1__btn-contents .c-btn {
       @media screen and (max-width:1400px) and (min-width:768px) {
-        font-size: vw(32,1400);
+        font-size: vw(1400,32);
       }
     }
     
