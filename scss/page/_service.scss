@@ -25,10 +25,11 @@
 }
 
 .service__body {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   gap: rem(30);
-  max-width: rem(1200);
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -36,50 +37,49 @@
   background-color: $color-white;
   border-radius: rem(12);
   overflow: hidden;
-  box-shadow: 0 rem(4) rem(16) rgba(0, 0, 0, 0.1);
+  box-shadow: $shadow-card;
   transition: all 0.3s ease;
   text-decoration: none;
   color: inherit;
+  width: calc((100% - (rem(30)) * 2) / 3);
 
   &:hover {
     transform: translateY(rem(-8));
-    box-shadow: 0 rem(8) rem(24) rgba(0, 0, 0, 0.15);
   }
 }
 
 .service__item-contents {
-  padding: rem(30);
+  padding: rem(30) rem(20);
   text-align: center;
 }
 
 .service__item-image {
-  width: rem(80);
-  height: rem(80);
+  width: rem(96);
+  height: rem(96);
   margin: 0 auto rem(20);
-  border-radius: 50%;
-  background-color: #e3f2fd;
   display: flex;
   align-items: center;
   justify-content: center;
 
   img {
-    width: rem(50);
-    height: rem(50);
+    width: 100%;
+    height: 100%;
     object-fit: contain;
   }
 }
 
 .service__item-head {
-  font-size: rem(20);
-  font-weight: $bold;
-  color: $color-black;
-  margin-bottom: rem(16);
+  font-size: rem(32);
+  font-weight: normal;
+  color: $color-theme;
+  margin-bottom: rem(20);
 }
 
 .service__item-description {
-  font-size: rem(14);
-  line-height: 1.7;
-  color: #666;
+  font-size: rem(22);
+  line-height: 1.5;
+  color: $color-black;
+  text-align: left;
 }
 
 // SP用スタイル
