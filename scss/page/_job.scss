@@ -1,174 +1,176 @@
 @use "../global" as *;
 
-.job {
-    padding: rem(100) 0;
-    background-color: $color-white;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-
-.job__flex {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: rem(60);
-    align-items: flex-start;
-}
-
-.job__main {
-    flex: 1;
-}
-
-.section__title--job {
-    text-align: left;
-    margin-bottom: rem(40);
-}
-
-.section__title-main--job {
-    font-size: rem(40);
-    line-height: 1.5;
-    color: $color-theme;
-}
-
-.section__title.section__title--job {
-    margin-bottom: rem(40);
-}
-
-.job__title--yellow-circle {
-    position: relative;
-    z-index: 1;
-}
-.job__title--yellow-circle::before {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    content: "";
-    width: 110%;
-    height: 200%;
-    background-image: url(https://mdniz.com/wp-content/uploads/2025/08/job_head_yellow_circle.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.job__title--large {
-    font-size: 1.25em;
-}
-
-.job__descriptions {
-    margin-bottom: rem(40);
-}
-
-.job__description {
-    font-size: rem(16);
-    color: $color-black;
-    line-height: 1.7;
-    margin-bottom: rem(16);
-}
-
-.job__description:last-child {
-    margin-bottom: 0;
-}
-
-.job__description--bg-orange {
-    display: inline-block;
-    background-color: #fff3e9;
-    padding-bottom: 1px;
-
-}
-
-.job__tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: rem(12);
-}
-
-.job__tag {
-    background-color: $color-theme;
-    color: $color-white;
-    padding: rem(8) rem(16);
-    line-height: 1;
-    border-radius: rem(4);
-    font-size: rem(16);
-    border: 2px solid $color-theme;
-    transition: all 0.3s ease;
-}
-
-.job__images {
-    text-align: center;
-}
-
-.job__images img {
-    max-width: rem(300);
-    height: auto;
-}
-
-.job__bg-text {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
-    opacity: 0.5;
-    max-width: rem(520);
-    width: 100%;
-}
-
-.job__bg-text img {
-    width: 100%;
-    height: auto;
-}
-
-// SP用スタイル
-@include mq(md) {
+#lp-ad {
     .job {
-        padding: rem(60) 0;
+        padding: rem(100) 0;
+        background-color: $color-white;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
     }
     
-    .job__inner {
-        padding: 0 $padding-sp;
-    }
     
     .job__flex {
-        grid-template-columns: 1fr;
-        gap: rem(40);
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: rem(60);
+        align-items: flex-start;
     }
     
-    .job__descriptions {
-        margin: rem(30) 0;
+    .job__main {
+        flex: 1;
     }
     
-    .job__description {
-        font-size: rem(14);
-        margin-bottom: rem(12);
-    }
-    
-    .job__tags {
-        gap: rem(8);
-    }
-    
-    .job__tag {
-        font-size: rem(12);
-        padding: rem(6) rem(12);
-    }
-    
-    .job__images img {
-        max-width: rem(250);
-    }
-    
-    .job__bg-text {
-        display: none;
+    .section__title--job {
+        text-align: left;
+        margin-bottom: rem(40);
     }
     
     .section__title-main--job {
-        font-size: rem(24);
-        margin-bottom: rem(30);
+        font-size: rem(40);
+        line-height: 1.5;
+        color: $color-theme;
+    }
+    
+    .section__title.section__title--job {
+        margin-bottom: rem(40);
+    }
+    
+    .job__title--yellow-circle {
+        position: relative;
+        z-index: 1;
+    }
+    .job__title--yellow-circle::before {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        content: "";
+        width: 110%;
+        height: 200%;
+        background-image: url(https://mdniz.com/wp-content/uploads/2025/08/job_head_yellow_circle.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     
     .job__title--large {
-        font-size: rem(28);
+        font-size: 1.25em;
+    }
+    
+    .job__descriptions {
+        margin-bottom: rem(40);
+    }
+    
+    .job__description {
+        font-size: rem(16);
+        color: $color-black;
+        line-height: 1.7;
+        margin-bottom: rem(16);
+    }
+    
+    .job__description:last-child {
+        margin-bottom: 0;
+    }
+    
+    .job__description--bg-orange {
+        display: inline-block;
+        background-color: #fff3e9;
+        padding-bottom: 1px;
+    
+    }
+    
+    .job__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(12);
+    }
+    
+    .job__tag {
+        background-color: $color-theme;
+        color: $color-white;
+        padding: rem(8) rem(16);
+        line-height: 1;
+        border-radius: rem(4);
+        font-size: rem(16);
+        border: 2px solid $color-theme;
+        transition: all 0.3s ease;
+    }
+    
+    .job__images {
+        text-align: center;
+    }
+    
+    .job__images img {
+        max-width: rem(300);
+        height: auto;
+    }
+    
+    .job__bg-text {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        opacity: 0.5;
+        max-width: rem(520);
+        width: 100%;
+    }
+    
+    .job__bg-text img {
+        width: 100%;
+        height: auto;
+    }
+    
+    // SP用スタイル
+    @include mq(md) {
+        .job {
+            padding: rem(60) 0;
+        }
+        
+        .job__inner {
+            padding: 0 $padding-sp;
+        }
+        
+        .job__flex {
+            grid-template-columns: 1fr;
+            gap: rem(40);
+        }
+        
+        .job__descriptions {
+            margin: rem(30) 0;
+        }
+        
+        .job__description {
+            font-size: rem(14);
+            margin-bottom: rem(12);
+        }
+        
+        .job__tags {
+            gap: rem(8);
+        }
+        
+        .job__tag {
+            font-size: rem(12);
+            padding: rem(6) rem(12);
+        }
+        
+        .job__images img {
+            max-width: rem(250);
+        }
+        
+        .job__bg-text {
+            display: none;
+        }
+        
+        .section__title-main--job {
+            font-size: rem(24);
+            margin-bottom: rem(30);
+        }
+        
+        .job__title--large {
+            font-size: rem(28);
+        }
     }
 }

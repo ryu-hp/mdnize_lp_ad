@@ -1,79 +1,81 @@
 @use "../global" as *;
 
-
-.about__description {
-    font-size: rem(18);
-    line-height: 1.8;
-    margin-bottom: rem(60);
-    color: $color-black;
-}
-
-.about__movie {
-    width: 100%;
-    max-width: rem(800);
-    margin: 0 auto;
-}
-
-.about__movie img {
-    width: 100%;
-    height: auto;
-    border-radius: rem(12);
-    box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.15);
-}
-
-
-.section__title--about {
-    text-align: center;
-    margin-bottom: rem(60);
-    position: relative;
-}
-
-.section__title--about .section__title-main {
-    font-size: rem(36);
-    font-weight: $bold;
-    color: $color-black;
-    margin-bottom: rem(20);
-    position: relative;
-    z-index: 1;
-}
-
-.about-title__bar {
-    display: block;
-    position: absolute;
-    width: rem(60);
-    height: rem(4);
-    top: 50%;
-    transform: translateY(-50%);
-    background-image: url(https://mdniz.com/wp-content/uploads/2025/08/about-title-accent-left.webp);
-    background-size: contain;
-    background-position: center;
-    background-repeat: repeat-x;
-}
-.about-title__bar--left {
-    right: 100%;
-}
-.about-title__bar--right {
-    left: 100%;
-}
-.text--center {
-    text-align: center;
-}
-
-// SP用スタイル
-@include mq(md) {
+#lp-ad {
     .about__description {
-        font-size: rem(16);
-        margin-bottom: rem(40);
-        text-align: left;
+        font-size: rem(18);
+        line-height: 1.8;
+        margin-bottom: rem(60);
+        color: $color-black;
     }
     
-    .section__title {
-        margin-bottom: rem(40);
+    .about__movie {
+        width: 100%;
+        max-width: rem(800);
+        margin: 0 auto;
     }
     
-    .section__title-main {
-        font-size: rem(28);
-        margin-bottom: rem(15);
+    .about__movie img {
+        width: 100%;
+        height: auto;
+        border-radius: rem(12);
+        box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.15);
     }
     
+    
+    .section__title--about {
+        text-align: center;
+        margin-bottom: rem(60);
+        position: relative;
+    }
+    
+    .section__title--about .section__title-main {
+        font-size: rem(36);
+        font-weight: $bold;
+        color: $color-black;
+        margin-bottom: rem(20);
+        position: relative;
+        z-index: 1;
+    }
+    
+    .about-title__bar {
+        display: block;
+        position: absolute;
+        width: rem(60);
+        height: rem(4);
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(https://mdniz.com/wp-content/uploads/2025/08/about-title-accent-left.webp);
+        background-size: contain;
+        background-position: center;
+        background-repeat: repeat-x;
+    }
+    .about-title__bar--left {
+        right: 100%;
+    }
+    .about-title__bar--right {
+        left: 100%;
+    }
+    .text--center {
+        text-align: center;
+    }
+    
+    // SP用スタイル
+    @include mq(md) {
+        .about__description {
+            font-size: rem(16);
+            margin-bottom: rem(40);
+            text-align: left;
+        }
+        
+        .section__title {
+            margin-bottom: rem(40);
+        }
+        
+        .section__title-main {
+            font-size: rem(28);
+            margin-bottom: rem(15);
+        }
+        
+    }
 }
+

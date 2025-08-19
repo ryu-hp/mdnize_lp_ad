@@ -1,109 +1,110 @@
 @use "../global" as *;
-
-.contact {
-  background-color: #f8f9fa;
-  padding: rem(100) 0;
-  position: relative;
-}
-
-.section__title--contact {
-  text-align: center;
-  margin-bottom: rem(60);
-}
-
-.contact__contents {
-  max-width: rem(800);
-  margin: 0 auto;
-}
-
-.contact__body {
-  background-color: $color-white;
-  border-radius: rem(12);
-  padding: rem(40);
-  box-shadow: 0 rem(4) rem(16) rgba(0, 0, 0, 0.1);
-}
-
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  gap: rem(20);
-}
-
-.contact__form-group {
-  display: flex;
-  flex-direction: column;
-  gap: rem(8);
-}
-
-.contact__form-label {
-  font-size: rem(14);
-  font-weight: $bold;
-  color: $color-black;
+#lp-ad {
+  .contact {
+    background-color: #f8f9fa;
+    padding: rem(100) 0;
+    position: relative;
+  }
   
-  &--required {
-    &::after {
-      content: '必須';
-      background-color: #e74c3c;
-      color: $color-white;
-      font-size: rem(12);
-      padding: rem(2) rem(6);
-      border-radius: rem(3);
-      margin-left: rem(8);
+  .section__title--contact {
+    text-align: center;
+    margin-bottom: rem(60);
+  }
+  
+  .contact__contents {
+    max-width: rem(800);
+    margin: 0 auto;
+  }
+  
+  .contact__body {
+    background-color: $color-white;
+    border-radius: rem(12);
+    padding: rem(40);
+    box-shadow: 0 rem(4) rem(16) rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+  }
+  
+  .contact__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: rem(8);
+  }
+  
+  .contact__form-label {
+    font-size: rem(14);
+    font-weight: $bold;
+    color: $color-black;
+    
+    &--required {
+      &::after {
+        content: '必須';
+        background-color: #e74c3c;
+        color: $color-white;
+        font-size: rem(12);
+        padding: rem(2) rem(6);
+        border-radius: rem(3);
+        margin-left: rem(8);
+      }
     }
   }
-}
-
-.contact__form-input,
-.contact__form-textarea {
-  padding: rem(12) rem(16);
-  border: 1px solid #ddd;
-  border-radius: rem(6);
-  font-size: rem(14);
-  font-family: inherit;
-  transition: border-color 0.3s ease;
-
-  &:focus {
-    outline: none;
-    border-color: $color-theme;
-    box-shadow: 0 0 0 rem(2) rgba(24, 79, 171, 0.1);
-  }
-}
-
-.contact__form-textarea {
-  min-height: rem(120);
-  resize: vertical;
-}
-
-.contact__form-submit {
-  align-self: center;
-  margin-top: rem(20);
-}
-
-// SP用スタイル
-@include mq(md) {
-  .contact {
-    padding: rem(60) 0;
-  }
-
-  .section__title--contact {
-    margin-bottom: rem(40);
-  }
-
-  .contact__body {
-    padding: rem(30);
-  }
-
-  .contact__form {
-    gap: rem(16);
-  }
-
+  
   .contact__form-input,
   .contact__form-textarea {
-    padding: rem(10) rem(12);
-    font-size: rem(13);
+    padding: rem(12) rem(16);
+    border: 1px solid #ddd;
+    border-radius: rem(6);
+    font-size: rem(14);
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+  
+    &:focus {
+      outline: none;
+      border-color: $color-theme;
+      box-shadow: 0 0 0 rem(2) rgba(24, 79, 171, 0.1);
+    }
   }
-
+  
   .contact__form-textarea {
-    min-height: rem(100);
+    min-height: rem(120);
+    resize: vertical;
   }
+  
+  .contact__form-submit {
+    align-self: center;
+    margin-top: rem(20);
+  }
+  
+  // SP用スタイル
+  @include mq(md) {
+    .contact {
+      padding: rem(60) 0;
+    }
+  
+    .section__title--contact {
+      margin-bottom: rem(40);
+    }
+  
+    .contact__body {
+      padding: rem(30);
+    }
+  
+    .contact__form {
+      gap: rem(16);
+    }
+  
+    .contact__form-input,
+    .contact__form-textarea {
+      padding: rem(10) rem(12);
+      font-size: rem(13);
+    }
+  
+    .contact__form-textarea {
+      min-height: rem(100);
+    }
+  }    
 }

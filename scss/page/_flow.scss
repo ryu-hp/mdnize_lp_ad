@@ -1,229 +1,232 @@
 @use "../global" as *;
 
-.flow {
-  background-color: #cbe4fd;
-  padding: rem(100) 0;
-  margin: 0 !important;
-}
-
-.section__title-main--flow {
-    color: $color-theme;
-}
-.section__title--flow .section__title-bg_text {
-    top: rem(-52);
-}
-
-
-.flow-title__logo {
-  max-width: rem(200);
-  width: 100%;
-  display: inline-block;
-}
-
-.section__title-main--flow img {
-  width: 100%;
-}
-
-.flows__title-sub {
-  font-size: rem(18);
-  margin-bottom: rem(10);
-}
-
-
-.flow__body {
-  position: relative;
-  z-index: 1;
-}
-
-.flow__contents {
-  position: relative;
-}
-.flow__contents:not(:last-child) {
-  margin-bottom: rem(30);
-}
-
-.flow__item {
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-  border-radius: rem(8);
-  position: relative;
-  background-color: $color-white;
-  box-shadow: rem(5) rem(5) rem(15) rgba(16,52,104, 0.3);
-}
-
-.flow__item:not(:last-child) {
-  margin-bottom: rem(30);
-}
-
-.flow__item-number {
-  font-size: rem(80);
-  font-weight: 900;
-  color: $color-white;
-  -webkit-text-stroke: 1px $color-orange;
-  text-stroke: 1px $color-orange;
-  align-self: center;
-  padding: rem(20) rem(32);
-}
-.flow__after-contents .flow__item-number {
-  -webkit-text-stroke: 1px $color-theme;
-  text-stroke: 1px $color-theme;
-}
-
-.flow__item-image {
-  flex: 1;
-  max-width: rem(374);
-  margin-left: auto;
-}
-
-.flow__item-image img {
-  width: 100%;
-  height: auto;
-}
-
-.flow__item-content {
-  flex: 1;
-  color: $color-black;
-  line-height: 1.5;
-  padding: rem(20) rem(32);
-  margin-left: rem(40);
-}
-
-.flow__item-head {
-  font-size: 1.5em;
-  margin-bottom: rem(32);
-}
-.flow__item-description {
-  font-size: rem(16);
-}
-
-.flow__tag {
-  position: absolute;
-  top: rem(-10);
-  left: rem(152);
-  background-color: $color-orange;
-  padding: rem(8) rem(8);
-  border-radius: rem(20);
-  font-size: rem(16);
-  height: calc(100% + (rem(10) * 2));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.flow__tag-text {
-  writing-mode: vertical-rl;
-  font-size: rem(14);
-  color: $color-white;
-  line-height: 1.5;
-  letter-spacing: 0.2em;
-}
-.flow__tag--after {
-  background: linear-gradient(0deg, #194fa9 0%, #037ef1 100%);
-}
-
-
-
-
-// SP用スタイル
-@include mq(md) {
+#lp-ad {
+    
   .flow {
-    padding: rem(60) 0;
-  }
-  
-  .flow__inner {
-    padding: 0 $padding-sp;
-  }
-  
-  .section__title--flow {
-    margin-bottom: rem(40);
+    background-color: #cbe4fd;
+    padding: rem(100) 0;
+    margin: 0 !important;
   }
   
   .section__title-main--flow {
-    font-size: rem(28);
+      color: $color-theme;
+  }
+  .section__title--flow .section__title-bg_text {
+      top: rem(-52);
+  }
+  
+  
+  .flow-title__logo {
+    max-width: rem(200);
+    width: 100%;
+    display: inline-block;
   }
   
   .section__title-main--flow img {
-    height: rem(30);
+    width: 100%;
   }
   
   .flows__title-sub {
-    font-size: rem(16);
+    font-size: rem(18);
+    margin-bottom: rem(10);
   }
   
+  
+  .flow__body {
+    position: relative;
+    z-index: 1;
+  }
   
   .flow__contents {
-    flex-direction: column;
-    gap: rem(30);
-    margin-bottom: rem(40);
+    position: relative;
   }
-  
-  .flow__image {
-    max-width: rem(300);
-  }
-  
-  .flow__top-text {
-    font-size: rem(16);
-    margin-bottom: rem(20);
-  }
-  
-  .flow__list-item {
-    padding: rem(15);
-  }
-  
-  .flow__list-item-text {
-    font-size: rem(14);
-  }
-  
-  .flow__bottom-description {
-    font-size: rem(14);
-  }
-  
-  .flow__bottom-description--large {
-    font-size: rem(16);
-  }
-  
-  .flow__bottom-contents {
-    flex-direction: column;
-    padding: rem(20);
-    margin-top: rem(30);
-  }
-  
-  .flow__bottom-contents-text {
-    font-size: rem(14);
-  }
-  
-  .flow__bottom-contents-text--large {
-    font-size: rem(16);
+  .flow__contents:not(:last-child) {
+    margin-bottom: rem(30);
   }
   
   .flow__item {
-    flex-direction: column;
-    gap: rem(20);
-    padding: rem(20);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: rem(8);
+    position: relative;
+    background-color: $color-white;
+    box-shadow: rem(5) rem(5) rem(15) rgba(16,52,104, 0.3);
+  }
+  
+  .flow__item:not(:last-child) {
     margin-bottom: rem(30);
   }
   
   .flow__item-number {
-    width: rem(50);
-    height: rem(50);
-    font-size: rem(18);
+    font-size: rem(80);
+    font-weight: 900;
+    color: $color-white;
+    -webkit-text-stroke: 1px $color-orange;
+    text-stroke: 1px $color-orange;
+    align-self: center;
+    padding: rem(20) rem(32);
   }
-  
-  .flow__item-head {
-    font-size: rem(18);
-    text-align: center;
-  }
-  
-  .flow__item-description {
-    font-size: rem(13);
-    text-align: center;
+  .flow__after-contents .flow__item-number {
+    -webkit-text-stroke: 1px $color-theme;
+    text-stroke: 1px $color-theme;
   }
   
   .flow__item-image {
-    width: rem(100);
+    flex: 1;
+    max-width: rem(374);
+    margin-left: auto;
   }
   
-  .flow__btn-area {
-    margin-top: rem(40);
+  .flow__item-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .flow__item-content {
+    flex: 1;
+    color: $color-black;
+    line-height: 1.5;
+    padding: rem(20) rem(32);
+    margin-left: rem(40);
+  }
+  
+  .flow__item-head {
+    font-size: 1.5em;
+    margin-bottom: rem(32);
+  }
+  .flow__item-description {
+    font-size: rem(16);
+  }
+  
+  .flow__tag {
+    position: absolute;
+    top: rem(-10);
+    left: rem(152);
+    background-color: $color-orange;
+    padding: rem(8) rem(8);
+    border-radius: rem(20);
+    font-size: rem(16);
+    height: calc(100% + (rem(10) * 2));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flow__tag-text {
+    writing-mode: vertical-rl;
+    font-size: rem(14);
+    color: $color-white;
+    line-height: 1.5;
+    letter-spacing: 0.2em;
+  }
+  .flow__tag--after {
+    background: linear-gradient(0deg, #194fa9 0%, #037ef1 100%);
+  }
+  
+  
+  
+  
+  // SP用スタイル
+  @include mq(md) {
+    .flow {
+      padding: rem(60) 0;
+    }
+    
+    .flow__inner {
+      padding: 0 $padding-sp;
+    }
+    
+    .section__title--flow {
+      margin-bottom: rem(40);
+    }
+    
+    .section__title-main--flow {
+      font-size: rem(28);
+    }
+    
+    .section__title-main--flow img {
+      height: rem(30);
+    }
+    
+    .flows__title-sub {
+      font-size: rem(16);
+    }
+    
+    
+    .flow__contents {
+      flex-direction: column;
+      gap: rem(30);
+      margin-bottom: rem(40);
+    }
+    
+    .flow__image {
+      max-width: rem(300);
+    }
+    
+    .flow__top-text {
+      font-size: rem(16);
+      margin-bottom: rem(20);
+    }
+    
+    .flow__list-item {
+      padding: rem(15);
+    }
+    
+    .flow__list-item-text {
+      font-size: rem(14);
+    }
+    
+    .flow__bottom-description {
+      font-size: rem(14);
+    }
+    
+    .flow__bottom-description--large {
+      font-size: rem(16);
+    }
+    
+    .flow__bottom-contents {
+      flex-direction: column;
+      padding: rem(20);
+      margin-top: rem(30);
+    }
+    
+    .flow__bottom-contents-text {
+      font-size: rem(14);
+    }
+    
+    .flow__bottom-contents-text--large {
+      font-size: rem(16);
+    }
+    
+    .flow__item {
+      flex-direction: column;
+      gap: rem(20);
+      padding: rem(20);
+      margin-bottom: rem(30);
+    }
+    
+    .flow__item-number {
+      width: rem(50);
+      height: rem(50);
+      font-size: rem(18);
+    }
+    
+    .flow__item-head {
+      font-size: rem(18);
+      text-align: center;
+    }
+    
+    .flow__item-description {
+      font-size: rem(13);
+      text-align: center;
+    }
+    
+    .flow__item-image {
+      width: rem(100);
+    }
+    
+    .flow__btn-area {
+      margin-top: rem(40);
+    }
   }
 }

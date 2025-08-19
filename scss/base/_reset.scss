@@ -122,7 +122,7 @@ select::-ms-expand {
 }
 
 // テーマcss無効化
-.lp1 {
+#lp-ad {
   h2 {
     border-top-color:transparent;
     border-top: none !important;
@@ -140,7 +140,4 @@ select::-ms-expand {
   h3::after {
     display: none;
   }
-}
-.vk-mobile-nav-menu-btn {
-  display: none !important;
 }
