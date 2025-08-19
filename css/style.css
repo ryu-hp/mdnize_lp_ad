@@ -985,6 +985,12 @@ body.page-template-one-column main {
   z-index: 1;
   padding: 3rem 0;
 }
+@media screen and (max-width: 1400px) and (min-width: 768px) {
+  #lp-ad .cta1 {
+    padding-top: 3.4285714286vw;
+    padding-bottom: 3.4285714286vw;
+  }
+}
 #lp-ad .cta1__contents {
   margin: 0 auto;
 }
