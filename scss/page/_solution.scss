@@ -46,8 +46,9 @@
   }
   
   .solution__title-logo {
-      display: inline-block;
-      width: rem(320);
+    display: inline-block;
+    width: rem(272);
+    transform: translateY(30%);
   }
   
   .solution__title--large {
@@ -62,6 +63,10 @@
       position: relative;
       z-index: 1;
       display: inline-block;
+  }
+  
+  p.solution__title-sub {
+    font-size: rem(32);
   }
   
   .section__body--solution {
