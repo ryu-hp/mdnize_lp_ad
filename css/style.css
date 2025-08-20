@@ -76,7 +76,7 @@ a {
   }
 }
 #lp-ad .color-theme-blue {
-  color: #184fab;
+  color: #184fab !important;
 }
 #lp-ad .color-light-blue {
   color: #007ef3;
@@ -119,10 +119,26 @@ a {
   position: relative;
   z-index: 1;
 }
-#lp-ad .section__title-main {
+#lp-ad p.section__title-sub {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  #lp-ad p.section__title-sub {
+    font-size: 1rem;
+  }
+}
+#lp-ad h2.section__title-main {
   font-size: 2.25rem;
   color: #17181c;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+@media screen and (max-width: 767px) {
+  #lp-ad h2.section__title-main {
+    font-size: 1.75rem;
+  }
 }
 #lp-ad .section__title--bar {
   width: 3.75rem;
@@ -145,6 +161,14 @@ a {
   opacity: 0.2;
   font-size: 5rem;
   letter-spacing: 0.1em;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-text-stroke: 4px #184fab;
 }
 #lp-ad .text--center {
   text-align: center;
@@ -668,7 +692,7 @@ body.page-template-one-column main {
   width: 100%;
   gap: 0.875rem;
   line-height: 1;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   border-radius: 0.625rem;
   font-size: 2rem;
   font-weight: 700;
@@ -1046,11 +1070,7 @@ body.page-template-one-column main {
 }
 
 .target__title-sub {
-  font-size: 2.625rem;
-  margin-bottom: 1.25rem;
   color: #184fab;
-  line-height: 1;
-  text-align: center;
 }
 
 .target__title-sub span {
@@ -1153,10 +1173,6 @@ body.page-template-one-column main {
   .section__title-main--target {
     font-size: 1.75rem;
   }
-  .target__title-sub {
-    font-size: 1rem;
-    margin-bottom: 0.9375rem;
-  }
   .target__title-icon {
     margin-bottom: 2.5rem;
   }
@@ -1235,10 +1251,6 @@ body.page-template-one-column main {
 }
 #lp-ad .solution__title--middle {
   font-size: 1.25em;
-}
-#lp-ad .solution__title-sub {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
 }
 #lp-ad .solution__title-area {
   position: relative;
@@ -1367,9 +1379,6 @@ body.page-template-one-column main {
   }
   #lp-ad .solution__title--middle {
     font-size: 1.5rem;
-  }
-  #lp-ad .solution__title-sub {
-    font-size: 1rem;
   }
   #lp-ad .solution__contents {
     gap: 2.5rem;
@@ -1877,11 +1886,6 @@ body.page-template-one-column main {
   border-radius: 0.25rem;
   font-size: 1.5em;
 }
-#lp-ad .outlines__title-sub {
-  font-size: 1.125rem;
-  color: #ccc;
-  margin-bottom: 0.625rem;
-}
 #lp-ad .outline__body {
   position: relative;
   z-index: 1;
@@ -2013,9 +2017,6 @@ body.page-template-one-column main {
   #lp-ad .section__title-main--outline img {
     height: 1.875rem;
   }
-  #lp-ad .outlines__title-sub {
-    font-size: 1rem;
-  }
   #lp-ad .outline__contents {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2085,13 +2086,6 @@ body.page-template-one-column main {
 
 .section__title--success .section__title-bg_text {
   top: -3.25rem;
-}
-
-.success__title-sub {
-  font-size: 1rem;
-  color: #ccc;
-  text-align: center;
-  margin-bottom: 0.625rem;
 }
 
 .success__body {
@@ -2260,9 +2254,6 @@ body.page-template-one-column main {
   .succes__inner {
     padding: 0 0.9375rem;
   }
-  .success__title-sub {
-    font-size: 0.875rem;
-  }
   .success__body {
     margin-top: 2.5rem;
   }
@@ -2336,10 +2327,6 @@ body.page-template-one-column main {
 }
 #lp-ad .section__title-main--flow img {
   width: 100%;
-}
-#lp-ad .flows__title-sub {
-  font-size: 1.125rem;
-  margin-bottom: 0.625rem;
 }
 #lp-ad .flow__body {
   position: relative;
@@ -2457,9 +2444,6 @@ body.page-template-one-column main {
   }
   #lp-ad .section__title-main--flow img {
     height: 1.875rem;
-  }
-  #lp-ad .flows__title-sub {
-    font-size: 1rem;
   }
   #lp-ad .flow__contents {
     -webkit-box-orient: vertical;
@@ -2733,12 +2717,6 @@ body.page-template-one-column main {
   max-width: 50rem;
   margin: 0 auto;
 }
-#lp-ad .faqs__title-sub {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 0.625rem;
-  text-align: center;
-}
 #lp-ad .section__title--faq {
   text-align: center;
   margin-bottom: 3.75rem;
@@ -2889,9 +2867,6 @@ body.page-template-one-column main {
   #lp-ad .section__title-main--faq {
     font-size: 1.75rem;
   }
-  #lp-ad .faqs__title-sub {
-    font-size: 0.875rem;
-  }
   #lp-ad .faq__item-head {
     padding: 1.25rem;
   }
@@ -2919,12 +2894,6 @@ body.page-template-one-column main {
 #lp-ad .service {
   padding: 6.25rem 0;
   position: relative;
-}
-#lp-ad .services__title-sub {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 0.625rem;
-  text-align: center;
 }
 #lp-ad .section__title--service {
   text-align: center;
@@ -3013,9 +2982,6 @@ body.page-template-one-column main {
   }
   #lp-ad .section__title-main--service {
     font-size: 1.75rem;
-  }
-  #lp-ad .services__title-sub {
-    font-size: 0.875rem;
   }
   #lp-ad .service__body {
     grid-template-columns: 1fr;
@@ -3168,6 +3134,7 @@ body.page-template-one-column main {
   color: #184fab;
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: normal;
 }
 #lp-ad .section__title--contact .section__title-bg_text {
   bottom: 0;

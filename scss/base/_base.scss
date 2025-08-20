@@ -67,7 +67,7 @@ a {
     
     // 共通カラークラス
     .color-theme-blue {
-        color: $color-theme;
+        color: $color-theme !important;
     }
     .color-light-blue {
         color: $color-light-blue;
@@ -120,11 +120,24 @@ a {
         position: relative;
         z-index: 1;
     }
+
+    p.section__title-sub  {
+        font-size: rem(20);
+        margin-bottom: rem(16);
+        text-align: center;
+        @include mq(md) {
+          font-size: rem(16);
+        }
+    }
     
-    .section__title-main {
+    h2.section__title-main {
         font-size: rem(36);
         color: $color-black;
-        margin-bottom: rem(16);
+        margin-bottom: 0;
+        margin-top: 0;
+        @include mq(md) {
+          font-size: rem(28);
+        }
     }
     
     .section__title--bar {
@@ -148,6 +161,10 @@ a {
         opacity: 0.2;
         font-size: rem(80);
         letter-spacing: 0.1em;
+        line-height: 1;
+        display: flex;
+        align-items: flex-end;
+        -webkit-text-stroke: 4px $color-theme;
     }
     
     .text--center {

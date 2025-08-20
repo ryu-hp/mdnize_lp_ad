@@ -24,11 +24,7 @@
 }
 
 .target__title-sub {
-    font-size: rem(42);
-    margin-bottom: rem(20);
     color: $color-theme;
-    line-height: 1;
-    text-align: center;
 }
 .target__title-sub span {
     display: inline-block;
@@ -127,11 +123,6 @@
 @include mq(md) {
     .section__title-main--target {
         font-size: rem(28);
-    }
-    
-    .target__title-sub {
-        font-size: rem(16);
-        margin-bottom: rem(15);
     }
     
     .target__title-icon {

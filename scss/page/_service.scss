@@ -6,13 +6,6 @@
     position: relative;
   }
   
-  .services__title-sub {
-    font-size: rem(16);
-    color: #666;
-    margin-bottom: rem(10);
-    text-align: center;
-  }
-  
   .section__title--service {
     text-align: center;
     margin-bottom: rem(60);
@@ -96,11 +89,7 @@
     .section__title-main--service {
       font-size: rem(28);
     }
-  
-    .services__title-sub {
-      font-size: rem(14);
-    }
-  
+
     .service__body {
       grid-template-columns: 1fr;
       gap: rem(20);

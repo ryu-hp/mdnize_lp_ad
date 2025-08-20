@@ -40,14 +40,7 @@
     border-radius: rem(4);
     font-size: 1.5em;
   }
-  
-  .outlines__title-sub {
-    font-size: rem(18);
-    color: #ccc;
-    margin-bottom: rem(10);
-  }
-  
-  
+
   .outline__body {
     position: relative;
     z-index: 1;
@@ -194,11 +187,6 @@
     .section__title-main--outline img {
       height: rem(30);
     }
-    
-    .outlines__title-sub {
-      font-size: rem(16);
-    }
-    
     
     .outline__contents {
       flex-direction: column;

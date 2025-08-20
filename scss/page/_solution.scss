@@ -58,11 +58,6 @@
       font-size: 1.25em;
   }
   
-  .solution__title-sub {
-      font-size: rem(24);
-      margin-bottom: rem(16);
-  }
-  
   .solution__title-area {
       position: relative;
       z-index: 1;
@@ -192,10 +187,6 @@
       
       .solution__title--middle {
           font-size: rem(24);
-      }
-      
-      .solution__title-sub {
-          font-size: rem(16);
       }
       
       .solution__contents {

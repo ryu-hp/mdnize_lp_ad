@@ -25,12 +25,7 @@
   .section__title-main--flow img {
     width: 100%;
   }
-  
-  .flows__title-sub {
-    font-size: rem(18);
-    margin-bottom: rem(10);
-  }
-  
+
   
   .flow__body {
     position: relative;
@@ -147,11 +142,6 @@
     .section__title-main--flow img {
       height: rem(30);
     }
-    
-    .flows__title-sub {
-      font-size: rem(16);
-    }
-    
     
     .flow__contents {
       flex-direction: column;
