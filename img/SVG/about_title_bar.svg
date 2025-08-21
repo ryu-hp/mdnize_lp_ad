@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.57 14.68">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #007ef3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="_デザイン" data-name="デザイン">
+    <g>
+      <g>
+        <line class="cls-1" x1="56.89" y1="1" x2="46.75" y2="13.68"/>
+        <line class="cls-1" x1="64.49" y1="1" x2="54.35" y2="13.68"/>
+        <line class="cls-1" x1="72.1" y1="1" x2="61.96" y2="13.68"/>
+        <line class="cls-1" x1="79.7" y1="1" x2="69.56" y2="13.68"/>
+        <line class="cls-1" x1="87.31" y1="1" x2="77.17" y2="13.68"/>
+        <line class="cls-1" x1="94.91" y1="1" x2="84.77" y2="13.68"/>
+        <line class="cls-1" x1="102.52" y1="1" x2="92.38" y2="13.68"/>
+        <line class="cls-1" x1="110.13" y1="1" x2="99.98" y2="13.68"/>
+        <line class="cls-1" x1="117.73" y1="1" x2="107.59" y2="13.68"/>
+        <line class="cls-1" x1="125.34" y1="1" x2="115.2" y2="13.68"/>
+        <line class="cls-1" x1="132.94" y1="1" x2="122.8" y2="13.68"/>
+        <line class="cls-1" x1="140.55" y1="1" x2="130.41" y2="13.68"/>
+        <line class="cls-1" x1="148.15" y1="1" x2="138.01" y2="13.68"/>
+        <line class="cls-1" x1="155.76" y1="1" x2="145.62" y2="13.68"/>
+        <line class="cls-1" x1="163.36" y1="1" x2="153.22" y2="13.68"/>
+        <line class="cls-1" x1="170.97" y1="1" x2="160.83" y2="13.68"/>
+        <line class="cls-1" x1="178.57" y1="1" x2="168.43" y2="13.68"/>
+      </g>
+      <g>
+        <line class="cls-1" x1="11.14" y1="1" x2="1" y2="13.68"/>
+        <line class="cls-1" x1="18.75" y1="1" x2="8.61" y2="13.68"/>
+        <line class="cls-1" x1="26.35" y1="1" x2="16.21" y2="13.68"/>
+        <line class="cls-1" x1="33.96" y1="1" x2="23.82" y2="13.68"/>
+        <line class="cls-1" x1="41.56" y1="1" x2="31.42" y2="13.68"/>
+        <line class="cls-1" x1="49.17" y1="1" x2="39.03" y2="13.68"/>
+      </g>
+    </g>
+  </g>
+</svg>

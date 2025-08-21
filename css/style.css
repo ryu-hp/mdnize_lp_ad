@@ -159,7 +159,7 @@ a {
   mix-blend-mode: soft-light;
   text-transform: uppercase;
   opacity: 0.2;
-  font-size: 5rem;
+  font-size: 6.5rem;
   letter-spacing: 0.1em;
   line-height: 1;
   display: -webkit-box;
@@ -694,7 +694,7 @@ body.page-template-one-column main {
   line-height: 1;
   padding: 1rem 1rem;
   border-radius: 0.625rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
   text-decoration: none;
@@ -801,7 +801,7 @@ body.page-template-one-column main {
 }
 #lp-ad .hero__contents {
   width: 100%;
-  max-width: calc(1000px + 3.125rem);
+  max-width: calc(1400px + 3.125rem);
   padding-right: 1.5625rem;
   padding-left: 1.5625rem;
   margin-right: auto;
@@ -842,7 +842,7 @@ body.page-template-one-column main {
   gap: 0.5rem;
 }
 #lp-ad .hero__main-copy {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.25rem;
@@ -859,7 +859,7 @@ body.page-template-one-column main {
   display: inline-block;
 }
 #lp-ad .hero__main-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #17181c;
   display: -webkit-box;
@@ -871,7 +871,7 @@ body.page-template-one-column main {
   gap: 0.625rem;
 }
 #lp-ad .hero__main-title--company {
-  height: 3rem;
+  height: 4rem;
   width: auto;
   display: inline-block;
 }
@@ -883,7 +883,7 @@ body.page-template-one-column main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  max-width: 30rem;
+  max-width: 40rem;
   margin-left: -5rem;
 }
 #lp-ad .hero__image img {
@@ -895,6 +895,21 @@ body.page-template-one-column main {
   text-align: center;
 }
 
+#lp-ad h2.section__title-main--about {
+  margin-bottom: 0 !important;
+  line-height: 1;
+  font-size: 2.25rem;
+  font-weight: normal;
+  color: #184fab;
+  margin-bottom: 1.25rem;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0 2.5rem;
+}
+#lp-ad .section__title-bg_text--about {
+  bottom: 0;
+}
 #lp-ad .about__description {
   font-size: 1.125rem;
   line-height: 1.8;
@@ -918,27 +933,18 @@ body.page-template-one-column main {
   margin-bottom: 3.75rem;
   position: relative;
 }
-#lp-ad .section__title--about .section__title-main {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: #17181c;
-  margin-bottom: 1.25rem;
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-}
 #lp-ad .about-title__bar {
   display: block;
   position: absolute;
-  width: 3.75rem;
-  height: 0.25rem;
+  width: 10rem;
+  height: 0.75rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url(https://mdniz.com/wp-content/uploads/2025/08/about-title-accent-left.webp);
+  background-image: url(https://mdniz.com/wp-content/uploads/2025/08/about_title_bar.svg);
   background-size: contain;
   background-position: center;
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
 }
 #lp-ad .about-title__bar--left {
   right: 100%;

@@ -1,6 +1,23 @@
 @use "../global" as *;
 
 #lp-ad {
+
+    h2.section__title-main--about {
+        margin-bottom: 0 !important;
+        line-height: 1;
+        font-size: rem(36);
+        font-weight: normal;
+        color: $color-theme;
+        margin-bottom: rem(20);
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        padding: 0 rem(40);
+    }
+
+    .section__title-bg_text--about {
+        bottom: 0;
+    }
     .about__description {
         font-size: rem(18);
         line-height: 1.8;
@@ -28,27 +45,17 @@
         position: relative;
     }
     
-    .section__title--about .section__title-main {
-        font-size: rem(36);
-        font-weight: $bold;
-        color: $color-black;
-        margin-bottom: rem(20);
-        position: relative;
-        z-index: 1;
-        display: inline-block;
-    }
-    
     .about-title__bar {
         display: block;
         position: absolute;
-        width: rem(60);
-        height: rem(4);
+        width: rem(160);
+        height: rem(12);
         top: 50%;
         transform: translateY(-50%);
-        background-image: url(https://mdniz.com/wp-content/uploads/2025/08/about-title-accent-left.webp);
+        background-image: url(https://mdniz.com/wp-content/uploads/2025/08/about_title_bar.svg);
         background-size: contain;
         background-position: center;
-        background-repeat: repeat-x;
+        background-repeat: no-repeat;
     }
     .about-title__bar--left {
         right: 100%;
