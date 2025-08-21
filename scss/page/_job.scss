@@ -12,7 +12,7 @@
     
     .job__flex {
         display: grid;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr max(420px);
         gap: rem(60);
         align-items: flex-start;
     }
@@ -104,7 +104,6 @@
     }
     
     .job__images img {
-        max-width: rem(300);
         height: auto;
     }
     

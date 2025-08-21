@@ -61,7 +61,7 @@
     display: inline-block;
     border-radius: rem(40);
     padding: rem(8) rem(20);
-    font-size: rem(24);
+    font-size: rem(20);
     background: $color-theme;
     color: $color-white;
   }
@@ -91,10 +91,10 @@
     position: absolute;
     text-align: center;
     color: $color-white;
-    font-size: rem(18);
+    font-size: rem(24);
     font-weight: $bold;
     padding: rem(8) rem(20);
-    border-radius: rem(20);
+    border-radius: rem(40);
     display: inline-block;
     margin-bottom: rem(20);
     top: 0;
@@ -127,6 +127,7 @@
     font-size: rem(16);
     line-height: 1.5;
     padding: rem(40) rem(20) rem(20);
+    font-weight: $bold;
   }
   
   .text-top-dot {
@@ -172,7 +173,7 @@
   }
   
   .platform__sub-item-main-text-02 {
-    font-size: rem(32);
+    font-size: rem(64);
     font-weight: $bold;
     line-height: 1;
   }
@@ -190,7 +191,7 @@
   }
   
   .platform__sub-item-main-text-03 {
-    font-size: rem(24);
+    font-size: rem(48);
     font-weight: $bold;
     margin-bottom: rem(8);
     line-height: 1;
@@ -199,8 +200,8 @@
   .platform__sub-item-main-text-03--hukidashi {
     background-color: #fffa94;
     color: $color-light-blue;
-    font-size: rem(24);
-    padding: rem(4) rem(8);
+    font-size: rem(28);
+    padding: rem(16) rem(16);
     border-radius: rem(8);
     position: relative;
     z-index: 1;
@@ -224,9 +225,21 @@
   }
   
   .platform__sub-item-main-text-04 {
-      font-size: rem(24);
+      font-size: rem(40);
       color: $color-white;
+      font-weight: $bold;
   }
+  @media screen and (max-width:1000px) and (min-width:768px) {
+    .platform__sub-item-label {
+      max-width: vw(1000, 350);
+    }
+    .platform__sub-item-main-text-01 {
+      font-size: vw(1000, 24);
+    }
+    .platform__sub-item-main-text-02 {
+      font-size: vw(1000, 64);
+      }
+    }
   
   // SP用スタイル
   @include mq(md) {

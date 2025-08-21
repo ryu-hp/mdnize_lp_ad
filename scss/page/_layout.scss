@@ -15,6 +15,9 @@ body.page-template-one-column main {
     max-width: 100% !important;
     width: 100% !important;
 }
+.page-template-one-column #wrapper {
+    max-width: 100% !important;
+}
 
 .lp1 p {
     line-height: 1.5;
@@ -26,7 +29,7 @@ body.page-template-one-column main {
 .lp1 {
     width: 100%;
     margin: 0 auto;
-    max-width: 1920px;
+    max-width: 100%;
     font-family: $base-font-family;
 }
 

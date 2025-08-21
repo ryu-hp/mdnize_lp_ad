@@ -89,7 +89,6 @@
     padding: rem(40) 0;
     box-shadow: rem(15) rem(15) rem(30) rgba(16, 52, 104, 0.3);
     width: 85%;
-    max-width: 640px;
     position: relative;
   }
   .solution__item:nth-child(odd) .solution__item-content {
@@ -123,6 +122,8 @@
   .solution__item-image {
     width: 100%;
     margin-bottom: rem(20);
+    max-height: 300px;
+    overflow: hidden;
   }
   
   .solution__item-image img {
@@ -132,12 +133,17 @@
   
   .solution__item-text {
     padding: 0;
+    max-width: 900px;
   }
   .solution__item:nth-child(odd) .solution__item-text {
     padding-right: rem(20);
   }
   .solution__item:nth-child(even) .solution__item-text {
     padding-left: rem(20);
+    margin-left: auto;
+    @media screen and (min-width:1401px) {
+      margin-left: 16.5vw;
+    }
   }
   
   .solution__item-title {
