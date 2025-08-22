@@ -3,11 +3,25 @@
 #lp-ad {
   
   .solution {
-    background: linear-gradient(0deg, #ecf7ff 0%, #fff 100%);
-    background-image: url(https://mdniz.com/wp-content/uploads/2025/08/bg-01.webp);
-    background-size: cover;
+    background-image: url(https://mdniz.com/wp-content/uploads/2025/08/solution_bg-scaled.webp);
+    background-size: auto;
     background-position: center;
     background-repeat: repeat;
+    position: relative;
+  }
+  .solution::before {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: inline-block;
+    width: rem(16);
+    height: rem(48);
+    background-image: url(https://mdniz.com/wp-content/uploads/2025/08/solution-arrows.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
   .section__title--solution {

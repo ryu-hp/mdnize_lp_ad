@@ -3,7 +3,7 @@
 #lp-ad {
     
   .faq {
-    background-color: $color-white;
+    background-color: #EBF5FF;
     padding: rem(100) 0;
     position: relative;
   
@@ -75,7 +75,7 @@
     align-items: center;
     justify-content: center;
     font-weight: $bold;
-    font-size: rem(28);
+    font-size: rem(24);
     margin-right: rem(16);
     text-transform: uppercase;
   }
@@ -88,7 +88,7 @@
 
   .faq__item-title {
     flex: 1;
-    font-size: rem(27);
+    font-size: rem(24);
     font-weight: normal;
     color: $color-black;
     line-height: 1.5;
@@ -134,7 +134,7 @@
   }
   
   .faq__item-description {
-    font-size: rem(22);
+    font-size: rem(20);
     line-height: 1.5;
     color: $color-black;
   }

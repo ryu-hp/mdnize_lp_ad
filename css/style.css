@@ -120,7 +120,7 @@ a {
   z-index: 1;
 }
 #lp-ad p.section__title-sub {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -134,6 +134,7 @@ a {
   color: #17181c;
   margin-bottom: 0;
   margin-top: 0;
+  font-weight: 700;
 }
 @media screen and (max-width: 767px) {
   #lp-ad h2.section__title-main {
@@ -1026,14 +1027,14 @@ body.page-template-one-column main {
   gap: 1.25rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: calc(970px + 1.25rem);
+  max-width: calc(680px + 1.25rem);
   margin-right: auto;
   margin-left: auto;
 }
 @media screen and (max-width: 1400px) and (min-width: 768px) {
   #lp-ad .cta1__btn-contents {
     gap: 1.4285714286vw;
-    max-width: 70.7142857143vw;
+    max-width: 50vw;
   }
 }
 #lp-ad .cta1__btn {
@@ -1044,6 +1045,7 @@ body.page-template-one-column main {
 @media screen and (max-width: 1400px) and (min-width: 768px) {
   #lp-ad .cta1__btn-contents .c-btn {
     font-size: 2vw;
+    padding: 1.7142857143vw 1.1428571429vw;
   }
 }
 #lp-ad .cta1__image {
@@ -1215,12 +1217,26 @@ body.page-template-one-column main {
 }
 
 #lp-ad .solution {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ecf7ff), to(#fff));
-  background: linear-gradient(0deg, #ecf7ff 0%, #fff 100%);
-  background-image: url(https://mdniz.com/wp-content/uploads/2025/08/bg-01.webp);
-  background-size: cover;
+  background-image: url(https://mdniz.com/wp-content/uploads/2025/08/solution_bg-scaled.webp);
+  background-size: auto;
   background-position: center;
   background-repeat: repeat;
+  position: relative;
+}
+#lp-ad .solution::before {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 3rem;
+  background-image: url(https://mdniz.com/wp-content/uploads/2025/08/solution-arrows.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #lp-ad .section__title--solution {
   position: relative;
@@ -2122,7 +2138,7 @@ body.page-template-one-column main {
 
 #lp-ad .success {
   padding: 6.25rem 0;
-  background-color: #cbe4fd;
+  background-color: #ecf7ff;
 }
 #lp-ad .succes__inner {
   max-width: 1000px;
@@ -2332,7 +2348,10 @@ body.page-template-one-column main {
 }
 
 #lp-ad .flow {
-  background-color: #cbe4fd;
+  background-image: url(https://mdniz.com/wp-content/uploads/2025/08/flow_bg-scaled.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 6.25rem 0;
   margin: 0 !important;
 }
@@ -2393,12 +2412,14 @@ body.page-template-one-column main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  max-width: 23.375rem;
+  max-width: 15.125rem;
   margin-left: auto;
 }
 #lp-ad .flow__item-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #lp-ad .flow__item-content {
   -webkit-box-flex: 1;
@@ -2406,12 +2427,12 @@ body.page-template-one-column main {
           flex: 1;
   color: #17181c;
   line-height: 1.5;
-  padding: 1.25rem 2rem;
+  padding: 1.25rem 1rem;
   margin-left: 2.5rem;
 }
 #lp-ad .flow__item-head {
   font-size: 1.5em;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 #lp-ad .flow__item-description {
   font-size: 1rem;
@@ -2725,7 +2746,7 @@ body.page-template-one-column main {
 }
 
 #lp-ad .faq {
-  background-color: #fff;
+  background-color: #EBF5FF;
   padding: 6.25rem 0;
   position: relative;
 }
@@ -2807,7 +2828,7 @@ body.page-template-one-column main {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: 700;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-right: 1rem;
   text-transform: uppercase;
 }
@@ -2821,7 +2842,7 @@ body.page-template-one-column main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-size: 1.6875rem;
+  font-size: 1.5rem;
   font-weight: normal;
   color: #17181c;
   line-height: 1.5;
@@ -2872,7 +2893,7 @@ body.page-template-one-column main {
   display: flex;
 }
 #lp-ad .faq__item-description {
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   color: #17181c;
 }
@@ -2913,6 +2934,7 @@ body.page-template-one-column main {
 #lp-ad .service {
   padding: 6.25rem 0;
   position: relative;
+  background-color: #EBF5FF;
 }
 #lp-ad .section__title--service {
   text-align: center;
@@ -3082,7 +3104,7 @@ body.page-template-one-column main {
   display: -ms-flexbox;
   display: flex;
   gap: 2rem;
-  max-width: 35rem;
+  max-width: 38rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -3093,6 +3115,13 @@ body.page-template-one-column main {
 }
 #lp-ad .cta2__item {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 #lp-ad h3.cta2__head {
   font-weight: normal;
@@ -3116,12 +3145,15 @@ body.page-template-one-column main {
     font-size: 1.5714285714vw;
   }
 }
+#lp-ad .cta2__btn {
+  margin-top: auto;
+}
 #lp-ad .cta2__btn .c-btn {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 @media screen and (max-width: 1400px) and (min-width: 768px) {
   #lp-ad .cta2__btn .c-btn {
-    font-size: 1.7142857143vw;
+    font-size: 1.4285714286vw;
   }
 }
 #lp-ad .cta2__image {
@@ -3213,6 +3245,7 @@ body.page-template-one-column main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-weight: 700;
 }
 #lp-ad .form-item__label--category {
   font-size: 14px;
