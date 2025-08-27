@@ -64,14 +64,14 @@
   }
   
   h3.service__item-head {
-    font-size: rem(32);
-    font-weight: normal;
+    font-size: rem(24);
+    font-weight: $bold;
     color: $color-theme;
     margin-bottom: rem(20);
   }
   
   .service__item-description {
-    font-size: rem(22);
+    font-size: rem(16);
     line-height: 1.5;
     color: $color-black;
     text-align: left;

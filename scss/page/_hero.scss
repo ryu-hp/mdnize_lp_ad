@@ -45,7 +45,7 @@
     }
     
     .hero__main-copy {
-        font-size: rem(72);
+        font-size: rem(80);
         font-weight: $bold;
         line-height: 1.2;
         margin-bottom: rem(20);
@@ -71,6 +71,7 @@
         display: flex;
         align-items: center;
         gap: rem(10);
+        margin-bottom: 0 !important; 
     }
     
     .hero__main-title--company {
@@ -81,6 +82,20 @@
     .hero__main-title--company img {
         display: block;
         height: 100%;
+    }
+    @media screen and (max-width:1160px) and (min-width: 768px) {
+      .hero__top-texts {
+        font-size: calc(24 / 1160 * 100vw);
+      }
+      .hero__main-copy {
+        font-size: calc(80 / 1160 * 100vw);
+      }
+      .hero__main-title {
+        font-size: calc(48 / 1160 * 100vw);
+      }
+      .hero__main-title--company {
+        height: calc(64 / 1160 * 100vw);
+      }
     }
     
     .hero__image {
@@ -95,7 +110,38 @@
         display: block;
     }
     
+    @media screen and (max-width:1160px) and (min-width: 768px) {
+      .hero__image {
+        max-width:calc(640 / 1160 * 100vw);
+        margin-left:calc(-80 / 1160 * 100vw);
+      }
+    }
+    
     .hero__cta {
-        text-align: center;
+      text-align: center;
+    }
+    @include mq(md) {
+      .hero__contents-main {
+        flex-direction: column;
+      }
+      .hero__top-texts {
+        font-size: rem(48);
+      }
+      .hero__main-copy {
+        font-size: rem(72);
+      } 
+      .hero__text-contents {
+        margin-right:auto;
+        margin-left:auto;
+        max-width: 100%;
+      }
+      .hero__main-title {
+        justify-content: center;
+      }
+      .hero__image {
+        margin-right:auto;
+        margin-left:auto;
+      }
+      
     }
 }

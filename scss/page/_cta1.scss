@@ -9,13 +9,15 @@
       position: relative;
       overflow: hidden;
       z-index: 1;
-      padding: rem(48) 0;
-      @media screen and (max-width:1400px) and (min-width:768px) {
-        padding-top: vw(1400,48);
-        padding-bottom: vw(1400,48);
-      }
+      display: flex;
+      padding: 0;
     }
     
+    .cta1__inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     
     .cta1__contents {
         margin: 0 auto;
@@ -25,10 +27,12 @@
         font-size: rem(40);
         font-weight: $bold;
         color: $color-white;
+        margin-top: 0;
         margin-bottom: rem(16);
         line-height: 1.4;
         @media screen and (max-width:1400px) and (min-width:768px) {
           font-size: vw(1400,38);
+          margin-bottom:vw(1400,16) ;
         }
     }
     
@@ -39,6 +43,7 @@
       line-height: 1.6;
       @media screen and (max-width:1400px) and (min-width:768px) {
         font-size: vw(1400,22);
+        margin-bottom: vw(1400,40);
       }
     }
     
@@ -61,17 +66,13 @@
     }
     .cta1__btn-contents .c-btn {
       @media screen and (max-width:1400px) and (min-width:768px) {
-        font-size: vw(1400,28);
+        font-size: vw(1400,20);
         padding: vw(1400,24) vw(1400,16);
       }
     }
     
     .cta1__image {
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        z-index: 1;
+      width: 28%;
     }
     
     .cta1__image img {
@@ -79,5 +80,23 @@
         width: auto;
         margin-left: auto;
     }
-
+  @include mq(md) {
+    .cta1 {
+      display: block;
+    }
+    .cta1__inner {
+      padding-top: rem(40);
+    }
+    .cta1__btn-contents {
+      flex-direction: column;
+      gap: rem(48);
+    }
+    .cta1__btn {
+      text-align: center;
+    }
+    .cta1__image {
+      width: 100%;
+      margin-top: rem(40);
+    }
+  }
 }    

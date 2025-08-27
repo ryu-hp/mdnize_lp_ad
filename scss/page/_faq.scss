@@ -75,7 +75,7 @@
     align-items: center;
     justify-content: center;
     font-weight: $bold;
-    font-size: rem(24);
+    font-size: rem(20);
     margin-right: rem(16);
     text-transform: uppercase;
   }
@@ -88,8 +88,8 @@
 
   .faq__item-title {
     flex: 1;
-    font-size: rem(24);
-    font-weight: normal;
+    font-size: rem(20);
+    font-weight: $bold;
     color: $color-black;
     line-height: 1.5;
     margin-bottom: 0;
@@ -98,7 +98,7 @@
   .faq__item-sign {
     flex-shrink: 0;
     width: rem(24);
-    height: calc(rem(27) * 1.5);
+    height: calc(rem(20) * 1.5);
     position: relative;
     transition: transform 0.3s ease;
   
@@ -134,7 +134,7 @@
   }
   
   .faq__item-description {
-    font-size: rem(20);
+    font-size: rem(16);
     line-height: 1.5;
     color: $color-black;
   }

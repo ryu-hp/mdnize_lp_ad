@@ -11,6 +11,7 @@
       position: relative;
       display: flex;
       flex-direction: column-reverse;
+      margin-bottom: rem(40);
   }
   
   h2.section__title-main--target {
@@ -19,6 +20,7 @@
       margin-bottom: rem(20);
       text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
       font-weight: bold;
+      margin-bottom: 0;
   }
   
   .target__title--large {
@@ -65,13 +67,25 @@
   
   .target__body-label {
     display: inline-block;
-    background-color: $color-theme;
+    background-color: #103468;
     color: $color-white;
     line-height: 1;
     padding: rem(12) rem(40);
     border-radius: rem(25);
     font-size: rem(24);
     font-weight: $bold;
+    position: relative;
+  }
+
+  .target__body-label::before {
+    content: "";
+    display: block;
+    height: 8px;
+    width: 2px;
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .target__body-content {
@@ -155,8 +169,7 @@
     }
     
     .target__list li {
-        padding: rem(16) rem(20);
-        font-size: rem(14);
+        font-size: rem(18);
         margin-bottom: rem(12);
     }
     
@@ -166,7 +179,7 @@
     }
     
     .target__bottom-label p {
-        font-size: rem(16);
+        font-size: rem(32);
     }
   }
 }
