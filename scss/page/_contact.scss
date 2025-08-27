@@ -35,7 +35,8 @@
   // SP用スタイル
   @include mq(md) {
     .contact {
-      padding: rem(60) 0;
+      padding: rem(100) 0;
+      background-color: $color-white;
     }
     .section__title--contact {
       margin-bottom: rem(40);
@@ -199,5 +200,30 @@
     border-bottom: 4px solid var(--vk-color-primary);
     border-right: 4px solid var(--vk-color-primary);
     transform: rotate(45deg);
+  }
+  @include mq(md) {
+    .form-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .form-item__label {
+      flex-basis: auto;
+    }
+    .form-item:not(:last-child) {
+      margin-bottom: rem(48);
+    }
+    .form-item--submit {
+      align-items: center;
+    }
+    .form-item__submit-content {
+      max-width: rem(320);
+    }
+    .form-item__submit-content::after {
+      left: 75%;
+      border-right-width: 2px;
+      border-bottom-width: 2px;
+      width: 0.675em;
+      height: 0.675em;
+    }
   }
 }
