@@ -1,33 +1,26 @@
 @use "../global" as *;
-
 #lp-ad {
-    
   .faq {
     background-color: #EBF5FF;
     padding: rem(100) 0;
     position: relative;
-  
     &__inner {
       position: relative;
     }
-  
     &__body {
       max-width: rem(800);
       margin: 0 auto;
     }
   }
-  
   .section__title--faq {
     text-align: center;
     margin-bottom: rem(60);
   }
-  
   .section__title-main--faq {
     font-size: rem(36);
     font-weight: $bold;
     margin-bottom: rem(20);
   }
-  
   // アコーディオンアイテム
   .faq__item {
     margin-bottom: rem(20);
@@ -55,7 +48,6 @@
     padding-left:rem(32);
     padding-right: rem(32);
   }
-  
   .faq__item-head {
     display: flex;
     align-items: flex-start;
@@ -63,12 +55,10 @@
     padding-bottom: rem(24);
     cursor: pointer;
     background-color: $color-white;
-  
     &:hover {
       background-color: #f8f9fa;
     }
   }
-  
   .faq__item-icon {
     flex-shrink: 0;
     display: flex;
@@ -85,7 +75,6 @@
   .faq__item-icon--answer {
     color: $color-orange;
   }
-
   .faq__item-title {
     flex: 1;
     font-size: rem(20);
@@ -94,14 +83,12 @@
     line-height: 1.5;
     margin-bottom: 0;
   }
-  
   .faq__item-sign {
     flex-shrink: 0;
     width: rem(24);
     height: calc(rem(20) * 1.5);
     position: relative;
     transition: transform 0.3s ease;
-  
     &::before,
     &::after {
       content: '';
@@ -111,20 +98,17 @@
       background-color: $color-theme;
       transition: transform 0.3s ease;
     }
-  
     &::before {
       width: rem(20);
       height: rem(4);
       transform: translate(-50%, -50%);
     }
-  
     &::after {
       width: rem(4);
       height: rem(20);
       transform: translate(-50%, -50%);
     }
   }
-  
   .faq__item-body {
     max-height: 0;
     overflow: hidden;
@@ -132,51 +116,41 @@
     background-color: $color-white;
     display: flex;
   }
-  
   .faq__item-description {
     font-size: rem(16);
     line-height: 1.5;
     color: $color-black;
   }
-  
   // SP用スタイル
   @include mq(md) {
     .faq {
       padding: rem(60) 0;
     }
-  
     .section__title--faq {
       margin-bottom: rem(40);
     }
-  
     .section__title-main--faq {
       font-size: rem(28);
     }
-
     .faq__item-head {
       padding: rem(20);
     }
-  
     .faq__item-icon {
       width: rem(28);
       height: rem(28);
       font-size: rem(12);
       margin-right: rem(12);
     }
-  
     .faq__item-title {
       font-size: rem(14);
     }
-  
     .faq__item-description {
       font-size: rem(13);
       margin-left: rem(40);
     }
-  
     .faq__item-body {
       padding: 0 rem(20);
     }
-  
     .faq__item-body.is-open {
       padding: rem(16) rem(20);
     }

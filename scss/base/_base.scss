@@ -1,22 +1,96 @@
 @use "../global" as * ;
-
-
 html {
-    font-size: 16px;
-    @include mq(md) {
-        font-size: vw(767px, 16px);
-    }
+  font-size: 16px;
+  @include mq(md) {
+    font-size: vw(767px, 16px);
+  }
 }
 img {
-    width: 100%;
+  width: 100%;
 }
 a {
-    transition: opacity .3s ease;
+  transition: opacity .3s ease;
 }
 a:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 .inner {
+  width: 100%;
+  max-width: calc($inner + ($padding-pc * 2));
+  padding-right: $padding-pc;
+  padding-left: $padding-pc;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  @include mq(md) {
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+  }
+}
+.only-sp {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
+.only-pc {
+  @include mq(md) {
+    display: none;
+  }
+}
+a {
+  text-decoration: none;
+}
+#lp-ad {
+  // 共通バッジスタイル
+  .c-badge-01 {
+    background-color: $color-theme;
+    color: $color-white;
+    line-height: 1;
+    padding: rem(8) rem(16);
+    border-radius: rem(20);
+    font-size: 1em;
+    font-weight: $bold;
+    display: inline-block;
+    margin: 0 rem(8);
+    @include mq(md) {
+      font-size: 1em;
+      padding: rem(6) rem(12);
+      margin: 0 rem(4);
+    }
+  }
+  // 共通カラークラス
+  .color-theme-blue {
+    color: $color-theme !important;
+  }
+  .color-light-blue {
+    color: $color-light-blue;
+  }
+  .color-grad-blue {
+    background: linear-gradient(175deg, #037ef1 0%, #037ef1 49.9%, #194fa9 50%, #194fa9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .color-heavy-blue {
+    color: #184fab;
+  }
+  .color-black {
+    color: $color-black;
+  }
+  .color-white {
+    color: $color-white;
+  }
+  // カラークラス
+  .color-theme-orange {
+    color: #FF6B35;
+  }
+  // セクション共通
+  .section {
+    position: relative;
+    padding: rem(80) 0;
+  }
+  .section__inner {
     width: 100%;
     max-width: calc($inner + ($padding-pc * 2));
     padding-right: $padding-pc;
@@ -24,469 +98,315 @@ a:hover {
     margin-right: auto;
     margin-left: auto;
     box-sizing: border-box;
+  }
+  .section__title {
+    text-align: center;
+    margin-bottom: rem(60);
+    position: relative;
+    z-index: 1;
+  }
+  p.section__title-sub  {
+    font-size: rem(24);
+    margin-bottom: rem(16);
+    text-align: center;
+    font-weight: $bold;
     @include mq(md) {
-        padding-right: $padding-sp;
-        padding-left: $padding-sp;
+      font-size: rem(16);
     }
-}
-
-.only-sp {
-    display: none;
+  }
+  h2.section__title-main {
+    font-size: rem(40);
+    color: $color-black;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: $bold;
     @include mq(md) {
-        display: block;
+      font-size: rem(44);
     }
-}
-.only-pc {
+  }
+  .section__title--bar {
+    width: rem(60);
+    height: rem(4);
+    background-color: $color-theme;
+    display: block;
+    margin: 0 auto rem(16);
+  }
+  .section__title-bg_text {
+    position: absolute;
+    top: rem(-20);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 1;
+    color: $color-theme;
+    mix-blend-mode: soft-light;
+    text-transform: uppercase;
+    opacity: 0.2;
+    font-size: rem(104);
+    line-height: 1;
+    display: flex;
+    align-items: flex-end;
+    -webkit-text-stroke: rem(8) $color-theme;
+    letter-spacing: 0.2em;
     @include mq(md) {
-        display: none;
+      font-size: rem(96);
     }
-}
-a {
-    text-decoration: none;
-}
-
-#lp-ad {
-    // 共通バッジスタイル
-    .c-badge-01 {
-        background-color: $color-theme;
-        color: $color-white;
-        line-height: 1;
-        padding: rem(8) rem(16);
-        border-radius: rem(20);
-        font-size: 1em;
-        font-weight: $bold;
-        display: inline-block;
-        margin: 0 rem(8);
-        
-        @include mq(md) {
-            font-size: 1em;
-            padding: rem(6) rem(12);
-            margin: 0 rem(4);
-        }
+  }
+  .text--center {
+    text-align: center;
+  }
+  // テキスト共通クラス
+  .text {
+    &--center {
+      text-align: center;
     }
-    
-    // 共通カラークラス
-    .color-theme-blue {
-        color: $color-theme !important;
+    &--left {
+      text-align: left;
     }
-    .color-light-blue {
-        color: $color-light-blue;
+    &--right {
+      text-align: right;
     }
-    
-    .color-grad-blue {
-        background: linear-gradient(175deg, #037ef1 0%, #037ef1 49.9%, #194fa9 50%, #194fa9 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+    &--bold {
+      font-weight: $bold;
     }
-    
-    .color-heavy-blue {
-        color: #184fab;
+    &--normal {
+      font-weight: $normal;
     }
-    
-    .color-black {
-        color: $color-black;
+    &--light {
+      font-weight: $light;
     }
-    
-    .color-white {
-        color: $color-white;
+  }
+  // フォントサイズクラス
+  .fs {
+    &--xs {
+      font-size: rem(12);
+      @include mq(md) {
+        font-size: rem(10);
+      }
     }
-    
-    // カラークラス
-    .color-theme-orange {
-        color: #FF6B35;
+    &--sm {
+      font-size: rem(14);
+      @include mq(md) {
+        font-size: rem(12);
+      }
     }
-    
-    
-    // セクション共通
-    .section {
-        position: relative;
-        padding: rem(80) 0;
+    &--md {
+      font-size: rem(16);
+      @include mq(md) {
+        font-size: rem(14);
+      }
     }
-    
-    .section__inner {
-        width: 100%;
-        max-width: calc($inner + ($padding-pc * 2));
-        padding-right: $padding-pc;
-        padding-left: $padding-pc;
-        margin-right: auto;
-        margin-left: auto;
-        box-sizing: border-box;
+    &--lg {
+      font-size: rem(18);
+      @include mq(md) {
+        font-size: rem(16);
+      }
     }
-    
-    .section__title {
-        text-align: center;
-        margin-bottom: rem(60);
-        position: relative;
-        z-index: 1;
+    &--xl {
+      font-size: rem(24);
+      @include mq(md) {
+        font-size: rem(20);
+      }
     }
-
-    p.section__title-sub  {
+    &--xxl {
+      font-size: rem(32);
+      @include mq(md) {
         font-size: rem(24);
-        margin-bottom: rem(16);
-        text-align: center;
-        font-weight: $bold;
-        @include mq(md) {
-          font-size: rem(16);
-        }
+      }
     }
-    
-    h2.section__title-main {
-        font-size: rem(40);
-        color: $color-black;
-        margin-bottom: 0;
-        margin-top: 0;
-        font-weight: $bold;
-        @include mq(md) {
-          font-size: rem(28);
-        }
+  }
+  // マージン・パディング共通クラス
+  .mt {
+    &--sm { margin-top: rem(10); }
+    &--md { margin-top: rem(20); }
+    &--lg { margin-top: rem(40); }
+    &--xl { margin-top: rem(60); }
+  }
+  .mb {
+    &--sm { margin-bottom: rem(10); }
+    &--md { margin-bottom: rem(20); }
+    &--lg { margin-bottom: rem(40); }
+    &--xl { margin-bottom: rem(60); }
+  }
+  .pt {
+    &--sm { padding-top: rem(10); }
+    &--md { padding-top: rem(20); }
+    &--lg { padding-top: rem(40); }
+    &--xl { padding-top: rem(60); }
+  }
+  .pb {
+    &--sm { padding-bottom: rem(10); }
+    &--md { padding-bottom: rem(20); }
+    &--lg { padding-bottom: rem(40); }
+    &--xl { padding-bottom: rem(60); }
+  }
+  // セクション共通スタイル
+  .section {
+    padding: rem(100) 0;
+    @include mq(md) {
+      padding: rem(60) 0;
     }
-    
-    .section__title--bar {
-        width: rem(60);
-        height: rem(4);
-        background-color: $color-theme;
-        display: block;
-        margin: 0 auto rem(16);
+    &--no-padding {
+      padding: 0;
     }
-    
-    .section__title-bg_text {
-        position: absolute;
-        top: rem(-20);
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-        opacity: 1;
-        color: $color-theme;
-        mix-blend-mode: soft-light;
-        text-transform: uppercase;
-        opacity: 0.2;
-        font-size: rem(104);
-        line-height: 1;
-        display: flex;
-        align-items: flex-end;
-        -webkit-text-stroke: rem(8) $color-theme;
-        letter-spacing: 0.2em;
+    &--sm-padding {
+      padding: rem(60) 0;
+      @include mq(md) {
+        padding: rem(40) 0;
+      }
     }
-    
-    .text--center {
-        text-align: center;
+    &--lg-padding {
+      padding: rem(140) 0;
+      @include mq(md) {
+        padding: rem(80) 0;
+      }
     }
-    
-    // テキスト共通クラス
-    .text {
-        &--center {
-            text-align: center;
-        }
-        
-        &--left {
-            text-align: left;
-        }
-        
-        &--right {
-            text-align: right;
-        }
-        
-        &--bold {
-            font-weight: $bold;
-        }
-        
-        &--normal {
-            font-weight: $normal;
-        }
-        
-        &--light {
-            font-weight: $light;
-        }
+  }
+  // 背景色クラス
+  .bg {
+    &--white {
+      background-color: $color-white;
     }
-    
-    // フォントサイズクラス
-    .fs {
-        &--xs {
-            font-size: rem(12);
-            
-            @include mq(md) {
-                font-size: rem(10);
-            }
-        }
-        
-        &--sm {
-            font-size: rem(14);
-            
-            @include mq(md) {
-                font-size: rem(12);
-            }
-        }
-        
-        &--md {
-            font-size: rem(16);
-            
-            @include mq(md) {
-                font-size: rem(14);
-            }
-        }
-        
-        &--lg {
-            font-size: rem(18);
-            
-            @include mq(md) {
-                font-size: rem(16);
-            }
-        }
-        
-        &--xl {
-            font-size: rem(24);
-            
-            @include mq(md) {
-                font-size: rem(20);
-            }
-        }
-        
-        &--xxl {
-            font-size: rem(32);
-            
-            @include mq(md) {
-                font-size: rem(24);
-            }
-        }
+    &--theme {
+      background-color: $color-theme;
     }
-    
-    // マージン・パディング共通クラス
-    .mt {
-        &--sm { margin-top: rem(10); }
-        &--md { margin-top: rem(20); }
-        &--lg { margin-top: rem(40); }
-        &--xl { margin-top: rem(60); }
+    &--gradient {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     }
-    
-    .mb {
-        &--sm { margin-bottom: rem(10); }
-        &--md { margin-bottom: rem(20); }
-        &--lg { margin-bottom: rem(40); }
-        &--xl { margin-bottom: rem(60); }
+  }
+  // ボックスシャドウクラス
+  .shadow {
+    &--sm {
+      box-shadow: 0 rem(4) rem(16) rgba(0, 0, 0, 0.1);
     }
-    
-    .pt {
-        &--sm { padding-top: rem(10); }
-        &--md { padding-top: rem(20); }
-        &--lg { padding-top: rem(40); }
-        &--xl { padding-top: rem(60); }
+    &--md {
+      box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.15);
     }
-    
-    .pb {
-        &--sm { padding-bottom: rem(10); }
-        &--md { padding-bottom: rem(20); }
-        &--lg { padding-bottom: rem(40); }
-        &--xl { padding-bottom: rem(60); }
+    &--lg {
+      box-shadow: 0 rem(16) rem(48) rgba(0, 0, 0, 0.2);
     }
-    
-    // セクション共通スタイル
-    .section {
-        padding: rem(100) 0;
-        
-        @include mq(md) {
-            padding: rem(60) 0;
-        }
-        
-        &--no-padding {
-            padding: 0;
-        }
-        
-        &--sm-padding {
-            padding: rem(60) 0;
-            
-            @include mq(md) {
-                padding: rem(40) 0;
-            }
-        }
-        
-        &--lg-padding {
-            padding: rem(140) 0;
-            
-            @include mq(md) {
-                padding: rem(80) 0;
-            }
-        }
+  }
+  // 角丸クラス
+  .radius {
+    &--sm {
+      border-radius: rem(8);
     }
-    
-    // 背景色クラス
-    .bg {
-        &--white {
-            background-color: $color-white;
-        }
-        
-        &--theme {
-            background-color: $color-theme;
-        }
-        
-        &--gradient {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-        }
+    &--md {
+      border-radius: rem(12);
     }
-    
-    // ボックスシャドウクラス
-    .shadow {
-        &--sm {
-            box-shadow: 0 rem(4) rem(16) rgba(0, 0, 0, 0.1);
-        }
-        
-        &--md {
-            box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.15);
-        }
-        
-        &--lg {
-            box-shadow: 0 rem(16) rem(48) rgba(0, 0, 0, 0.2);
-        }
+    &--lg {
+      border-radius: rem(16);
     }
-    
-    // 角丸クラス
-    .radius {
-        &--sm {
-            border-radius: rem(8);
-        }
-        
-        &--md {
-            border-radius: rem(12);
-        }
-        
-        &--lg {
-            border-radius: rem(16);
-        }
-        
-        &--xl {
-            border-radius: rem(24);
-        }
-        
-        &--full {
-            border-radius: rem(50);
-        }
+    &--xl {
+      border-radius: rem(24);
     }
-    
-    .text-underline {
-      text-decoration: underline;
+    &--full {
+      border-radius: rem(50);
     }
-    
-    
-    .section__title {
-        text-align: center;
-        margin-bottom: rem(60);
-        position: relative;
-        
-        @include mq(md) {
-            margin-bottom: rem(40);
-        }
-        
-        &--bar {
-            width: rem(60);
-            height: rem(4);
-            background-color: $color-theme;
-            display: block;
-            margin: 0 auto rem(20) auto;
-            
-            @include mq(md) {
-                margin-bottom: rem(15);
-            }
-        }
-        
-        &-main {
-            font-size: rem(40);
-            font-weight: $bold;
-            line-height: 1.4;
-            color: $color-black;
-            
-            @include mq(md) {
-                font-size: rem(28);
-            }
-        }
-        
-        &--accent {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            
-            &--left {
-                left: rem(-60);
-                
-                @include mq(md) {
-                    left: rem(-30);
-                }
-            }
-            
-            &--right {
-                right: rem(-60);
-                
-                @include mq(md) {
-                    right: rem(-30);
-                }
-            }
-            
-            img {
-                width: rem(40);
-                height: auto;
-                
-                @include mq(md) {
-                    width: rem(30);
-                }
-            }
-        }
+  }
+  .text-underline {
+    text-decoration: underline;
+  }
+  .section__title {
+    text-align: center;
+    margin-bottom: rem(60);
+    position: relative;
+    @include mq(md) {
+      margin-bottom: rem(40);
     }
-    
-    // テキスト配置クラス
-    .text--center {
-        text-align: center;
-    }
-    
-    .text--left {
-        text-align: left;
-    }
-    
-    .text--right {
-        text-align: right;
-    }
-    
-    // アバウト用スタイル
-    .about {
-        &__description {
-            font-size: rem(18);
-            line-height: 1.7;
-            margin-bottom: rem(40);
-            color: $color-black;
-            
-            @include mq(md) {
-                font-size: rem(16);
-                margin-bottom: rem(30);
-            }
-        }
-        
-        &__movie {
-            max-width: rem(600);
-            margin: 0 auto;
-            
-            img {
-                width: 100%;
-                height: auto;
-                border-radius: rem(16);
-                box-shadow: 0 rem(16) rem(48) rgba(0, 0, 0, 0.15);
-            }
-        }
-    }
-    
-    //base_laout
-    .text-yellow-line {
-      background: linear-gradient(transparent 40%, #fffa94 40%);
-    }
-    .text-single-dt {
-      display: inline-block;
-      position: relative;  
-    }
-    .text-single-dt::before {
-      content: "";
-      display: block;
-      left: 50%;
-      transform: translateX(-50%);
-      width: rem(4);
+    &--bar {
+      width: rem(60);
       height: rem(4);
-      top: rem(-4);
-      border-radius: 50%;
+      background-color: $color-theme;
+      display: block;
+      margin: 0 auto rem(20) auto;
+      @include mq(md) {
+        margin-bottom: rem(15);
+      }
     }
+    &-main {
+      font-size: rem(40);
+      font-weight: $bold;
+      line-height: 1.4;
+      color: $color-black;
+      @include mq(md) {
+        font-size: rem(28);
+      }
+    }
+    &--accent {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      &--left {
+        left: rem(-60);
+        @include mq(md) {
+          left: rem(-30);
+        }
+      }
+      &--right {
+        right: rem(-60);
+        @include mq(md) {
+          right: rem(-30);
+        }
+      }
+      img {
+        width: rem(40);
+        height: auto;
+        @include mq(md) {
+          width: rem(30);
+        }
+      }
+    }
+  }
+  // テキスト配置クラス
+  .text--center {
+    text-align: center;
+  }
+  .text--left {
+    text-align: left;
+  }
+  .text--right {
+    text-align: right;
+  }
+  // アバウト用スタイル
+  .about {
+    &__description {
+      font-size: rem(18);
+      line-height: 1.7;
+      margin-bottom: rem(40);
+      color: $color-black;
+      @include mq(md) {
+        font-size: rem(16);
+        margin-bottom: rem(30);
+      }
+    }
+    &__movie {
+      max-width: rem(600);
+      margin: 0 auto;
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: rem(16);
+        box-shadow: 0 rem(16) rem(48) rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+  //base_laout
+  .text-yellow-line {
+    background: linear-gradient(transparent 40%, #fffa94 40%);
+  }
+  .text-single-dt {
+    display: inline-block;
+    position: relative;
+  }
+  .text-single-dt::before {
+    content: "";
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(4);
+    height: rem(4);
+    top: rem(-4);
+    border-radius: 50%;
+  }
 }

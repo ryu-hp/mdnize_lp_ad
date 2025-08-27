@@ -1,23 +1,19 @@
 @use "../global" as *;
-
 #lp-ad {
   .service {
     padding: rem(100) 0;
     position: relative;
     background-color: #EBF5FF;
   }
-  
   .section__title--service {
     text-align: center;
     margin-bottom: rem(60);
   }
-  
   .section__title-main--service {
     font-size: rem(36);
     font-weight: $bold;
     margin-bottom: rem(20);
   }
-  
   .service__body {
     display: flex;
     flex-direction: row;
@@ -27,7 +23,6 @@
     width: 100%;
     margin: 0 auto;
   }
-  
   .service__item {
     background-color: $color-white;
     border-radius: rem(12);
@@ -37,17 +32,14 @@
     text-decoration: none;
     color: inherit;
     width: calc((100% - (rem(30)) * 2) / 3);
-  
     &:hover {
       transform: translateY(rem(-8));
     }
   }
-  
   .service__item-contents {
     padding: rem(30) rem(20);
     text-align: center;
   }
-  
   .service__item-image {
     width: rem(96);
     height: rem(96);
@@ -55,70 +47,57 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  
     img {
       width: 100%;
       height: 100%;
       object-fit: contain;
     }
   }
-  
   h3.service__item-head {
     font-size: rem(24);
     font-weight: $bold;
     color: $color-theme;
     margin-bottom: rem(20);
   }
-  
   .service__item-description {
     font-size: rem(16);
     line-height: 1.5;
     color: $color-black;
     text-align: left;
   }
-  
   // SP用スタイル
   @include mq(md) {
     .service {
       padding: rem(60) 0;
     }
-  
     .section__title--service {
       margin-bottom: rem(40);
     }
-  
     .section__title-main--service {
       font-size: rem(28);
     }
-
     .service__body {
       grid-template-columns: 1fr;
       gap: rem(20);
     }
-  
     .service__item-contents {
       padding: rem(24);
     }
-  
     .service__item-image {
       width: rem(60);
       height: rem(60);
       margin-bottom: rem(16);
-  
       img {
         width: rem(36);
         height: rem(36);
       }
     }
-  
     h3.service__item-head {
       font-size: rem(18);
       margin-bottom: rem(12);
     }
-  
     .service__item-description {
       font-size: rem(13);
     }
   }
 }
-

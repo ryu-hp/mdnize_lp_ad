@@ -1,73 +1,64 @@
 @use "../global" as *;
-
 // 全体のレイアウト
 #contentInner {
-    max-width: 100% !important;
-    width: 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
 }
 body.page-template-one-column main {
-    padding: 0 !important;
-    max-width: 100% !important;
-    width: 100% !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
 }
 .page-template-one-column .post {
-    padding: 0 !important;
-    max-width: 100% !important;
-    width: 100% !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
 }
 .page-template-one-column #wrapper {
-    max-width: 100% !important;
+  max-width: 100% !important;
 }
-
 .lp1 p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 .lp1 h3 {
-    padding: 0;
+  padding: 0;
 }
-
 .lp1 {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 100%;
-    font-family: $base-font-family;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  font-family: $base-font-family;
 }
-
 .lp1 section,
 .lp1 footer {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
-
 .lp1 picture {
-    width: 100%;
-    display: block;
-    line-height: 0;
+  width: 100%;
+  display: block;
+  line-height: 0;
 }
-
 .lp1 picture img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
-
 .lp1 img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
-
 .hero-about-wrapper {
-    background-image: url(https://mdniz.com/wp-content/uploads/2025/08/hero-about-bg-image.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url(https://mdniz.com/wp-content/uploads/2025/08/hero-about-bg-image.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 // SP用スタイル
 @include mq(md) {
-    .lp1 picture img {
-        object-position: center;
-    }
+  .lp1 picture img {
+    object-position: center;
+  }
 }

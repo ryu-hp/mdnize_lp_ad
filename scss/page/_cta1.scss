@@ -1,85 +1,76 @@
 @use "../global" as *;
-
 #lp-ad {
-    .cta1 {
-      background-image: url(https://mdniz.com/wp-content/uploads/2025/08/cta1-bg.webp);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-      display: flex;
-      padding: 0;
+  .cta1 {
+    background-image: url(https://mdniz.com/wp-content/uploads/2025/08/cta1-bg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    padding: 0;
+  }
+  .cta1__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cta1__contents {
+    margin: 0 auto;
+  }
+  .cta1__title {
+    font-size: rem(40);
+    font-weight: $bold;
+    color: $color-white;
+    margin-top: 0;
+    margin-bottom: rem(16);
+    line-height: 1.4;
+    @media screen and (max-width:1400px) and (min-width:768px) {
+      font-size: vw(1400,38);
+      margin-bottom:vw(1400,16) ;
     }
-    
-    .cta1__inner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  }
+  .cta1__description {
+    font-size: rem(24);
+    color: $color-white;
+    margin-bottom: rem(40);
+    line-height: 1.6;
+    @media screen and (max-width:1400px) and (min-width:768px) {
+      font-size: vw(1400,22);
+      margin-bottom: vw(1400,40);
     }
-    
-    .cta1__contents {
-        margin: 0 auto;
+  }
+  .cta1__btn-contents {
+    display: flex;
+    justify-content: center;
+    gap: rem(20);
+    flex-wrap: wrap;
+    max-width: calc(340px * 2 + rem(20));
+    margin-right:auto;
+    margin-left:auto;
+    @media screen and (max-width:1400px) and (min-width:768px) {
+      gap: vw(1400,20);
+      max-width: calc(vw(1400,340) * 2 + vw(1400,20));
     }
-    
-    .cta1__title {
-        font-size: rem(40);
-        font-weight: $bold;
-        color: $color-white;
-        margin-top: 0;
-        margin-bottom: rem(16);
-        line-height: 1.4;
-        @media screen and (max-width:1400px) and (min-width:768px) {
-          font-size: vw(1400,38);
-          margin-bottom:vw(1400,16) ;
-        }
+  }
+  .cta1__btn {
+    flex: 1;
+  }
+  .cta1__btn-contents .c-btn {
+    @media screen and (max-width:1400px) and (min-width:768px) {
+      font-size: vw(1400,20);
+      padding: vw(1400,24) vw(1400,16);
     }
-    
-    .cta1__description {
-      font-size: rem(24);
-      color: $color-white;
-      margin-bottom: rem(40);
-      line-height: 1.6;
-      @media screen and (max-width:1400px) and (min-width:768px) {
-        font-size: vw(1400,22);
-        margin-bottom: vw(1400,40);
-      }
-    }
-    
-    .cta1__btn-contents {
-      display: flex;
-      justify-content: center;
-      gap: rem(20);
-      flex-wrap: wrap;
-      max-width: calc(340px * 2 + rem(20));
-      margin-right:auto;
-      margin-left:auto;
-      
-      @media screen and (max-width:1400px) and (min-width:768px) {
-        gap: vw(1400,20);
-        max-width: calc(vw(1400,340) * 2 + vw(1400,20));
-      }
-    }
-    .cta1__btn {
-      flex: 1;
-    }
-    .cta1__btn-contents .c-btn {
-      @media screen and (max-width:1400px) and (min-width:768px) {
-        font-size: vw(1400,20);
-        padding: vw(1400,24) vw(1400,16);
-      }
-    }
-    
-    .cta1__image {
-      width: 28%;
-    }
-    
-    .cta1__image img {
-        height: 100%;
-        width: auto;
-        margin-left: auto;
-    }
+  }
+  .cta1__image {
+    width: 28%;
+  }
+  .cta1__image img {
+    height: 100%;
+    width: auto;
+    margin-left: auto;
+  }
   @include mq(md) {
     .cta1 {
       display: block;
@@ -99,4 +90,4 @@
       margin-top: rem(40);
     }
   }
-}    
+}

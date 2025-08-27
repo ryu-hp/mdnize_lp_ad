@@ -1,5 +1,4 @@
 @use "../global" as *;
-
 #lp-ad {
   .cta2 {
     background-image: url(https://mdniz.com/wp-content/uploads/2025/08/cta1-bg.webp);
@@ -13,23 +12,19 @@
     display: flex;
     align-items: center;
   }
-  
-  
   .cta2__contents {
     margin: 0 auto;
   }
-  
   .cta2__title {
-      font-size: rem(32);
-      font-weight: $bold;
-      color: $color-white;
-      margin-bottom: rem(16);
-      line-height: 1.4;
-      @media screen and (max-width:1400px) and (min-width:768px) {
-        font-size: vw(1400,32);
-      }
+    font-size: rem(32);
+    font-weight: $bold;
+    color: $color-white;
+    margin-bottom: rem(16);
+    line-height: 1.4;
+    @media screen and (max-width:1400px) and (min-width:768px) {
+      font-size: vw(1400,32);
+    }
   }
-
   .cta2__title--under-line {
     display: inline-block;
     padding-bottom: 0.5em;
@@ -58,7 +53,6 @@
       max-width: vw(1400,840);
       gap: vw(1400,32);
     }
-
   }
   .cta2__item {
     width: 50%;
@@ -74,7 +68,7 @@
       font-size: vw(1400,28);
       margin-bottom:vw(1400,24);
     }
-  } 
+  }
   .cta2__description {
     font-size: rem(16);
     color: $color-white;
@@ -88,14 +82,12 @@
   .cta2__btn {
     margin-top: auto;
   }
-  
   .cta2__btn .c-btn {
     font-size: rem(20);
     @media screen and (max-width:1400px) and (min-width:768px) {
       font-size: vw(1400,20);
     }
   }
-  
   .cta2__image {
     // position: absolute;
     // right: 0;
@@ -105,10 +97,9 @@
     width: 30%;
     max-width: 260px;
   }
-  
   .cta2__image img {
-      height: 100%;
-      width: auto;
-      margin-left: auto;
+    height: 100%;
+    width: auto;
+    margin-left: auto;
   }
 }
