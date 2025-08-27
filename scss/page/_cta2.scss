@@ -102,4 +102,18 @@
     width: auto;
     margin-left: auto;
   }
+
+  @include mq(md) {
+    .cta2 {
+      flex-direction: column;
+    }
+    .cta2__image {
+      width: 100%;
+      max-width: 100%;
+    }
+    .cta2__body {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
 }

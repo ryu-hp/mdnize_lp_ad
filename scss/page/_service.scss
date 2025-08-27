@@ -80,24 +80,24 @@
       grid-template-columns: 1fr;
       gap: rem(20);
     }
+    .service__item {
+      width: 100%;
+      max-width: 300px;
+    }
     .service__item-contents {
       padding: rem(24);
     }
     .service__item-image {
-      width: rem(60);
-      height: rem(60);
+      width: rem(112);
+      height: auto;
       margin-bottom: rem(16);
-      img {
-        width: rem(36);
-        height: rem(36);
-      }
     }
     h3.service__item-head {
-      font-size: rem(18);
+      font-size: rem(36);
       margin-bottom: rem(12);
     }
     .service__item-description {
-      font-size: rem(13);
+      font-size: rem(28);
     }
   }
 }

@@ -2573,6 +2573,8 @@ body.page-template-one-column main {
           flex: 1;
   max-width: 15.125rem;
   margin-left: auto;
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 #lp-ad .flow__item-image img {
   width: 100%;
@@ -2588,6 +2590,8 @@ body.page-template-one-column main {
   line-height: 1.5;
   padding: 1.25rem 1rem;
   margin-left: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 15.125rem;
 }
 #lp-ad .flow__item-head {
   font-size: 1.5em;
@@ -2686,32 +2690,41 @@ body.page-template-one-column main {
     font-size: 1rem;
   }
   #lp-ad .flow__item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     gap: 1.25rem;
-    padding: 1.25rem;
+    padding: 0;
     margin-bottom: 1.875rem;
   }
   #lp-ad .flow__item-number {
-    width: 3.125rem;
-    height: 3.125rem;
-    font-size: 1.125rem;
+    font-size: 3.5rem;
+  }
+  #lp-ad .flow__item-content {
+    text-align: left;
+    grid-template-columns: 1fr 12.5rem;
+    gap: 1rem 0.5rem;
+    padding: 0;
   }
   #lp-ad .flow__item-head {
-    font-size: 1.125rem;
-    text-align: center;
+    font-size: 1.75rem;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-bottom: 0;
+    padding-left: 1rem;
   }
   #lp-ad .flow__item-description {
-    font-size: 0.8125rem;
-    text-align: center;
+    font-size: 1.25rem;
+    grid-column: 1/3;
+    padding: 0 1rem 2rem;
   }
   #lp-ad .flow__item-image {
-    width: 6.25rem;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
   #lp-ad .flow__btn-area {
     margin-top: 2.5rem;
+  }
+  #lp-ad .flow__tag {
+    left: 8.25rem;
   }
 }
 
@@ -3070,17 +3083,14 @@ body.page-template-one-column main {
     padding: 1.25rem;
   }
   #lp-ad .faq__item-icon {
-    width: 1.75rem;
-    height: 1.75rem;
-    font-size: 0.75rem;
+    font-size: 1.125rem;
     margin-right: 0.75rem;
   }
   #lp-ad .faq__item-title {
-    font-size: 0.875rem;
+    font-size: 1.125rem;
   }
   #lp-ad .faq__item-description {
-    font-size: 0.8125rem;
-    margin-left: 2.5rem;
+    font-size: 1rem;
   }
   #lp-ad .faq__item-body {
     padding: 0 1.25rem;
@@ -3187,24 +3197,24 @@ body.page-template-one-column main {
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
+  #lp-ad .service__item {
+    width: 100%;
+    max-width: 300px;
+  }
   #lp-ad .service__item-contents {
     padding: 1.5rem;
   }
   #lp-ad .service__item-image {
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 7rem;
+    height: auto;
     margin-bottom: 1rem;
   }
-  #lp-ad .service__item-image img {
-    width: 2.25rem;
-    height: 2.25rem;
-  }
   #lp-ad h3.service__item-head {
-    font-size: 1.125rem;
+    font-size: 2.25rem;
     margin-bottom: 0.75rem;
   }
   #lp-ad .service__item-description {
-    font-size: 0.8125rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -3325,6 +3335,27 @@ body.page-template-one-column main {
   height: 100%;
   width: auto;
   margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  #lp-ad .cta2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #lp-ad .cta2__image {
+    width: 100%;
+    max-width: 100%;
+  }
+  #lp-ad .cta2__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 #lp-ad {
