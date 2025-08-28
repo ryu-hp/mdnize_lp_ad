@@ -70,7 +70,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   #lp-ad .c-badge-01 {
-    font-size: 1em;
+    font-size: 0.8em;
     padding: 0.375rem 0.75rem;
     margin: 0 0.25rem;
   }
@@ -127,7 +127,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   #lp-ad p.section__title-sub {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 #lp-ad h2.section__title-main {
@@ -467,6 +467,7 @@ a {
 #lp-ad .text-single-dt::before {
   content: "";
   display: block;
+  position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -782,10 +783,10 @@ body.page-template-one-column main {
 }
 @media screen and (max-width: 767px) {
   #lp-ad .c-btn {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 1.5rem 1rem;
-    gap: 0.375rem;
-    max-width: 20rem;
+    gap: 1rem;
+    max-width: 27rem;
   }
 }
 
@@ -919,6 +920,43 @@ body.page-template-one-column main {
 #lp-ad .hero__cta {
   text-align: center;
 }
+#lp-ad .hero__batch-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25rem;
+}
+#lp-ad .hero__batch-group--sp {
+  display: none;
+}
+#lp-ad .hero__batch {
+  width: 100%;
+  position: relative;
+}
+#lp-ad .hero__batch-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem 1rem;
+}
 @media screen and (max-width: 767px) {
   #lp-ad .hero__contents-main {
     -webkit-box-orient: vertical;
@@ -945,6 +983,19 @@ body.page-template-one-column main {
   #lp-ad .hero__image {
     margin-right: auto;
     margin-left: auto;
+  }
+  #lp-ad .hero__batch-group {
+    margin-bottom: 3rem;
+  }
+  #lp-ad .hero__batch-group--sp {
+    display: grid;
+  }
+  #lp-ad .hero__batch-group--pc {
+    display: none;
+  }
+  #lp-ad .hero__batch-text {
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
   }
 }
 
@@ -1009,6 +1060,9 @@ body.page-template-one-column main {
   text-align: center;
 }
 @media screen and (max-width: 767px) {
+  #lp-ad h2.section__title-main--about {
+    font-size: 2.5rem;
+  }
   #lp-ad .about__description {
     font-size: 1.25rem;
     margin-bottom: 2.5rem;
@@ -1130,6 +1184,10 @@ body.page-template-one-column main {
   }
   #lp-ad .cta1__inner {
     padding-top: 2.5rem;
+  }
+  #lp-ad .cta1__description {
+    font-size: 1.75rem;
+    letter-spacing: 0.1em;
   }
   #lp-ad .cta1__btn-contents {
     -webkit-box-orient: vertical;
@@ -1270,7 +1328,7 @@ body.page-template-one-column main {
 }
 #lp-ad .target__list--yellow {
   background-color: #fff892;
-  display: inline-block;
+  display: inline;
   padding: 0.125rem 0.375rem;
 }
 #lp-ad .target__bottom-label {
@@ -1291,10 +1349,10 @@ body.page-template-one-column main {
     font-size: 2.5rem;
   }
   #lp-ad .target__title-icon {
-    margin-bottom: 2.5rem;
-  }
-  #lp-ad .target__title-icon img {
+    margin-bottom: 0;
     width: 3.75rem;
+    left: 97%;
+    bottom: 80%;
   }
   #lp-ad .target__body-head {
     margin-bottom: 1.875rem;
@@ -1304,8 +1362,8 @@ body.page-template-one-column main {
     padding: 0.75rem 2.5rem;
   }
   #lp-ad .target__list li {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
+    font-size: 2rem;
+    padding-left: 1.75em;
   }
   #lp-ad .target__bottom-label {
     margin-top: 2.5rem;
@@ -1317,11 +1375,22 @@ body.page-template-one-column main {
 }
 
 #lp-ad .solution {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ecf7ff));
+  background: linear-gradient(180deg, #fff 0%, #ecf7ff 100%);
+}
+#lp-ad .solution::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   background-image: url(https://mdniz.com/wp-content/uploads/2025/08/solution_bg-scaled.webp);
   background-size: auto;
   background-position: center;
   background-repeat: repeat;
-  position: relative;
 }
 #lp-ad .solution::before {
   position: absolute;
@@ -1514,19 +1583,26 @@ body.page-template-one-column main {
 @media screen and (max-width: 767px) {
   #lp-ad .solution {
     padding-top: 12rem;
+    padding-bottom: 3.75rem;
   }
   #lp-ad .section__title--solution {
     padding-top: 0;
     padding-bottom: 0;
   }
+  #lp-ad .section__title--accent {
+    bottom: 0.5em;
+    top: auto;
+    -webkit-transform: none;
+            transform: none;
+  }
   #lp-ad .section__title-main--solution {
     gap: 0.5rem;
   }
   #lp-ad .solution__title--large {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   #lp-ad .solution__title--middle {
-    font-size: 2em;
+    font-size: 1.75em;
   }
   #lp-ad .solution__contents {
     gap: 7rem;
@@ -1546,6 +1622,7 @@ body.page-template-one-column main {
   #lp-ad .solution__item:nth-child(odd) .solution__item-content,
   #lp-ad .solution__item:nth-child(even) .solution__item-content {
     padding: 1.875rem 1.25rem;
+    border-radius: 0;
   }
   #lp-ad .solution__item-image {
     -webkit-box-flex: 0;
@@ -1561,7 +1638,7 @@ body.page-template-one-column main {
   }
   #lp-ad h3.solution__item-title {
     font-size: 2.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.75rem;
   }
   #lp-ad .solution__item-description {
     font-size: 1.75rem;
@@ -1814,7 +1891,7 @@ body.page-template-one-column main {
 }
 @media screen and (max-width: 767px) {
   #lp-ad .platform {
-    padding: 3.75rem 0;
+    padding: 6.25rem 0;
   }
   #lp-ad .platform__inner {
     padding: 0 1.25rem;
@@ -1861,16 +1938,16 @@ body.page-template-one-column main {
     font-size: 2rem;
   }
   #lp-ad .platform__sub-item-main-text-02 {
-    font-size: 4rem;
+    font-size: 7rem;
   }
   #lp-ad .platform__sub-item-main-text-03 {
-    font-size: 4.25rem;
+    font-size: 5.5rem;
   }
   #lp-ad .platform__sub-item-main-text-03--hukidashi {
     font-size: 2.5rem;
   }
   #lp-ad .platform__sub-item-main-text-04 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
   #lp-ad .section__title-main--platform {
     font-size: 1.75rem;
@@ -2221,6 +2298,9 @@ body.page-template-one-column main {
   #lp-ad .outline__top-text {
     font-size: 1.75rem;
     margin-bottom: 1.25rem;
+  }
+  #lp-ad .outline__top-text--large {
+    font-size: 1.5em;
   }
   #lp-ad .outline__list {
     margin-bottom: 4rem;
@@ -2695,7 +2775,14 @@ body.page-template-one-column main {
     margin-bottom: 1.875rem;
   }
   #lp-ad .flow__item-number {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    -webkit-text-stroke: 2px #fa7019;
+    text-stroke: 2px #fa7019;
+    padding: 1rem 1rem;
+  }
+  #lp-ad .flow__after-contents .flow__item-number {
+    -webkit-text-stroke: 2px #184fab;
+    text-stroke: 2px #184fab;
   }
   #lp-ad .flow__item-content {
     text-align: left;
@@ -3083,14 +3170,14 @@ body.page-template-one-column main {
     padding: 1.25rem;
   }
   #lp-ad .faq__item-icon {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     margin-right: 0.75rem;
   }
   #lp-ad .faq__item-title {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
   #lp-ad .faq__item-description {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
   #lp-ad .faq__item-body {
     padding: 0 1.25rem;
@@ -3199,11 +3286,11 @@ body.page-template-one-column main {
   }
   #lp-ad .service__item {
     width: 100%;
-    max-width: 18.75rem;
-    padding: 1rem 3rem;
+    max-width: 28.875rem;
+    padding: 2rem 4rem;
   }
   #lp-ad .service__item-contents {
-    padding: 1.5rem;
+    padding: 0;
   }
   #lp-ad .service__item-image {
     width: 7rem;
@@ -3344,6 +3431,7 @@ body.page-template-one-column main {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 2.5rem;
+    padding-top: 5rem;
   }
   #lp-ad .cta2__image {
     width: 100%;
@@ -3361,17 +3449,19 @@ body.page-template-one-column main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 6rem;
   }
   #lp-ad .cta2__item {
     width: 100%;
   }
   #lp-ad h3.cta2__head {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
     font-weight: 700;
   }
   #lp-ad .cta2__description {
-    font-size: 1.25rem;
-    max-width: 19.5rem;
+    font-size: 1.625rem;
+    max-width: 28rem;
+    margin-bottom: 3rem;
     margin-right: auto;
     margin-left: auto;
   }

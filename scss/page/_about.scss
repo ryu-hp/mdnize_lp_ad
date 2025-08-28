@@ -60,6 +60,9 @@
   }
   // SP用スタイル
   @include mq(md) {
+    h2.section__title-main--about {
+      font-size: rem(40);
+    }
     .about__description {
       font-size: rem(20);
       margin-bottom: rem(40);

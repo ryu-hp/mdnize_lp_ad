@@ -2,11 +2,21 @@
 
 #lp-ad {
   .solution {
+    position: relative;
+    background: linear-gradient(180deg, #fff 0%, #ecf7ff 100%);
+  }
+  .solution::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     background-image: url(https://mdniz.com/wp-content/uploads/2025/08/solution_bg-scaled.webp);
     background-size: auto;
     background-position: center;
     background-repeat: repeat;
-    position: relative;
   }
 
   .solution::before {
@@ -203,6 +213,7 @@
   @include mq(md) {
     .solution {
       padding-top: rem(192);
+      padding-bottom: rem(60);
     }
 
     .section__title--solution {
@@ -210,16 +221,22 @@
       padding-bottom: 0;
     }
 
+    .section__title--accent {
+      bottom: 0.5em;
+      top: auto;
+      transform: none;
+    }
+
     .section__title-main--solution {
       gap: rem(8);
     }
 
     .solution__title--large {
-      font-size: 3em;
+      font-size: 2.5em;
     }
 
     .solution__title--middle {
-      font-size: 2em;
+      font-size: 1.75em;
     }
 
     .solution__contents {
@@ -243,6 +260,7 @@
     .solution__item:nth-child(odd) .solution__item-content,
     .solution__item:nth-child(even) .solution__item-content {
       padding: rem(30) rem(20);
+      border-radius: 0;
     }
 
     .solution__item-image {
@@ -259,7 +277,7 @@
 
     h3.solution__item-title {
       font-size: rem(44);
-      margin-bottom: rem(16);
+      margin-bottom: rem(28);
     }
 
     .solution__item-description {

@@ -216,7 +216,7 @@
   // SP用スタイル
   @include mq(md) {
     .platform {
-      padding: rem(60) 0;
+      padding: rem(100) 0;
     }
     .platform__inner {
       padding: 0 $padding-sp;
@@ -263,16 +263,16 @@
       font-size: rem(32);
     }
     .platform__sub-item-main-text-02 {
-      font-size: rem(64);
+      font-size: rem(112);
     }
     .platform__sub-item-main-text-03 {
-      font-size: rem(68);
+      font-size: rem(88);
     }
     .platform__sub-item-main-text-03--hukidashi {
       font-size: rem(40);
     }
     .platform__sub-item-main-text-04 {
-      font-size: rem(64);
+      font-size: rem(72);
     }
     .section__title-main--platform {
       font-size: rem(28);

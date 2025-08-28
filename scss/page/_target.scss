@@ -112,7 +112,7 @@
   }
   .target__list--yellow {
     background-color: #fff892;
-    display: inline-block;
+    display: inline;
     padding: rem(2) rem(6);
   }
   .target__bottom-label {
@@ -133,10 +133,10 @@
       font-size: rem(40);
     }
     .target__title-icon {
-      margin-bottom: rem(40);
-    }
-    .target__title-icon img {
+      margin-bottom: 0;
       width: rem(60);
+      left: 97%;
+      bottom: 80%;
     }
     .target__body-head {
       margin-bottom: rem(30);
@@ -146,8 +146,8 @@
       padding: rem(12) rem(40);
     }
     .target__list li {
-      font-size: rem(20);
-      margin-bottom: rem(12);
+      font-size: rem(32);
+      padding-left: 1.75em;
     }
     .target__bottom-label {
       margin-top: rem(40);

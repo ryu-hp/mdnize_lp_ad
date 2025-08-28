@@ -163,7 +163,14 @@
       margin-bottom: rem(30);
     }
     .flow__item-number {
-      font-size: rem(56);
+      font-size: rem(64);
+      -webkit-text-stroke: 2px $color-orange;
+      text-stroke: 2px $color-orange;
+      padding: rem(16) rem(16);
+    }
+    .flow__after-contents .flow__item-number {
+      -webkit-text-stroke: 2px $color-theme;
+      text-stroke: 2px $color-theme;
     }
     .flow__item-content {
       text-align: left;
