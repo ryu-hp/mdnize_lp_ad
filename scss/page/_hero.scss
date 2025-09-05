@@ -129,9 +129,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: rem(16);
+    font-size: rem(24);
     text-align: center;
     padding: rem(16) rem(16);
+    font-weight: $bold;
+    color: #b49235;
   }
   @include mq(md) {
     .hero__contents-main {
