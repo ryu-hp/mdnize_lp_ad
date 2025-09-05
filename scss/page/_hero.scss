@@ -109,6 +109,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: rem(4);
+    margin-top: rem(20);
   }
   .hero__batch-group--sp {
     display: none;

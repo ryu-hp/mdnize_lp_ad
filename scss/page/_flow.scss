@@ -74,18 +74,21 @@
     margin-left: rem(40);
     display: grid;
     grid-template-columns: 1fr max(rem(242));
+    gap: rem(20) 0;
   }
   .flow__item-head {
     font-size: 1.5em;
     margin-bottom: rem(16);
+    align-self: center;
   }
   .flow__item-description {
     font-size: rem(16);
+    grid-column: 1 / 3;
   }
   .flow__tag {
     position: absolute;
     top: rem(-10);
-    left: rem(152);
+    left: rem(148);
     background-color: $color-orange;
     padding: rem(8) rem(8);
     border-radius: rem(20);

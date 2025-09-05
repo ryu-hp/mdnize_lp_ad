@@ -20,6 +20,7 @@
     font-weight: $bold;
     color: $color-white;
     margin-bottom: rem(16);
+    margin-top: 0;
     line-height: 1.4;
     @media screen and (max-width:1400px) and (min-width:768px) {
       font-size: vw(1400,32);
@@ -104,6 +105,10 @@
       gap: rem(40);
       padding-top: rem(80);
     }
+    .cta2__title {
+      font-size: rem(48);
+      margin-bottom: rem(48);
+    }
     .cta2__image {
       width: 100%;
       max-width: 100%;
@@ -123,6 +128,7 @@
     h3.cta2__head {
       font-size: rem(40);
       font-weight: $bold;
+      margin-bottom: rem(48);
     }
     .cta2__description {
       font-size: rem(26);
