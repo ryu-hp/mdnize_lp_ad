@@ -1214,6 +1214,7 @@ body.page-template-one-column main {
   }
   #lp-ad .cta1__image img {
     height: auto;
+    width: 100%;
   }
 }
 
