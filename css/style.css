@@ -983,6 +983,11 @@ body.page-template-one-column main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    font-size: 3rem;
+  }
+  #lp-ad .hero__main-title--company {
+    height: 100%;
+    max-width: 22rem;
   }
   #lp-ad .hero__image {
     margin-right: auto;
@@ -998,7 +1003,7 @@ body.page-template-one-column main {
     display: none;
   }
   #lp-ad .hero__batch-text {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     padding: 1rem 1.5rem;
   }
 }
@@ -1206,6 +1211,9 @@ body.page-template-one-column main {
   #lp-ad .cta1__image {
     width: 100%;
     margin-top: 2.5rem;
+  }
+  #lp-ad .cta1__image img {
+    height: auto;
   }
 }
 

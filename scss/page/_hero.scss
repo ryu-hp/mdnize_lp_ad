@@ -152,6 +152,11 @@
     }
     .hero__main-title {
       justify-content: center;
+      font-size: rem(48);
+    }
+    .hero__main-title--company {
+      height: 100%;
+      max-width: 22rem;
     }
     .hero__image {
       margin-right:auto;
@@ -167,7 +172,7 @@
       display: none;
     }
     .hero__batch-text {
-      font-size: rem(24);
+      font-size: rem(28);
       padding: rem(16) rem(24);
     }
   }
