@@ -203,11 +203,12 @@
     flex-direction: column;
     gap: rem(16);
   }
-
+  
   .solution__item-description {
     font-size: rem(16);
     line-height: 1.7;
     color: $color-black;
+    font-weight: $bold;
   }
   // SP用スタイル
   @include mq(md) {

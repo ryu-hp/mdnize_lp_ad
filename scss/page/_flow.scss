@@ -84,6 +84,7 @@
   .flow__item-description {
     font-size: rem(16);
     grid-column: 1 / 3;
+    font-weight: $bold;
   }
   .flow__tag {
     position: absolute;

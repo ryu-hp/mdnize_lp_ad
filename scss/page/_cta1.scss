@@ -36,6 +36,7 @@
     color: $color-white;
     margin-bottom: rem(40);
     line-height: 1.6;
+    font-weight: $bold;
     @media screen and (max-width:1400px) and (min-width:768px) {
       font-size: vw(1400,22);
       margin-bottom: vw(1400,40);
@@ -67,7 +68,7 @@
     width: 28%;
   }
   .cta1__image img {
-    height: 100%;
+    // height: 100%;
     width: auto;
     margin-left: auto;
   }

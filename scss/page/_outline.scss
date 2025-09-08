@@ -63,6 +63,7 @@
     color: $color-black;
     margin-bottom: rem(30);
     line-height: 1.6;
+    font-weight: $bold;
   }
   .outline__top-text .text-single-dt::before {
     background-color: $color-orange
@@ -94,6 +95,7 @@
     background-color: #f0f0f0;
     padding: rem(8) rem(16);
     flex: 1;
+    font-weight: $bold;
   }
   .outline__bottom-description {
     font-size: rem(20);
