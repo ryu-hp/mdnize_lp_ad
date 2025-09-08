@@ -83,15 +83,16 @@
     }
     .service__item {
       width: 100%;
-      max-width: rem(462);
+      max-width: rem(624);
+      height: rem(384);
       padding: rem(32) rem(64);
     }
     .service__item-contents {
       padding: 0;
     }
     .service__item-image {
-      width: rem(112);
-      height: auto;
+      width: auto;
+      height: rem(112);
       margin-bottom: rem(16);
     }
     h3.service__item-head {

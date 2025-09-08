@@ -22,18 +22,12 @@
     box-shadow: 2px 2px 0 2px $color-orange-dark;
   }
   .c-btn:hover {
-    transform: translate(rem(2),rem(2));
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    opacity: 1;
+    opacity: 0.7;
   }
   .c-btn--contact {
     background-color: $color-white;
     color: $color-black;
     box-shadow: 2px 2px 0 2px darken($color-white, 20%);
-  }
-  .c-btn--contact:hover {
-    background-color: $color-black;
-    color: $color-white;
   }
   .c-btn__icon--contact img {
     filter: brightness(0) invert(0);
@@ -42,22 +36,11 @@
     background-color: $color-orange;
     border: 2px solid $color-orange;
   }
-  .c-btn--shiryo:hover {
-    background-color: $color-white;
-    color: $color-orange;
-  }
-  .c-btn--shiryo:hover .c-btn__icon--shiryo img {
-    filter: brightness(0) invert(1);
-  }
   .c-btn--soudan {
     background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
     color: $color-white;
     font-size: rem(18);
     padding: rem(18) rem(36);
-  }
-  .c-btn--soudan:hover {
-    background: linear-gradient(135deg, darken(#FF6B35, 10%) 0%, darken(#F7931E, 10%) 100%);
-    transform: translateY(rem(2));
   }
   .c-btn__icon {
     display: inline-flex;

@@ -719,21 +719,13 @@ body.page-template-one-column main {
           box-shadow: 2px 2px 0 2px #c65618;
 }
 #lp-ad .c-btn:hover {
-  -webkit-transform: translate(0.125rem, 0.125rem);
-          transform: translate(0.125rem, 0.125rem);
-  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  opacity: 1;
+  opacity: 0.7;
 }
 #lp-ad .c-btn--contact {
   background-color: #fff;
   color: #17181c;
   -webkit-box-shadow: 2px 2px 0 2px #cccccc;
           box-shadow: 2px 2px 0 2px #cccccc;
-}
-#lp-ad .c-btn--contact:hover {
-  background-color: #17181c;
-  color: #fff;
 }
 #lp-ad .c-btn__icon--contact img {
   -webkit-filter: brightness(0) invert(0);
@@ -743,24 +735,11 @@ body.page-template-one-column main {
   background-color: #fa7019;
   border: 2px solid #fa7019;
 }
-#lp-ad .c-btn--shiryo:hover {
-  background-color: #fff;
-  color: #fa7019;
-}
-#lp-ad .c-btn--shiryo:hover .c-btn__icon--shiryo img {
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
-}
 #lp-ad .c-btn--soudan {
   background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
   color: #fff;
   font-size: 1.125rem;
   padding: 1.125rem 2.25rem;
-}
-#lp-ad .c-btn--soudan:hover {
-  background: linear-gradient(135deg, rgb(255, 69.6336633663, 2) 0%, rgb(218.2403433476, 121.2446351931, 7.7596566524) 100%);
-  -webkit-transform: translateY(0.125rem);
-          transform: translateY(0.125rem);
 }
 #lp-ad .c-btn__icon {
   display: -webkit-inline-box;
@@ -1077,7 +1056,7 @@ body.page-template-one-column main {
     font-size: 1.25rem;
     margin-bottom: 2.5rem;
     font-weight: 700;
-    max-width: 27rem;
+    max-width: 30rem;
     margin-right: auto;
     margin-left: auto;
   }
@@ -3314,15 +3293,16 @@ body.page-template-one-column main {
   }
   #lp-ad .service__item {
     width: 100%;
-    max-width: 28.875rem;
+    max-width: 39rem;
+    height: 24rem;
     padding: 2rem 4rem;
   }
   #lp-ad .service__item-contents {
     padding: 0;
   }
   #lp-ad .service__item-image {
-    width: 7rem;
-    height: auto;
+    width: auto;
+    height: 7rem;
     margin-bottom: 1rem;
   }
   #lp-ad h3.service__item-head {
